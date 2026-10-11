@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/aconnectome_ids_ganglia.json",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "aconnectome_ids_ganglia.json",
+      "note": "The authors' assignment of neurons to ganglia; its 'head' key defines the 188-neuron head set.",
+      "origin": "secondary",
+      "primary_reference": "https://funconn.princeton.edu/ (atlas portal); raw data https://osf.io/e2syt/",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2",
+      "size": 5636,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/aconnectome_ids_ganglia.json"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/funatlas.h5",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "funatlas.h5",
+      "note": "Signal propagation atlas, WT and unc-31. Internal attribute time_compiled=2023-06-28_19-52-14.",
+      "origin": "secondary",
+      "primary_reference": "https://funconn.princeton.edu/ (atlas portal); raw data https://osf.io/e2syt/",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975",
+      "size": 18266176,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/funatlas.h5"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/neuron_ids.txt",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "neuron_ids.txt",
+      "note": "The package's 300-neuron id list (no CANL/CANR). Its order differs from funatlas.h5.",
+      "origin": "secondary",
+      "primary_reference": "https://funconn.princeton.edu/ (atlas portal); raw data https://osf.io/e2syt/",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "e2c7e54af611c1e85aa0705588fcf096ede5f0c28f7fd1d5f0cbec5480b786cc",
+      "size": 2645,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/neuron_ids.txt"
+    }
+  ],
+  "source": "randi2023"
+}

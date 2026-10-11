@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Raw downloads are re-creatable from the pinned URLs and SHA-256 values in
+# src/acquire/. Only the per-source manifests are versioned.
+data/raw/**
+!data/raw/
+!data/raw/*/
+!data/raw/*/MANIFEST.json
+
+# Run logs
+logs/*
+!logs/.gitkeep

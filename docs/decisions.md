@@ -48,3 +48,73 @@ Full context for each is in `docs/phase0-prior-work.md` §5.
 | Q-008 (F10) | `predicted_sign` source: Fenyves 2020 primary, and whether to add the 2026 refinement, Wang 2024, or a CeNGEN threshold variant as separate columns. |
 | Q-009 (F13) | `monoamine_edge` source: Bentley 2016 or the later monoamine connectome file? |
 | Q-010 | Data access: approve secondary copies (the PyPI `wormneuroatlas` wheel, the ConnectomeToolbox GitHub repo) with SHA-256 recorded, or allowlist the primary hosts listed in phase0 §5 first? |
+
+---
+
+## Phase 1
+
+### D-003 (2026-10-11, Phase 1, DECIDED by owner)
+**Acquire from reachable secondary distributions now; verify against the
+primary copies later.**
+
+Answers Q-010. Every file is logged as SECONDARY with URL, SHA-256 and
+retrieval date. Each provenance doc marks the primary comparison as PENDING,
+and pending primary checks block the Phase 4 freeze until the primary hosts are
+allowlisted. Distributions used:
+
+- the PyPI `wormneuroatlas` 0.0.7.3 wheel (by Randi);
+- the GitHub `openworm/ConnectomeToolbox` repository at commit
+  `ffe570268b7cffb9329cd009a1bb37d60db2d465`.
+
+### D-004 (2026-10-11, Phase 1, DECIDED, engineering)
+**`data/raw/` contents are not committed to git; only the per-source
+`MANIFEST.json` files are.**
+
+Reasoning: the raw files total tens of MB, and every file is pinned by URL,
+size and SHA-256 in `src/acquire/`, so a fresh clone can re-create
+`data/raw/` with `python -m src.acquire` and verify it bit-for-bit. The risk
+is that a distributor deletes a file. PyPI release files are immutable
+(yank-only) and the GitHub URLs are commit-pinned, so the risk is low but not
+zero. If the owner prefers, raw files can be committed or moved to LFS later
+without changing any pin.
+
+### D-005 (2026-10-11, Phase 1, DECIDED, engineering)
+**Archive members are extracted, byte-identical, into
+`data/raw/<source>/`; the archive itself is kept untouched in
+`data/raw/_distributions/`.**
+
+Every extracted member is checked against both its pin and the wheel's own
+`RECORD`. Extraction copies bytes and never transforms them, so "raw is never
+modified" holds for the archive and for each member.
+
+### D-006 (2026-10-11, Phase 1, DECIDED, engineering)
+**Raw files are made read-only after their hash is verified, and an existing
+raw file whose bytes differ from its pin raises an error instead of being
+overwritten.**
+
+### D-007 (2026-10-11, Phase 1, DECIDED, engineering)
+**Retrieval dates are recorded only in `data/raw/<source>/MANIFEST.json` and
+`docs/provenance/`, never in interim or processed data** (Rule 4).
+
+A date is set when bytes first arrive and is carried forward on re-runs. If a
+manifest is lost, the date is written as "UNKNOWN" rather than guessed.
+
+### D-008 (2026-10-11, Phase 1, DECIDED, engineering)
+**Python dependencies are pinned exactly in `requirements.txt`** (Python
+3.13).
+
+### D-009 (2026-10-11, Phase 1, DECIDED, engineering)
+**The canonical-neuron-list candidates are acquired as their own "source"
+(`canonical_neurons`).**
+
+Phase 2 needs a WormAtlas-standard list, and wormatlas.org is blocked. The
+choice of which candidate is authoritative stays with the owner in Phase 2.
+
+### D-010 (2026-10-11, Phase 1, DECIDED, engineering)
+**When several reachable copies of the same dataset exist, all genuine
+variants are acquired and their byte-level relationships documented; none is
+picked as canonical in Phase 1.**
+
+Examples: the White-lineage connectome variants, and the wheel vs toolbox
+copies of Bentley 2016. Which variant feeds which Phase 4 column is the
+owner's call (Q-007, Q-009).
