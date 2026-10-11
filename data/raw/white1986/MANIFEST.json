@@ -1,0 +1,341 @@
+{
+  "files": [
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "41586_2019_1352_MOESM9_ESM.xlsx",
+      "git_blob_sha1": "b7a225693bde9aa198f39c69561c37e6a53b3892",
+      "note": "Cook et al. 2019 (separate paper) Nature SI 5 as published. Weights are EM serial-section counts. Hermaphrodite sheets identical in value to the WormWiring original.",
+      "origin": "secondary",
+      "primary_reference": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-019-1352-7/MediaObjects/41586_2019_1352_MOESM9_ESM.xlsx (Cook et al. 2019 Nature, Supplementary Information 5)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "86d3f24c77752b1f7df4b26cdf9583461fe7e8fc76f86d2d81b3879cdaa0e389",
+      "size": 4172457,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/41586_2019_1352_MOESM9_ESM.xlsx"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "NeuronConnect.xls",
+      "git_blob_sha1": "898ba5408669a4c27467554591dd69c73b571b41",
+      "note": "Varshney et al. 2011 (separate paper) re-compilation of White's somatic wiring with ~600 updates. One sheet 'NeuronConnect.csv': Neuron 1, Neuron 2, Type (S, Sp, R, Rp, EJ, NMJ), Nbr.",
+      "origin": "secondary",
+      "primary_reference": "https://www.wormatlas.org/images/NeuronConnect.xls (Varshney et al. 2011, doi:10.1371/journal.pcbi.1001066; per the toolbox's cect/validation/VarshneyEtAl2011.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "b5e32612967ff277c91ba37463bd03a85678bd8e65a4861abc6516323b6ff5f3",
+      "size": 518144,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/NeuronConnect.xls"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "SI 5 Connectome adjacency matrices, corrected July 2020.xlsx",
+      "git_blob_sha1": "4d53c16e9a07c1ecfd068a02b39ccffd6b8a3eaa",
+      "note": "Cook et al. 2019 SI 5, WormWiring 'corrected July 2020'. Gap-junction corrections (e.g. PVDL/R-hmc 400 added, BDUL/R-PLML/R 23 removed); adds hmc column and 'int' row/column. Used by the toolbox.",
+      "origin": "secondary",
+      "primary_reference": "https://wormwiring.org/si/SI%205%20Connectome%20adjacency%20matrices,%20corrected%20July%202020.xlsx (Emmons lab, WormWiring)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "1f4fdbf84746b69b49a8da0816f52787860ce349b638dce37924ba80f90c70c9",
+      "size": 4188190,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/SI%205%20Connectome%20adjacency%20matrices%2C%20corrected%20July%202020.xlsx"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "SI 5 Connectome adjacency matrices.xlsx",
+      "git_blob_sha1": "9e4f34968eb0f9436ab351c44c34a13a06379d07",
+      "note": "Cook et al. 2019 SI 5, WormWiring copy. Hermaphrodite values identical to the Nature file; male sheets rename ray structural cells R*st* -> R*sh* and one row RMFL -> RMFR (duplicate).",
+      "origin": "secondary",
+      "primary_reference": "https://wormwiring.org/si/SI%205%20Connectome%20adjacency%20matrices.xlsx (Emmons lab, WormWiring)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "559989daa02cd9a76e9266537a6b80bfd47d338cb5d397d11296288629df364a",
+      "size": 4367796,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/SI%205%20Connectome%20adjacency%20matrices.xlsx"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/aconnectome.json",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "aconnectome.json",
+      "note": "NOT used by Randi et al.'s published analysis. Electrical matrix equals Varshney 2011 EJ; chemical matrix looks like Varshney 2011 with Sp overwriting S instead of adding (see provenance doc).",
+      "origin": "secondary",
+      "primary_reference": "No primary identified. Undocumented 300x300 matrices (chemical, chemical_sign, electrical) used by pumpprobe Anatlas source 'white'; the matching 'white' entry in Funatlas.aconn_sources is commented out. Index: aconnectome_ids.txt from leiferlab/pumpprobe (not in the wheel).",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "8d45df9db673ec2a03bd0ab1bd3980d16b6305920adf2332dc80b4cb5f5fb29e",
+      "size": 902866,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/aconnectome.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 (Leifer lab; Randi et al. analysis code)",
+      "filename": "aconnectome_ids.txt",
+      "git_blob_sha1": "1bb809e9eeee15926c0cb850f3dc1ca05e051d80",
+      "note": "300 lines 'index<TAB>name' giving the row/column order of aconnectome.json (pumpprobe Anatlas). Uses AWCL/AWCR.",
+      "origin": "secondary",
+      "primary_reference": "https://github.com/leiferlab/pumpprobe (authors' own repository; no other copy known)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "bfcde4c0ccaadce2f69f44c858caddd7c6f5b27aaac878975042b19fa3f7442d",
+      "size": 2641,
+      "url": "https://raw.githubusercontent.com/leiferlab/pumpprobe/1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7/pumpprobe/aconnectome_ids.txt"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "cect__aconnectome_white_1986_A.csv",
+      "git_blob_sha1": "442f160c9a10830c7d75a238528a2ed1f648f467",
+      "note": "Toolbox copy; CRLF, header 'pre post type synapses' with spaces not tabs, final newline added. Data rows equal the wna__ copy. Read by toolbox reader White_A.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_n2u ('White et al., 1986, N2U (adult)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "09284a374c3c30f6c806ea4dbbbb33da2e735d1891893a3f1fd65ada1e565123",
+      "size": 43790,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/aconnectome_white_1986_A.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "cect__aconnectome_white_1986_L4.csv",
+      "git_blob_sha1": "aadcc1ff705708af4b8248e18486f75d8863d329",
+      "note": "Toolbox copy; equals wna__ copy after CRLF->LF. Read by toolbox reader White_L4.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_jsh ('White et al., 1986, JSH (L4)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "f2b709afa7b7997dff7482999af189971f79203f9df1db184a37ced86cb0127d",
+      "size": 40834,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/aconnectome_white_1986_L4.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "cect__aconnectome_white_1986_whole.csv",
+      "git_blob_sha1": "3b96800baa602180a6a49f704695df37df775586",
+      "note": "Toolbox copy of the wheel file (per cect/validation/WhiteEtAl1986.md, copied from wormneuroatlas). Equals wna__ copy after CRLF->LF. Read by toolbox readers White_whole / WhiteDataReader.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_whole ('White et al., 1986 compilation (adult)'); underlying data: somatic White et al. 1986 as compiled by Varshney et al. 2011 (doi:10.1371/journal.pcbi.1001066), pharynx Albertson & Thomson 1976 (doi:10.1098/rstb.1976.0085)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "c8aac78756b71f6337629951e5f4211448e85d148f6db9b367b2cd0450bb403a",
+      "size": 67453,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/aconnectome_white_1986_whole.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ da8ca7e2fc0eece4b21c30625880b41f39961c76 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_da8ca7e__neurons.json",
+      "git_blob_sha1": "81da4572b20674dcc852cfa9fd041e66a3c7a73c",
+      "note": "NemaNode cell table. Its names define which rows NemaNode's CSV export keeps (src/server/db/download-data.js). Same blob as witvliet2021's nemanode_baf8ec8__neurons.json.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download); NemaNode cell table",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492",
+      "size": 58575,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/da8ca7e2fc0eece4b21c30625880b41f39961c76/src/server/populate-db/raw-data/neurons.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ da8ca7e2fc0eece4b21c30625880b41f39961c76 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_da8ca7e__white_1986_jsh.json",
+      "git_blob_sha1": "3f54979ca00c210b37f205c77e69cab4810a464e",
+      "note": "NemaNode source records for white_1986_jsh. Same blob at master head 6b7ca03. Differs from the pre-da8ca7e blob (859641e) in 5 chemical edges.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_jsh ('White et al., 1986, JSH (L4)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "ac251c32cfbc3f3ee5add0f4f566c3006b715553e822210cc4ec9f1fc9816dd4",
+      "size": 271999,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/da8ca7e2fc0eece4b21c30625880b41f39961c76/src/server/populate-db/raw-data/connections/white_1986_jsh.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ da8ca7e2fc0eece4b21c30625880b41f39961c76 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_da8ca7e__white_1986_n2u.json",
+      "git_blob_sha1": "6aafc974cd97be8cc43653bde6b81935a8266858",
+      "note": "NemaNode source records for white_1986_n2u (both gap-junction directions, per-synapse ids). Same blob at master head 6b7ca03. Differs from the pre-da8ca7e blob (859641e) in 2 chemical edges.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_n2u ('White et al., 1986, N2U (adult)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "ba949e1e1766020009d0db38aa3182b245aa6242bb0359a253cd65d0a6b9a5d4",
+      "size": 284796,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/da8ca7e2fc0eece4b21c30625880b41f39961c76/src/server/populate-db/raw-data/connections/white_1986_n2u.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ da8ca7e2fc0eece4b21c30625880b41f39961c76 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_da8ca7e__white_1986_whole.json",
+      "git_blob_sha1": "75a28a2706b0834dca9420343f57213e83ce3894",
+      "note": "NemaNode source records for white_1986_whole (Varshney 2011 + pharynx). Same blob from 859641e through master head 6b7ca03. Contains pharyngeal targets the CSV export drops.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_whole ('White et al., 1986 compilation (adult)'); underlying data: somatic White et al. 1986 as compiled by Varshney et al. 2011 (doi:10.1371/journal.pcbi.1001066), pharynx Albertson & Thomson 1976 (doi:10.1098/rstb.1976.0085)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "fe7ff4a6529ccb9d13183e665644e30ad8aded887c64b24732808757bddae41d",
+      "size": 375599,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/da8ca7e2fc0eece4b21c30625880b41f39961c76/src/server/populate-db/raw-data/connections/white_1986_whole.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "neurodata.txt",
+      "git_blob_sha1": "b137a51be4011b138dc81e3b40fd5153b5e42a6c",
+      "note": "Durbin 1987 (separate work: thesis) compilation of White's N2U and JSH series, unedited per the toolbox. One record lacks its series field.",
+      "origin": "secondary",
+      "primary_reference": "https://www.wormatlas.org/neurodata.txt (readme https://www.wormatlas.org/neurodata_readme.txt); Durbin 1987 thesis https://www.wormatlas.org/Durbin/durbinthesis.pdf",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "e4cd6f02499a8cce7b780fa11076645b443ba509001782ae5844ff0b4d27b56c",
+      "size": 223795,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/neurodata.txt"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "neurodata_updated.txt",
+      "git_blob_sha1": "da9ff80371b713f1609e2967064c44bb6c0b23ba",
+      "note": "Toolbox-edited derivative of neurodata.txt: blank series set to N2U, 19 missing reverse gap-junction records added, RIML->AVAR gap weight 5->6. Not a published dataset.",
+      "origin": "secondary",
+      "primary_reference": "No primary: OpenWorm ConnectomeToolbox edit of neurodata.txt (cect/validation/WhiteEtAl1986.md lists the 3 edits). Original: https://www.wormatlas.org/neurodata.txt (readme https://www.wormatlas.org/neurodata_readme.txt); Durbin 1987 thesis https://www.wormatlas.org/Durbin/durbinthesis.pdf",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "d420e9472e2cd2d62b3ed78211cc3e56a90e1e6ccbb00fab442b464bd30c1f37",
+      "size": 226307,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/neurodata_updated.txt"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "white_1986_jsh.csv",
+      "git_blob_sha1": "15577df82afdc9c842ae2a661bbd2ad55651dece",
+      "note": "NemaNode-named copy; read by no toolbox reader. Byte-identical to wheel _L4 and to Nondairy-Creamer/Creamer_LDS_2026 anatomical_data/worm_connectomes/white_1986_jsh.csv, which its README says was downloaded from NemaNode on 2025-11-01.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_jsh ('White et al., 1986, JSH (L4)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "afe7a37a5bae62630a773b5e7815a408e3a72063caf0ed49ecc91e213077fb12",
+      "size": 39065,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/white_1986_jsh.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "white_1986_n2u.csv",
+      "git_blob_sha1": "945003a9949c73c98bd2ad90003ac5fd16f693d8",
+      "note": "NemaNode-named copy; read by no toolbox reader. Byte-identical to wheel _A and to the Creamer repository's NemaNode download (2025-11-01).",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_n2u ('White et al., 1986, N2U (adult)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "6b63f6c0281b7bbc3be75fa3962e26caa020ddf3756bfc8dd9aad6577655fc16",
+      "size": 41889,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/white_1986_n2u.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/aconnectome_white_1986_A.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "wna__aconnectome_white_1986_A.csv",
+      "note": "Shipped in the wheel but NOT loaded by any code in wormneuroatlas or pumpprobe (type 'whiteA' loads _whole). NemaNode export of white_1986_n2u (N2U, adult, head). Byte-identical to toolbox white_1986_n2u.csv.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_n2u ('White et al., 1986, N2U (adult)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "6b63f6c0281b7bbc3be75fa3962e26caa020ddf3756bfc8dd9aad6577655fc16",
+      "size": 41889,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/aconnectome_white_1986_A.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/aconnectome_white_1986_L4.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "wna__aconnectome_white_1986_L4.csv",
+      "note": "LOADED by Randi et al. as aconn_sources type 'whiteL4'. NemaNode export of white_1986_jsh (JSH, L4, head). Byte-identical to toolbox white_1986_jsh.csv and to pumpprobe's copy.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_jsh ('White et al., 1986, JSH (L4)'); underlying data: White et al. 1986 doi:10.1098/rstb.1986.0056, compiled by Durbin 1987 (https://www.wormatlas.org/neurodata.txt), muscles re-annotated by the Zhen lab",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "afe7a37a5bae62630a773b5e7815a408e3a72063caf0ed49ecc91e213077fb12",
+      "size": 39065,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/aconnectome_white_1986_L4.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/aconnectome_white_1986_whole.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "wna__aconnectome_white_1986_whole.csv",
+      "note": "LOADED by Randi et al. as aconn_sources type 'whiteA' (pumpprobe Funatlas.py and wormneuroatlas NeuroAtlas.py). NemaNode export of white_1986_whole: Varshney 2011 somatic compilation + pharynx. Tab-separated, LF, no final newline. Byte-identical to leiferlab/pumpprobe@1dbc5e0a pumpprobe/.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (connectivity download), dataset id white_1986_whole ('White et al., 1986 compilation (adult)'); underlying data: somatic White et al. 1986 as compiled by Varshney et al. 2011 (doi:10.1371/journal.pcbi.1001066), pharynx Albertson & Thomson 1976 (doi:10.1098/rstb.1976.0085)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "768d2b16557d768b51f81548f630adb45d76c1f99586e8fd4c90279293cc9dae",
+      "size": 64492,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/aconnectome_white_1986_whole.csv"
+    }
+  ],
+  "source": "white1986"
+}

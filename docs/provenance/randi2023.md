@@ -129,6 +129,13 @@ Other counts recorded for later phases:
 - **P1-R4. The AWC naming affects reproduction.** Only the AWCON/AWCOF
   stand-in reproduces the paper's counts. That is evidence about what the
   authors did, not a decision about our namespace (Q-005 remains open).
+- **P1-R6. The authors' head list omits RMHR.** `aconnectome_ids_ganglia.json`
+  lists `RMHL` twice under "ventral ganglion" and never lists `RMHR`: 189
+  entries, 188 unique. RMHR is in the atlas but has **zero** finite q-values in
+  either strain, as stimulated or as responding neuron, so the omission does
+  not change any paper count. It does matter for Phase 2 and Phase 4: RMHR is
+  a head neuron and should appear with "never tested" status, not be missing.
+  This was found by the witvliet2021 build agent and re-checked here.
 - **P1-R5. This copy's identity with the portal version is unproven.** The
   matching headline numbers are strong evidence, not proof. The element-wise
   primary comparison remains PENDING.
