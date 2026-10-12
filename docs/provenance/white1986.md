@@ -9,7 +9,9 @@
     - Zhen lab (NemaNode, 2020): the muscle re-annotation in `*_A*`, `*_L4*`, `white_1986_jsh/n2u*`.
 - Module: `src/acquire/white1986.py`
 - Status: SECONDARY — primary comparison PENDING (blocks Phase 4 freeze)
-- Retrieval date (UTC): 2026-10-11 (all 20 files; `data/raw/white1986/MANIFEST.json`)
+- Retrieval dates (UTC): 2026-10-11 for the original 20 files; 2026-10-12 for the 4 `lrv__*` files added after verification (`data/raw/white1986/MANIFEST.json`)
+- Verified: Phase 1 verification pass 2026-10-12, overall PASS_WITH_FIXES. Every fix below was applied on 2026-10-12.
+- Q-007 is resolved PROVISIONALLY in `docs/decisions.md`: `anat_chem_white` = N2U, with JSH and whole kept as separate columns.
 
 This source answers no question by itself. It exists so the owner can settle **Q-007 ("which White")** with every candidate in hand. Nothing here picks one.
 
@@ -29,6 +31,7 @@ This source answers no question by itself. It exists so the owner can settle **Q
 | `SI 5 Connectome adjacency matrices, corrected July 2020.xlsx` | https://wormwiring.org/si/SI%205%20Connectome%20adjacency%20matrices,%20corrected%20July%202020.xlsx | WormWiring corrected copy |
 | `aconnectome.json` | none found | Undocumented matrix in the Leifer-lab code |
 | `aconnectome_ids.txt` | https://github.com/leiferlab/pumpprobe (the authors' repository is the only copy) | Index for `aconnectome.json` |
+| `lrv__ConnOrdered_040903.mat`, `lrv__NeuronTypeOrdered_040903.mat`, `lrv__A_sendjoint.mat`, `lrv__datareader.m` | none known: the first author's own release (https://github.com/lrvarshney/elegans, linked from the toolbox's docs/Varshney_2011.md) | Varshney et al. 2011's own matrices and loader |
 
 The nemanode.org export URLs above are given by dataset id. The exact download URL format was not checked, because the host is blocked. The NemaNode source data in the Zhen lab's GitHub repository was reachable and was acquired; see below.
 
@@ -68,8 +71,12 @@ Integrity checks:
 | `41586_2019_1352_MOESM9_ESM.xlsx` | 4172457 | `86d3f24c77752b1f7df4b26cdf9583461fe7e8fc76f86d2d81b3879cdaa0e389` | Toolbox `41586_2019_1352_MOESM9_ESM.xlsx`, blob `b7a225693bde9aa198f39c69561c37e6a53b3892` | G |
 | `SI 5 Connectome adjacency matrices.xlsx` | 4367796 | `559989daa02cd9a76e9266537a6b80bfd47d338cb5d397d11296288629df364a` | Toolbox, same name, blob `9e4f34968eb0f9436ab351c44c34a13a06379d07` | G |
 | `SI 5 Connectome adjacency matrices, corrected July 2020.xlsx` | 4188190 | `1f4fdbf84746b69b49a8da0816f52787860ce349b638dce37924ba80f90c70c9` | Toolbox, same name, blob `4d53c16e9a07c1ecfd068a02b39ccffd6b8a3eaa` | G |
+| `lrv__ConnOrdered_040903.mat` | 66328 | `bd05af64c7d8c14ff44988e0f009b45d1ebe7db0b7194fff341fc4885cc91d38` | `https://raw.githubusercontent.com/lrvarshney/elegans/07d10c2d43b3da9a1fefed2e8658a98dc4310765/ConnOrdered_040903.mat`, blob `9321bd79828fb9faa66b04ce82361d770497390f` | G |
+| `lrv__NeuronTypeOrdered_040903.mat` | 18056 | `5baec9fa9ffad32eec0429c962f5d3e1ebb2da35ce612f91499da1dad5c03c17` | same repository and commit, blob `0cb1c7f9cd75569976917b7d486fe23ffa378862` | G |
+| `lrv__A_sendjoint.mat` | 5415 | `e50e2e86a454d5d468eda5e8d83ca723cd1bd223498d225bc9f834bfd7271d02` | same, blob `ceadf9de35d3eb24e16db2fcf4bc2db37b1bbc82` | G |
+| `lrv__datareader.m` | 2014 | `7a252b2c76a142241d6bf8c29d27cb8909ab85dc58a22c13cda7d26faf7e9c04` | same, blob `61c4845b68fee4873aeaee03f0b94a107c2a3a07` (MATLAB source; acquired as text, never executed) | G |
 
-Re-running `python -m src.acquire white1986` verified all 20 files without re-downloading any of them. Data-file mtimes were unchanged and `MANIFEST.json` was rewritten byte-identically.
+Re-running `python -m src.acquire white1986` verified all files (20 at the time; 24 after the `lrv__*` additions) without re-downloading any of them. Data-file mtimes were unchanged and `MANIFEST.json` was rewritten byte-identically.
 
 ### Byte-level relationships between copies
 
@@ -84,10 +91,10 @@ These are computed by `record_counts` (`_relationships`) unless marked (scratch)
 | `cect__aconnectome_white_1986_whole.csv` vs `wna__…_whole.csv` | identical after CRLF→LF. The toolbox copy uses CRLF line endings (+2961 bytes); neither ends with a newline. |
 | `cect__aconnectome_white_1986_L4.csv` vs `wna__…_L4.csv` | identical after CRLF→LF (+1769 bytes) |
 | `cect__aconnectome_white_1986_A.csv` vs `wna__…_A.csv` | not identical after CRLF→LF. Line 1 (the header) is `pre post type synapses` with spaces instead of tabs, and the toolbox copy adds a final CRLF. All 1899 data lines are identical. |
-| NemaNode JSON (`nemanode_da8ca7e__white_1986_{n2u,jsh,whole}.json`) → wheel CSVs | **NemaNode's own export rules, applied to the JSON, reproduce each wheel CSV exactly** (`nemanode_json_export_equals_csv`: all true). The rules are `populate-connections.js` (weight = `len(syn)`, electrical reverse duplicates skipped) and `db/download-data.js` (keep names in `neurons.json`). The pre-da8ca7e blobs (`859641e`, not acquired) do not reproduce them: n2u differs in 2 chemical rows (ADEL→RMGL 3 vs 1; ADER→RMGR 2 vs absent), and jsh in 5 rows that the CSV lacks (ADLL→ASHL 3, AIAL→ASKL 1, AIAR→ASKR 1, DVA→AIZL 1, DVA→AIZR 1). |
+| NemaNode JSON (`nemanode_da8ca7e__white_1986_{n2u,jsh,whole}.json`) → wheel CSVs | **NemaNode's own export rules, applied to the JSON, reproduce each wheel CSV exactly** (`nemanode_json_export_equals_csv`: all true). The rules are `populate-connections.js` (weight = `len(syn)`, electrical reverse duplicates skipped) and `db/download-data.js` (keep names in `neurons.json`). The blobs at commit `859641e` (n2u `8ded5b4c018f40a342b7c36d9fa88a29c390bdec`, jsh `fd1252d7955f270582d013dc4ee76ec24c7134d7`; not acquired) do not reproduce them: n2u differs in 2 chemical rows (ADEL→RMGL 3 vs 1; ADER→RMGR 2 vs absent), and jsh in 5 rows that the CSV lacks (ADLL→ASHL 3, AIAL→ASKL 1, AIAR→ASKR 1, DVA→AIZL 1, DVA→AIZR 1). |
 | `neurodata_updated.txt` vs `neurodata.txt` | content edit: 1 record removed (`ADAL ADAR Gap_junction` with no series); 20 records added (that record with series N2U, plus 19 reverse-direction gap junctions); 1 changed (`RIML AVAR Gap_junction JSH` 5 → 6). Comment and blank lines added. |
 | `41586_2019_1352_MOESM9_ESM.xlsx` vs `SI 5 Connectome adjacency matrices.xlsx` | different bytes. All three hermaphrodite sheets have identical labels and values. Male sheets: ray structural cells renamed `R*st*` → `R*sh*` (7 chemical columns; 11 gap rows/columns), and chemical row `RMFL` relabelled `RMFR`, which duplicates the `RMFR` label. |
-| `SI 5 … .xlsx` vs `SI 5 …, corrected July 2020.xlsx` | different bytes and content. Hermaphrodite chemical: column `hmc` added, no value changes. Hermaphrodite gap: row/column `int` added; 11 symmetric-sheet and 13 asymmetric-sheet label pairs changed; sheets renamed `herm gap jn …` → `hermaphrodite gap jn …`. Male: `R*sh*` → `R*st*` restored, `RMFL` restored, `int` added, 9 (symmetric) and 8 (asymmetric) gap changes. Symmetric-sheet changes (scratch listing): added PVDL↔hmc 400 and PVDR↔hmc 400; removed BDUL↔PLML 23 and BDUR↔PLMR 23; DD06↔PDB, ALA↔exc_gl and VA09↔PVCR made symmetric. These agree with the toolbox's `cect/validation/CookEtAl2019.md`. |
+| `SI 5 … .xlsx` vs `SI 5 …, corrected July 2020.xlsx` | different bytes and content. Hermaphrodite chemical: column `hmc` added, no value changes. Hermaphrodite gap: row/column `int` added; 11 symmetric-sheet and 13 asymmetric-sheet label pairs changed; sheets renamed `herm gap jn …` → `hermaphrodite gap jn …`. Male: `R*sh*` → `R*st*` restored, `RMFL` restored, `int` added, 9 (symmetric) and 8 (asymmetric) gap changes. Symmetric-sheet changes (scratch listing): added PVDL↔hmc 400 and PVDR↔hmc 400; removed BDUL↔PLML 23 and BDUR↔PLMR 23; DD06↔PDB, ALA↔exc_gl and VA09↔PVCR made symmetric. The toolbox's `cect/validation/CookEtAl2019.md` lists the same changes except that it reports only BDUR↔PLMR as removed. **Within the corrected file, the asymmetric sheet puts the two 400-section entries on PVDL/R–hyp, while the symmetric sheet puts them on PVDL/R–hmc: the two sheets disagree** (verifier finding). |
 
 ## What each file contains
 
@@ -98,6 +105,11 @@ These are computed by `record_counts` (`_relationships`) unless marked (scratch)
 - **Gap junctions: each unordered pair is listed once, in arbitrary orientation (first-seen in the JSON).** Self-pairs exist: RIBL–RIBL and RIBR–RIBR in A and L4; M4, M5, RIBL, RIBR, RID and VA8 in whole.
 - Summing `synapses` over electrical rows gives the single-counted total. A symmetric matrix built from them sums to 2×total − self.
 - Randi's loader (`_get_aconnectome_witvliet`, used for all White CSVs) symmetrises the gap matrix with `max(gap[i,j], gap[j,i])`.
+- **Randi's loaders fold unmatched names onto VD9.** Both loaders map names through `ids_to_ai`/`ids_to_i`, which return −1 for unmatched names; `chem[-1, …]` is VD9 (`np.unique(neuron_ids)[-1]`).
+  - Wheel defaults: `_whole` folds 11 names (150 chemical rows, weight 1509; 6 electrical rows) onto VD9, and `_L4` folds 39 names (219 rows, weight 774; 4 electrical rows, weight 8).
+  - pumpprobe, which matches AWCL/AWCR: 120 rows / 1434 and 189 / 638.
+  - In the wheel the AWCOFF/AWCON→AWCL/AWCR mapping is commented out, so AWCL/AWCR also go to VD9.
+  - See witvliet2021 P1-W2. Our pipeline never uses these loaders.
 - Names are not zero-padded (VA1). AWCL/AWCR are used.
 
 Per-file contents:
@@ -125,14 +137,16 @@ NemaNode's own help text describes these datasets. It is in the NemaNode reposit
 
 - The source labelled `whiteA` loads **`_whole`**, the multi-animal compilation, not `_A` (N2U). `_A` is loaded by no code in either repository.
 - The four sources are summed (`average=False`), then thresholded with `chem <= chem_th → 0` and `gap <= gap_th → 0`.
-- `pumpprobe` defaults to `chem_th=3, gap_th=2`, and the wheel to `0, 0`. The paper scripts in `pumpprobe/scripts` (e.g. `Numbers_script.py`, `funatlas_vs_anatomy.py`) call `load_aconnectome_from_file(chem_th=0, gap_th=0)`.
+- `pumpprobe` defaults to `chem_th=3, gap_th=2`, and the wheel to `0, 0`.
+- The paper scripts under `scripts/` at the repository root (e.g. `scripts/Numbers_script.py`, `scripts/fconnectivity/figures/compare_connectomes/funatlas_vs_anatomy.py`) call `load_aconnectome_from_file(chem_th=0, gap_th=0)`. `fraction_of_funatlas_in_aconn_n_hops.py` sweeps thresholds.
+- The `whiteA` → `_whole` mapping is the same at pumpprobe tags v1.0 (a5198e2), v1.1 (5ca97c7, "after reviewers") and 1dbc5e0a.
 
 **NemaNode JSON** (`nemanode_da8ca7e__*.json`)
 
 - Lists of records `{pre, post, typ, syn[, ids, pre_tid, post_tid]}`. `typ` is 0 (chemical) or 2 (electrical).
 - Gap junctions are listed in both directions (n2u 538 records, jsh 576, whole 1144, each with 2 or 6 self-records).
 - n2u: the number of `syn` entries (5210) differs from the sum of `syn` values (5213). NemaNode counts entries.
-- `whole` contains 10 names that are not in `neurons.json`: `DefecationMuscles`, `G1`, `G2`, `mc2`, `mc3`, `pm2`, `pm3`, `pm5`, `pm6`, `pm7`. The CSV export therefore drops 19 rows (weight 246) of pharyngeal neuron → pharyngeal muscle/gland connectivity. `pm1` and `pm4` survive.
+- `whole` contains 10 names that are not in `neurons.json`: `DefecationMuscles`, `G1`, `G2`, `mc2`, `mc3`, `pm2`, `pm3`, `pm5`, `pm6`, `pm7`. The CSV export therefore drops 19 rows (weight 246): 18 pharyngeal neuron → pharyngeal muscle/gland/mc rows (weight 241), and DVB→DefecationMuscles 5. `pm1` and `pm4` survive.
 
 **Durbin `neurodata.txt`**
 
@@ -171,7 +185,7 @@ NemaNode's own help text describes these datasets. It is in the NemaNode reposit
 - Keys `chemical` (300×300), `electrical` (300×300) and `chemical_sign` (300-vector: −1 for 26 ids, namely DD1–6, VD1–13, RME×4, AVL, DVB, RIS).
 - Indexed by pumpprobe's `aconnectome_ids.txt` (AWCL/AWCR). `chemical[i][j]` is ids[i] → ids[j]; pumpprobe `Anatlas._load_aconnectome_white` transposes it.
 - Scratch comparison against `NeuronConnect.xls`, after removing zero-padding (VA01→VA1) for the comparison only:
-  - The **electrical matrix equals Varshney EJ** for all 1031 directed entries.
+  - The **electrical matrix, restricted to Varshney's 279 neurons, equals Varshney EJ** for all 1031 directed entries. It adds 65 pharyngeal entries (weight 87), which include all 35 unmirrored entries and the 6 unequal pairs.
   - The **chemical matrix equals Varshney with each Sp row overwriting the S row of the same pair** instead of being added. All 2194 Varshney pairs agree with that rule (including two pairs zeroed by Nbr-0 Sp rows); only 1813 agree with S+Sp.
   - 84 extra pharyngeal pairs (sum 200) are present; only 7 of them equal `_whole`.
 - It is not loaded by the published analysis: the `white` entry in `Funatlas.aconn_sources` is commented out.
@@ -181,9 +195,9 @@ NemaNode's own help text describes these datasets. It is in the NemaNode reposit
 - **`_whole` vs Varshney.**
   - All 2194 Varshney S+Sp ordered pairs are in `_whole` with equal weight. `_whole` adds 78 pharyngeal chemical pairs (weight 144).
   - All 517 Varshney EJ unordered pairs (incl. self) are in `_whole` with equal weight. `_whole` adds 58, mostly pharyngeal, plus BDUL/R–PLML/R, GLR–RME and RID–RID.
-  - `LegacyBodyWallMuscles` NMJ rows cover 114 neurons, weight 1405. Varshney's NMJ rows cover 115 neurons, weight 1410: **DVB's 5 NMJs are missing in `_whole`.**
+  - `LegacyBodyWallMuscles` NMJ rows cover 114 neurons, weight 1405. Varshney's NMJ rows cover 115 neurons, weight 1410. DVB's 5 NMJs are in the NemaNode JSON as DVB→DefecationMuscles; the export drops them because DefecationMuscles is not in `neurons.json` (the 19th dropped row above). It is not a separate loss.
 - **NemaNode n2u/jsh vs Durbin N2U/JSH.**
-  - Neuron→neuron chemical pairs present in both have equal weight to Durbin's send side (n2u 1409/1409; jsh 1285/1287). The exceptions are JSH IL1L→RMDDL (3 vs 2) and RMHL→RMDR (3 vs 2).
+  - Non-BWM, non-mu_bod/hyp chemical pairs present in both (CEPsh glia pairs included; DVB/PVT pairs not matched) have equal weight to Durbin's send side (n2u 1409/1409; jsh 1285/1287). With plain names only: 1399/1399 and 1274/1276. With Durbin's DVB read as PVT: 1414/1414 and 1288/1290. The exceptions are JSH IL1L→RMDDL (3 vs 2) and RMHL→RMDR (3 vs 2).
   - NemaNode renames the head processes of **DVB to PVT**. This is the DVB/PVT swap correction noted in Varshney 2011 and Cook 2019 per the toolbox docs.
   - NemaNode drops DA1, DB1, SABD, SABVL, VA2, VB1, VB2, VC1–3, VD1, `hyp` and `mu_bod`, and adds BWM-* muscle targets. JSH also gains RIGR→PLNR 1, SIAVR→SAADR 4 and URYVR→RMDL 1.
 - **`_whole` vs `_A` on the 186 shared names.**
@@ -197,19 +211,19 @@ All "count in acquired file" values come from `python -m src.acquire --counts wh
 
 | Quantity | Definition | Count in acquired file | Paper reports | Where the paper reports it | Match |
 |---|---|---|---|---|---|
-| White 1986 total chemical synapses / NMJs / gap junctions | approximate whole-animal estimates | not computed: no file holds White's own whole-animal tally | "about 5,000 chemical synapses, 2,000 neuromuscular junctions, and 600 gap junctions" (search-tool summary of the abstract via https://scholarhub.vn/publication/:slug/e37ad51d-aaea-4f34-bc62-4fbb89c6ad10). A second search returned "approximate figures of 2000 neuromuscular junctions, 5000 chemical synapses between neurons, and 700 gap junctions" (unattributed). | abstract (not reached directly) | UNVERIFIED: the two excerpts disagree (600 vs 700) and the text was not reached. NOT COMPARABLE in any case, since these are estimates for a typical animal and every file is a partial or compiled reconstruction. |
-| White 1986 neuron count | 302 neurons, hermaphrodite | no file classifies neurons; see per-file name counts below | "the connectivity of each of the 118 classes of neurons in the 302-neuron nervous system of the adult of one sex, the hermaphrodite was published" (search excerpt of Emmons 2015 commentary, https://royalsocietypublishing.org/rstb/article/370/1666/20140309/22515/The-beginning-of-connectomics-a-commentary-on) | commentary, not the paper | NOT COMPARABLE (the neuron set is decided in Phase 2) |
-| Varshney 2011 neurons | distinct plain A-Z0-9 names in S/Sp/R/Rp/EJ rows with Nbr > 0 (`NeuronConnect.xls`) | **279** (VC06 occurs only in an NMJ row; `avfl`/`avfr` lower-case tokens excluded) | "After excluding CANL/R and VC06, which make no synapses, it keeps the remaining 279 somatic neurons" (search-tool summary of arXiv:0907.2373v4, https://arxiv.org/html/0907.2373v4) | Varshney et al., Results (arXiv v4 author version) | YES (against the author preprint excerpt; PLoS text not reached) |
-| Varshney 2011 chemical synapses | sum of Nbr over S+Sp rows (`chemical_S_plus_Sp.weight`); R+Rp mirrored gives the same | **6394** | "The v4 HTML reports 6393 chemical synapses, 890 gap junctions, and 1410 neuromuscular junctions" (search excerpt of https://arxiv.org/html/0907.2373v4). Also 2016 PLOS Comput Biol paper: "279 neurons with 6,393 chemical synapses and 890 electrical junctions" (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005084) | arXiv v4; repeated by later papers | **NO — BLOCKER** (off by 1; Varshney candidate only). The only internal inconsistency found is the AVFR→AVFL synapse whose receive-side record is written `avfr`/`avfl`; that may explain it but is unverified. |
-| Varshney 2011 gap junctions | EJ weight summed once per unordered pair, self-pairs included (`EJ.weight_sum_over_unordered_pairs_taking_max_direction`) | **890** (summed over both listed directions: 1777) | 890 (same excerpts as above) | arXiv v4 | YES |
+| White 1986 total chemical synapses / NMJs / gap junctions | approximate whole-animal estimates | not computed: no file holds White's own whole-animal tally | "These consist of about 5000 chemical synapses, 2000 neuromuscular junctions and 600 gap junctions." (abstract, via web-search excerpt; text not reached). An unattributed '700' excerpt is discarded. | abstract | NOT COMPARABLE (estimates for a typical animal vs partial or compiled reconstructions) |
+| White 1986 neuron count | 302 neurons, hermaphrodite | no file classifies neurons; see per-file name counts below | "a total complement of 302 neurons" (abstract, via web-search excerpt) | abstract | NOT COMPARABLE here. The neuron set is decided in Phase 2, where the canonical list reproduces 302 and 118 classes (`tests/test_reproduction.py`) |
+| Varshney 2011 neurons | distinct plain A-Z0-9 names in S/Sp/R/Rp/EJ rows with Nbr > 0 (`NeuronConnect.xls`) | **279** (VC06 occurs only in an NMJ row; `avfl`/`avfr` lower-case tokens excluded) | "279 neurons and 2194 directed connections" (search excerpt, arXiv:0907.2373). Paraphrase, not a quote: the paper excludes two neurons and one other cell that make no synapses. The authors' `lrv__ConnOrdered_040903.mat` has exactly 279 neuron labels, identical to this file's 279 (no VC06, CANL or CANR) | Varshney et al. (arXiv author version; PLoS text not reached) | YES |
+| Varshney 2011 chemical synapses | sum of Nbr over S+Sp rows (`chemical_S_plus_Sp.weight`); R+Rp mirrored gives the same | **6394** | "The v4 HTML reports 6393 chemical synapses, 890 gap junctions, and 1410 neuromuscular junctions" (search excerpt of https://arxiv.org/html/0907.2373v4). Also 2016 PLOS Comput Biol paper: "279 neurons with 6,393 chemical synapses and 890 electrical junctions" (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005084) | arXiv v4; repeated by later papers | **NO — BLOCKER** (off by 1). **The authors' own released matrix (`lrv__ConnOrdered_040903.mat`, `A_init_t_ordered`) also sums to 6394 over 2194 nonzero entries** (`varshney_author_mat`), equal to this file at every pair. So 6393 conflicts with the authors' released data, not only with this copy. The only route to 6393 is a receive-side sum with case-sensitive names, which drops `avfl avfr Rp 1`. Unverified as the explanation. Strict-xfail test `test_varshney_published_chemical_synapses_6393`. |
+| Varshney 2011 gap junctions | EJ weight summed once per unordered pair, self-pairs included (`EJ.weight_sum_over_unordered_pairs_taking_max_direction`) | **890** (summed over both listed directions: 1777; the author `.mat` gives the same: `gap_junctions_upper_triangle_incl_diag` 890) | 890 (same excerpts as above) | arXiv v4 | YES. 890 is reached only with the 3 self-pairs (RIBL, RIBR, VA08); the authors' `datareader.m` zeroes them as 'superfluous self-loops', which gives 887 |
 | Varshney 2011 gap-junction connections | unordered EJ pairs excluding self (`EJ.unordered_pairs_excl_self`) | **514** (517 incl. 3 self) | "The gap junction network that we analyze consists of 279 neurons and 514 gap junction connections, consisting of one or more junctions" (search excerpt, arXiv:0907.2373 / journal.pcbi.1001066) | Varshney et al., Results | YES |
 | Varshney 2011 NMJs | sum of Nbr over NMJ rows | **1410** (153 rows, 115 neurons) | 1410 (same arXiv v4 excerpt) | arXiv v4 | YES |
-| Varshney dataset directed chemical connections | ordered pairs with S+Sp > 0 | **2194** | "There are 2194 unique directed chemical synapses and 514 unique undirected gap junctions" (2026 PLOS Comput Biol paper using the Varshney dataset, https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014152, via search excerpt) | a third-party paper, not Varshney 2011 | UNVERIFIED (agrees, but it is not the paper's own statement) |
+| Varshney dataset directed chemical connections | ordered pairs with S+Sp > 0 | **2194** (author `.mat`: `chemical_nonzero_entries` 2194) | "279 neurons and 2194 directed connections" (search excerpt, arXiv:0907.2373) | Varshney et al. | YES (against the arXiv excerpt) |
 | Cook 2019 hermaphrodite chemical edges | nonzero cells in sheet `hermaphrodite chemical` | **4879** in all three workbooks | "respective graphs have 4,887 chemical (or directed) edges and 1,447 gap junction (or undirected) edges in the hermaphrodite and 5,315 chemical and 1,755 gap junction edges in the male" (search excerpt attributed to https://www.nature.com/articles/s41586-019-1352-7 / PubMed 31270481 / ResearchGate) | Cook et al. 2019, main text | **NO — BLOCKER** (8 fewer; Cook candidate only). The workbook has no explicit zero cells and no stray cells. The analogous gap definition matches exactly (next row), so the cause is unexplained. |
-| Cook 2019 hermaphrodite gap-junction edges | nonzero cells in the herm gap **asymmetric** sheet | **1447** (Nature, WormWiring original); **1450** (corrected 2020) | 1,447 (same excerpt) | main text | YES for the as-published files (the corrected file differs by +3) |
+| Cook 2019 hermaphrodite gap-junction edges | nonzero cells in the herm gap **asymmetric** sheet | **1447** nonzero cells (Nature, WormWiring original). These include 15 self-edges, and I1L–RIPL, I1R–RIPR and ASJL–IL2L are counted twice. Distinct undirected pairs: **1444**. Symmetric sheet: 1450. Corrected 2020: 1450 | 1,447 "gap junction (or undirected) edges" (same excerpt) | main text | **NO — BLOCKER under the paper's stated definition** (undirected edges = 1444 vs 1,447). It equals 1,447 only if the paper counted asymmetric-sheet cells, which is inferred, not stated. Corrected 2020: NOT COMPARABLE (post-publication correction) |
 | Cook 2019 male chemical edges | nonzero cells in `male chemical` | **5306** | 5,315 (same excerpt) | main text | **NO — BLOCKER** (9 fewer; male, out of project scope but reported) |
-| Cook 2019 male gap-junction edges | nonzero cells in male gap asymmetric sheet | **1755** (orig.), 1758 (corrected) | 1,755 (same excerpt) | main text | YES for the as-published files |
-| Cook 2019 hermaphrodite nodes | union of labels over the three herm sheets | **473** (all occur in a nonzero cell); per sheet 453 (chemical) / 468 (gap) | "460 nodes (302 neurons, 132 muscles and 26 non-muscle end organs)" (toolbox `docs/Cook_2019.md` and search excerpt of the abstract) | abstract | NOT COMPARABLE: the label set includes cells the paper may group or count differently; splitting into neurons, muscles and end organs needs the Phase-2 cell classification |
+| Cook 2019 male gap-junction edges | nonzero cells in male gap asymmetric sheet | **1755** nonzero cells (orig.; R8BL–R8BR and PVV–SPVR in both directions; 33 self). Distinct undirected pairs **1753**. Corrected 1758 | 1,755 (same excerpt) | main text | **NO — BLOCKER under the stated definition** (1753 vs 1,755), as for the hermaphrodite. Corrected: NOT COMPARABLE |
+| Cook 2019 hermaphrodite nodes | union of labels over the three herm sheets | **473** (all occur in a nonzero cell); per sheet 453 (chemical) / 468 (gap) | "460 nodes (302 neurons, 132 muscles and 26 non-muscle end organs)" (toolbox `docs/Cook_2019.md` summary; search excerpt) | location in paper not reached | NOT COMPARABLE: the label set includes cells the paper may group or count differently; splitting into neurons, muscles and end organs needs the Phase-2 cell classification |
 | Durbin 1987 H-series totals | — | N2U send-side 1486 pairs / 4056; JSH 1350 / 4000; gap junctions over unordered pairs N2U 347, JSH 775 | "3,462 chemical synapses and 754 gap junctions among 183 neurons in one database" (search-tool summary of https://ftp.sanger.ac.uk/pub/resources/theses/durbin/chapter7.pdf; definition of the database not given) | thesis ch. 7 | UNVERIFIED (definition unknown; likely NOT COMPARABLE) |
 
 Per-file counts with no paper counterpart (raw facts; definitions are in the module docstrings):
@@ -237,8 +251,8 @@ Cross-checks against the toolbox's own derived counts (not paper counts; `cect/v
 
 **Blockers (report, do not explain away)**
 
-1. **Cook 2019 chemical edge counts do not match the paper:** 4879 vs 4,887 (herm) and 5306 vs 5,315 (male), in all three workbooks. Gap-edge counts match exactly under the analogous definition (asymmetric-sheet nonzero cells: 1447 / 1755), so the definitional mapping is probably right. The paper number was read only through a search excerpt and must be re-checked against the Nature text. This blocks only if Cook 2019 is chosen.
-2. **Varshney 2011 chemical synapse total is 6394 in the file vs 6393 reported** (arXiv v4 excerpt and two later papers). It blocks only if Varshney/`_whole` is chosen; `_whole` reproduces Varshney's 6394 exactly.
+1. **Cook 2019 chemical edge counts do not match the paper:** 4879 vs 4,887 (herm) and 5306 vs 5,315 (male), in all three workbooks. Gap-edge counts equal the asymmetric-sheet nonzero cells (1447 / 1755), but not the distinct undirected pairs (1444 / 1753) that the paper's wording describes. That cell count includes self-edges and pairs listed in both directions. The paper number was read only through a search excerpt and must be re-checked against the Nature text. This blocks only if Cook 2019 is chosen; it is not used by the merged table. Strict-xfail test `test_cook2019_hermaphrodite_chemical_edges_4887`.
+2. **Varshney 2011 chemical synapse total is 6394 in the file vs 6393 reported** (arXiv v4 excerpt and two later papers). **The authors' own released matrix also gives 6394**, so the paper figure conflicts with the authors' data. `_whole` reproduces 6394 and appears in the merged table as `anat_chem_white_whole`, an alternate column, not the primary.
 
 **Flags for the owner**
 
@@ -251,8 +265,8 @@ Cross-checks against the toolbox's own derived counts (not paper counts; `cect/v
    - It drops retrovesicular/ventral-cord cells and `hyp`, and replaces `mu_bod` with Zhen-lab BWM annotations.
    - It changes 2 JSH weights and adds 3 JSH edges.
    - Durbin's file is closer to White's notebooks; NemaNode's is curated. **Owner decision**, including which name, DVB or PVT, to trust for those edges.
-6. **`_whole` loses pharyngeal targets on export** (19 rows, weight 246, to `DefecationMuscles`, `G1`, `G2`, `mc2`, `mc3`, `pm2/3/5/6/7`). It also lacks DVB's 5 NMJs relative to Varshney. Irrelevant to neuron→neuron head edges, but `_whole` is not a lossless copy of the NemaNode data.
-7. **Cook 2019 weights are EM serial-section counts (size-weighted), not synapse counts.** They are not comparable with White/Durbin/Varshney/NemaNode counts. There are three versions; the corrected 2020 file changes 11 hermaphrodite gap-junction cells, including two 400-section PVD–hmc entries and removal of two 23-section BDU–PLM entries. **Owner decision** on which version, if Cook is used.
+6. **`_whole` loses 19 rows on export** (weight 246): 18 pharyngeal rows to `G1`, `G2`, `mc2`, `mc3` and `pm2/3/5/6/7`, plus DVB→`DefecationMuscles` 5, which is DVB's NMJ total. Irrelevant to neuron→neuron head edges, but `_whole` is not a lossless copy of the NemaNode data.
+7. **Cook 2019 weights are EM serial-section counts (size-weighted), not synapse counts.** They are not comparable with White/Durbin/Varshney/NemaNode counts. There are three versions. The corrected 2020 file changes 11 symmetric-sheet and 13 asymmetric-sheet hermaphrodite gap-junction cells, and its two sheets disagree on PVDL/R–hmc vs –hyp. The changes include two 400-section PVD–hmc entries and the removal of two 23-section BDU–PLM entries. **Owner decision** on which version, if Cook is used.
 8. **`neurodata_updated.txt` is an OpenWorm edit, not a published dataset.** Use `neurodata.txt` if Durbin is chosen, and decide how to treat the 20 one-directional gap-junction records.
 9. **`aconnectome.json` looks like a processing artefact.** Its chemical matrix equals Varshney with S overwritten by Sp (S counts lost wherever both exist). It has no documented provenance and Randi's published analysis does not use it. It is acquired only so the owner can see it. Recommend not using it; that is the owner's call.
 10. Naming quirks to resolve in Phase 2, without changing raw data:
@@ -280,7 +294,8 @@ Cross-checks against the toolbox's own derived counts (not paper counts; `cect/v
 - Wheel `aconnectome_default.h5`: Randi's precompiled sum of `_whole` + `_L4` + Witvliet 7 + 8. It is not a White variant; it belongs with the combined Randi connectome (randi2023 / witvliet2021 owners).
 - NemaNode `white_1986_{n2u,jsh}.json` at `859641e` (and older `b6dfd28`, `8a50236`): superseded on 2020-05-22. Their differences are listed above. The wheel and the 2025 NemaNode download both equal the later version.
 - NemaNode `white_1986_jse.json`: JSE adult tail series (Hall & Russell 1991 compilation); no head edges.
-- Creamer_LDS_2026 and pumpprobe copies: byte-identical to acquired files (same blob or SHA-256), cited as evidence only.
+- Creamer_LDS_2026 and pumpprobe copies: byte-identical to acquired files (same blob or SHA-256), cited as evidence only. `francescorandi/wormneuroatlas@b2e13d8` `wormneuroatlas/data/` (the toolbox's stated source) and pumpprobe release tags v1.0 (a5198e2) and v1.1 (5ca97c7) hold the same blobs.
+- `lrvarshney/elegans`: its other files are MATLAB analysis scripts (`*.m`), not data, and are not needed. The four data/loader files are acquired (`lrv__*`).
 - Toolbox `NeuronConnectFormatted.xlsx`: OpenWorm reformat of `NeuronConnect.xls` (de-padded names, some rows re-oriented); not read by the Varshney reader.
 - Toolbox `CElegansNeuronTables.xls`: reader says "legacy dataset (based on White_whole) used in the past in OpenWorm. Only included here for reference! Do not use!"
 - Toolbox `herm_full_edgelist*.csv`: "legacy dataset (based on Cook et al. 2019) … Do not use!"

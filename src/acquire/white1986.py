@@ -38,8 +38,13 @@ Variants acquired (all SECONDARY copies; see docs/provenance/white1986.md):
    re-annotated White's prints; weights are EM-section counts, not synapse
    counts.
 7. ``aconnectome.json`` (wheel) with its index ``aconnectome_ids.txt`` (from
-   leiferlab/pumpprobe): an older, undocumented "white" matrix that Randi et
-   al.'s code no longer loads (commented out in pumpprobe's ``aconn_sources``).
+   leiferlab/pumpprobe): an undocumented "white" matrix that Randi et al.'s
+   analysis code does not load (its ``aconn_sources`` entry is commented out in
+   every public pumpprobe commit; only the unused pumpprobe Anatlas reads it).
+8. Varshney et al.'s own released data (github.com/lrvarshney/elegans):
+   ``ConnOrdered_040903.mat`` (279-neuron chemical and gap-junction matrices),
+   ``NeuronTypeOrdered_040903.mat``, ``A_sendjoint.mat`` and ``datareader.m``
+   (MATLAB source, acquired as text, never executed).
 
 Facts later phases must respect (each checked by ``record_counts``):
 
@@ -197,6 +202,28 @@ def _nemanode(path: str, filename: str, sha256: str, size: int, blob: str, prima
     )
 
 
+LRV_REPO = "lrvarshney/elegans"
+LRV_COMMIT = "07d10c2d43b3da9a1fefed2e8658a98dc4310765"  # 2019-04-24, L. R. Varshney
+PRIMARY_LRV = (
+    "Authors' own release linked from Varshney et al. 2011 / WormAtlas; no journal copy of these files known. "
+    "github.com/lrvarshney/elegans is the first author's repository."
+)
+
+
+def _lrv(path: str, sha256: str, size: int, blob: str, note: str) -> RemoteFile:
+    return RemoteFile(
+        url=f"https://raw.githubusercontent.com/{LRV_REPO}/{LRV_COMMIT}/{path}",
+        filename=f"lrv__{path}",
+        sha256=sha256,
+        size=size,
+        distributor=f"GitHub {LRV_REPO} @ {LRV_COMMIT} (L. R. Varshney, first author of Varshney et al. 2011)",
+        origin="secondary",
+        primary_reference=PRIMARY_LRV,
+        git_blob_sha1=blob,
+        note=note,
+    )
+
+
 FILES = (
     # --- wormneuroatlas 0.0.7.3 wheel: what Randi et al. loaded ---------------
     _wheel(
@@ -236,7 +263,8 @@ FILES = (
         "No primary identified. Undocumented 300x300 matrices (chemical, chemical_sign, electrical) used by "
         "pumpprobe Anatlas source 'white'; the matching 'white' entry in Funatlas.aconn_sources is commented "
         "out. Index: aconnectome_ids.txt from leiferlab/pumpprobe (not in the wheel).",
-        "NOT used by Randi et al.'s published analysis. Electrical matrix equals Varshney 2011 EJ; chemical "
+        "NOT used by Randi et al.'s published analysis. Electrical matrix restricted to Varshney's 279 neurons "
+        "equals Varshney 2011 EJ, plus 65 pharyngeal entries (weight 87); chemical "
         "matrix looks like Varshney 2011 with Sp overwriting S instead of adding (see provenance doc).",
     ),
     RemoteFile(
@@ -371,7 +399,8 @@ FILES = (
         518144,
         "898ba5408669a4c27467554591dd69c73b571b41",
         PRIMARY_VARSHNEY,
-        "Varshney et al. 2011 (separate paper) re-compilation of White's somatic wiring with ~600 updates. "
+        "Varshney et al. 2011 (separate paper) re-compilation of White's somatic wiring (number of updates not "
+        "verified; ConnectomeToolbox docs/Varshney_2011.md says '600 updates were made'). "
         "One sheet 'NeuronConnect.csv': Neuron 1, Neuron 2, Type (S, Sp, R, Rp, EJ, NMJ), Nbr.",
     ),
     _toolbox(
@@ -394,6 +423,18 @@ FILES = (
         "Cook et al. 2019 SI 5, WormWiring copy. Hermaphrodite values identical to the Nature file; male sheets "
         "rename ray structural cells R*st* -> R*sh* and one row RMFL -> RMFR (duplicate).",
     ),
+    _lrv("ConnOrdered_040903.mat", "bd05af64c7d8c14ff44988e0f009b45d1ebe7db0b7194fff341fc4885cc91d38", 66328,
+         "9321bd79828fb9faa66b04ce82361d770497390f",
+         "Varshney et al.'s own 279-neuron matrices: A_init_t_ordered (chemical), Ag_t_ordered (gap), "
+         "Neuron_ordered (labels), Q_sorted. MATLAB v5 file, read with scipy.io.loadmat."),
+    _lrv("NeuronTypeOrdered_040903.mat", "5baec9fa9ffad32eec0429c962f5d3e1ebb2da35ce612f91499da1dad5c03c17", 18056,
+         "0cb1c7f9cd75569976917b7d486fe23ffa378862", "Varshney et al.'s neuron type table (MATLAB)."),
+    _lrv("A_sendjoint.mat", "e50e2e86a454d5d468eda5e8d83ca723cd1bd223498d225bc9f834bfd7271d02", 5415,
+         "ceadf9de35d3eb24e16db2fcf4bc2db37b1bbc82", "Varshney et al.'s send-joint (polyadic) matrix (MATLAB)."),
+    _lrv("datareader.m", "7a252b2c76a142241d6bf8c29d27cb8909ab85dc58a22c13cda7d26faf7e9c04", 2014,
+         "61c4845b68fee4873aeaee03f0b94a107c2a3a07",
+         "Varshney et al.'s loader. Acquired as text and never executed. It zeroes three gap-junction self-loops "
+         "as 'superfluous' (887 vs 890 gap junctions)."),
     _toolbox(
         "cect/data/SI 5 Connectome adjacency matrices, corrected July 2020.xlsx",
         "SI 5 Connectome adjacency matrices, corrected July 2020.xlsx",
@@ -401,8 +442,9 @@ FILES = (
         4188190,
         "4d53c16e9a07c1ecfd068a02b39ccffd6b8a3eaa",
         PRIMARY_COOK_WW_2020,
-        "Cook et al. 2019 SI 5, WormWiring 'corrected July 2020'. Gap-junction corrections (e.g. PVDL/R-hmc "
-        "400 added, BDUL/R-PLML/R 23 removed); adds hmc column and 'int' row/column. Used by the toolbox.",
+        "Cook et al. 2019 SI 5, WormWiring 'corrected July 2020'. Gap-junction corrections (symmetric sheet: "
+        "PVDL/R-hmc 400 added, BDUL/R-PLML/R 23 removed); its asymmetric sheet puts the 400-section entries on "
+        "PVDL/R-hyp instead, so the two sheets disagree. Adds hmc column and 'int' row/column. Used by the toolbox.",
     ),
 )
 
@@ -703,6 +745,7 @@ def _varshney_counts(path: Path) -> dict:
         a, b, t, w = (sh.cell(r, c).value for c in range(4))
         if sh.cell(r, 3).ctype != xlrd.XL_CELL_NUMBER or float(w) != int(w):
             nonnum += 1
+            continue
         rows.append((str(a), str(b), str(t), int(w)))
     out["data_rows"] = len(rows)
     out["rows_with_non_integer_Nbr"] = nonnum
@@ -791,7 +834,7 @@ def _read_cook_sheet(ws) -> dict:
 def _cook_counts(path: Path) -> tuple[dict, dict]:
     """Counts per sheet of a Cook et al. 2019 SI 5 workbook.
 
-    - ``nonzero_cells`` / ``weight_sum``: cells with a value > 0 inside the
+    - ``nonzero_cells`` / ``weight_sum``: cells with a nonzero value inside the
       labelled matrix and their sum (weights are EM serial-section counts).
     - ``diagonal_nonzero``: cells whose row and column labels are equal.
     - ``row_groups_colA``: row counts per group label written in column A.
@@ -937,6 +980,38 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _lrv_counts(path: Path) -> dict:
+    """Varshney et al.'s own ConnOrdered_040903.mat.
+
+    Chemical = A_init_t_ordered (row = presynaptic), gap = Ag_t_ordered
+    (symmetric). The sums and nonzero counts are as stored, with no self-loop
+    removal; ``*_offdiag`` excludes the diagonal.
+    """
+    import numpy as np
+    import scipy.io as sio
+
+    m = sio.loadmat(str(path), spmatrix=False)
+
+    def dense(x):
+        return np.asarray(x.toarray() if hasattr(x, "toarray") else x, dtype=float)
+
+    a = dense(m["A_init_t_ordered"])
+    g = dense(m["Ag_t_ordered"])
+    labels = [str(x[0][0]) if hasattr(x[0], "__len__") else str(x[0]) for x in m["Neuron_ordered"]]
+    off = ~np.eye(a.shape[0], dtype=bool)
+    return {
+        "neurons": len(labels),
+        "chemical_weight_sum": int(a.sum()),
+        "chemical_nonzero_entries": int((a != 0).sum()),
+        "chemical_diagonal_nonzero": int((np.diag(a) != 0).sum()),
+        "gap_weight_sum_both_directions": int(g.sum()),
+        "gap_symmetric": bool(np.array_equal(g, g.T)),
+        "gap_diagonal_nonzero": int((np.diag(g) != 0).sum()),
+        "gap_unordered_pairs_offdiag": int(((g != 0) & off).sum() // 2),
+        "gap_junctions_upper_triangle_incl_diag": int(np.triu(g).sum()),
+    }
+
+
 def record_counts() -> dict:
     """Counts computed only from data/raw/white1986/, with no renaming or filtering.
 
@@ -950,6 +1025,7 @@ def record_counts() -> dict:
     """
     raw = RAW_ROOT / SOURCE_ID
     out: dict = {}
+    out["varshney_author_mat"] = _lrv_counts(raw / "lrv__ConnOrdered_040903.mat")
 
     tsvs = [
         "wna__aconnectome_white_1986_whole.csv",

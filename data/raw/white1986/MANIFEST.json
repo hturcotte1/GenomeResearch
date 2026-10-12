@@ -24,7 +24,7 @@
       "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
       "filename": "NeuronConnect.xls",
       "git_blob_sha1": "898ba5408669a4c27467554591dd69c73b571b41",
-      "note": "Varshney et al. 2011 (separate paper) re-compilation of White's somatic wiring with ~600 updates. One sheet 'NeuronConnect.csv': Neuron 1, Neuron 2, Type (S, Sp, R, Rp, EJ, NMJ), Nbr.",
+      "note": "Varshney et al. 2011 (separate paper) re-compilation of White's somatic wiring (number of updates not verified; ConnectomeToolbox docs/Varshney_2011.md says '600 updates were made'). One sheet 'NeuronConnect.csv': Neuron 1, Neuron 2, Type (S, Sp, R, Rp, EJ, NMJ), Nbr.",
       "origin": "secondary",
       "primary_reference": "https://www.wormatlas.org/images/NeuronConnect.xls (Varshney et al. 2011, doi:10.1371/journal.pcbi.1001066; per the toolbox's cect/validation/VarshneyEtAl2011.md)",
       "retrieved_utc_date": "2026-10-11",
@@ -40,7 +40,7 @@
       "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
       "filename": "SI 5 Connectome adjacency matrices, corrected July 2020.xlsx",
       "git_blob_sha1": "4d53c16e9a07c1ecfd068a02b39ccffd6b8a3eaa",
-      "note": "Cook et al. 2019 SI 5, WormWiring 'corrected July 2020'. Gap-junction corrections (e.g. PVDL/R-hmc 400 added, BDUL/R-PLML/R 23 removed); adds hmc column and 'int' row/column. Used by the toolbox.",
+      "note": "Cook et al. 2019 SI 5, WormWiring 'corrected July 2020'. Gap-junction corrections (symmetric sheet: PVDL/R-hmc 400 added, BDUL/R-PLML/R 23 removed); its asymmetric sheet puts the 400-section entries on PVDL/R-hyp instead, so the two sheets disagree. Adds hmc column and 'int' row/column. Used by the toolbox.",
       "origin": "secondary",
       "primary_reference": "https://wormwiring.org/si/SI%205%20Connectome%20adjacency%20matrices,%20corrected%20July%202020.xlsx (Emmons lab, WormWiring)",
       "retrieved_utc_date": "2026-10-11",
@@ -76,7 +76,7 @@
       ],
       "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
       "filename": "aconnectome.json",
-      "note": "NOT used by Randi et al.'s published analysis. Electrical matrix equals Varshney 2011 EJ; chemical matrix looks like Varshney 2011 with Sp overwriting S instead of adding (see provenance doc).",
+      "note": "NOT used by Randi et al.'s published analysis. Electrical matrix restricted to Varshney's 279 neurons equals Varshney 2011 EJ, plus 65 pharyngeal entries (weight 87); chemical matrix looks like Varshney 2011 with Sp overwriting S instead of adding (see provenance doc).",
       "origin": "secondary",
       "primary_reference": "No primary identified. Undocumented 300x300 matrices (chemical, chemical_sign, electrical) used by pumpprobe Anatlas source 'white'; the matching 'white' entry in Funatlas.aconn_sources is commented out. Index: aconnectome_ids.txt from leiferlab/pumpprobe (not in the wheel).",
       "retrieved_utc_date": "2026-10-11",
@@ -147,6 +147,70 @@
       "sha256": "c8aac78756b71f6337629951e5f4211448e85d148f6db9b367b2cd0450bb403a",
       "size": 67453,
       "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/aconnectome_white_1986_whole.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub lrvarshney/elegans @ 07d10c2d43b3da9a1fefed2e8658a98dc4310765 (L. R. Varshney, first author of Varshney et al. 2011)",
+      "filename": "lrv__A_sendjoint.mat",
+      "git_blob_sha1": "ceadf9de35d3eb24e16db2fcf4bc2db37b1bbc82",
+      "note": "Varshney et al.'s send-joint (polyadic) matrix (MATLAB).",
+      "origin": "secondary",
+      "primary_reference": "Authors' own release linked from Varshney et al. 2011 / WormAtlas; no journal copy of these files known. github.com/lrvarshney/elegans is the first author's repository.",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "e50e2e86a454d5d468eda5e8d83ca723cd1bd223498d225bc9f834bfd7271d02",
+      "size": 5415,
+      "url": "https://raw.githubusercontent.com/lrvarshney/elegans/07d10c2d43b3da9a1fefed2e8658a98dc4310765/A_sendjoint.mat"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub lrvarshney/elegans @ 07d10c2d43b3da9a1fefed2e8658a98dc4310765 (L. R. Varshney, first author of Varshney et al. 2011)",
+      "filename": "lrv__ConnOrdered_040903.mat",
+      "git_blob_sha1": "9321bd79828fb9faa66b04ce82361d770497390f",
+      "note": "Varshney et al.'s own 279-neuron matrices: A_init_t_ordered (chemical), Ag_t_ordered (gap), Neuron_ordered (labels), Q_sorted. MATLAB v5 file, read with scipy.io.loadmat.",
+      "origin": "secondary",
+      "primary_reference": "Authors' own release linked from Varshney et al. 2011 / WormAtlas; no journal copy of these files known. github.com/lrvarshney/elegans is the first author's repository.",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "bd05af64c7d8c14ff44988e0f009b45d1ebe7db0b7194fff341fc4885cc91d38",
+      "size": 66328,
+      "url": "https://raw.githubusercontent.com/lrvarshney/elegans/07d10c2d43b3da9a1fefed2e8658a98dc4310765/ConnOrdered_040903.mat"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub lrvarshney/elegans @ 07d10c2d43b3da9a1fefed2e8658a98dc4310765 (L. R. Varshney, first author of Varshney et al. 2011)",
+      "filename": "lrv__NeuronTypeOrdered_040903.mat",
+      "git_blob_sha1": "0cb1c7f9cd75569976917b7d486fe23ffa378862",
+      "note": "Varshney et al.'s neuron type table (MATLAB).",
+      "origin": "secondary",
+      "primary_reference": "Authors' own release linked from Varshney et al. 2011 / WormAtlas; no journal copy of these files known. github.com/lrvarshney/elegans is the first author's repository.",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "5baec9fa9ffad32eec0429c962f5d3e1ebb2da35ce612f91499da1dad5c03c17",
+      "size": 18056,
+      "url": "https://raw.githubusercontent.com/lrvarshney/elegans/07d10c2d43b3da9a1fefed2e8658a98dc4310765/NeuronTypeOrdered_040903.mat"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub lrvarshney/elegans @ 07d10c2d43b3da9a1fefed2e8658a98dc4310765 (L. R. Varshney, first author of Varshney et al. 2011)",
+      "filename": "lrv__datareader.m",
+      "git_blob_sha1": "61c4845b68fee4873aeaee03f0b94a107c2a3a07",
+      "note": "Varshney et al.'s loader. Acquired as text and never executed. It zeroes three gap-junction self-loops as 'superfluous' (887 vs 890 gap junctions).",
+      "origin": "secondary",
+      "primary_reference": "Authors' own release linked from Varshney et al. 2011 / WormAtlas; no journal copy of these files known. github.com/lrvarshney/elegans is the first author's repository.",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "7a252b2c76a142241d6bf8c29d27cb8909ab85dc58a22c13cda7d26faf7e9c04",
+      "size": 2014,
+      "url": "https://raw.githubusercontent.com/lrvarshney/elegans/07d10c2d43b3da9a1fefed2e8658a98dc4310765/datareader.m"
     },
     {
       "checks": [
