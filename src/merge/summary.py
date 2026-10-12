@@ -17,6 +17,7 @@ import json
 from collections import Counter
 
 from src.acquire.common import REPO_ROOT
+from src.merge import readers
 from src.merge.build_table import COLUMN_ORDER, OUT_DIR, STATES, TABLE
 
 DOC = REPO_ROOT / "docs" / "merged-table-summary.md"
@@ -148,10 +149,24 @@ def generate() -> str:
     findings.append(f"RMHR ({len(rmhr)} rows) is a head neuron missing from the authors' head list; it is never observed "
                     "in the atlas (`not_observed`).")
     cov = {k: sum(1 for r in rows if r[k] is None) for k in ("anat_chem_white", "anat_chem_witvliet")}
-    findings.append(f"Anatomical coverage is partial: `anat_chem_white` (N2U head series) is null for {cov['anat_chem_white']:,} "
-                    f"rows and `anat_chem_witvliet` for {cov['anat_chem_witvliet']:,}. Pharyngeal and "
-                    "retrovesicular-ganglion neurons lie outside those reconstructions. `anat_chem_white_whole` "
-                    "(the Varshney compilation Randi used) covers them.")
+    uncovered = {}
+    for k in ("anat_chem_white", "anat_chem_witvliet", "anat_chem_white_whole"):
+        has = {r["pre"] for r in rows if r[k] is not None}
+        uncovered[k] = [h for h in heads if h not in has and h not in ("AWCON", "AWCOFF")]
+    ganglia = readers.randi_ganglia()
+    by_ganglion = Counter(g for h in uncovered["anat_chem_white"]
+                          for g, members in ganglia.items() if g not in ("head", "pharynx") and h in members)
+    where = ", ".join(f"{g} {n}" for g, n in sorted(by_ganglion.items()))
+    findings.append(f"Anatomical coverage is partial: `anat_chem_white` (white_primary={cfg['white_primary']}) is null for "
+                    f"{cov['anat_chem_white']:,} rows and `anat_chem_witvliet` for {cov['anat_chem_witvliet']:,}. "
+                    f"Apart from AWCON/AWCOFF, the head neurons outside `anat_chem_white` are "
+                    f"{len(uncovered['anat_chem_white'])}: {', '.join(uncovered['anat_chem_white'])}; outside "
+                    f"`anat_chem_witvliet`, {len(uncovered['anat_chem_witvliet'])}"
+                    + (" (the same set)" if uncovered["anat_chem_witvliet"] == uncovered["anat_chem_white"] else
+                       f": {', '.join(uncovered['anat_chem_witvliet'])}")
+                    + f". By the authors' ganglion file (`aconnectome_ids_ganglia.json`) their ganglia are: {where}. "
+                    "`anat_chem_white_whole` (the Varshney compilation "
+                    f"Randi used) misses {len(uncovered['anat_chem_white_whole'])} of them.")
     lat0 = sum(1 for r in rows if r["randi_state_wt"] == "connected" and r["measured_peak_time_wt"] == 0)
     findings.append(f"{lat0} WT-connected pairs have their kernel peak at t=0, so rise time = 0: the fitted impulse "
                     "response is maximal at stimulus onset. Peak times are resolved at 0.2 s (authors' 0–200 s, "
