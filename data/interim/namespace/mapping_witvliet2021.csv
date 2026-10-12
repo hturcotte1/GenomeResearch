@@ -1,0 +1,228 @@
+source_name,files,n_occurrences,status,canonical_name,rule,needs_review,reason
+ADAL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,80,mapped,ADAL,exact,0,
+ADAR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,73,mapped,ADAR,exact,0,
+ADEL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,75,mapped,ADEL,exact,0,
+ADER,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,82,mapped,ADER,exact,0,
+ADFL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,55,mapped,ADFL,exact,0,
+ADFR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,47,mapped,ADFR,exact,0,
+ADLL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,64,mapped,ADLL,exact,0,
+ADLR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,ADLR,exact,0,
+AFDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,30,mapped,AFDL,exact,0,
+AFDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,24,mapped,AFDR,exact,0,
+AIAL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,87,mapped,AIAL,exact,0,
+AIAR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,87,mapped,AIAR,exact,0,
+AIBL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,114,mapped,AIBL,exact,0,
+AIBR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,128,mapped,AIBR,exact,0,
+AIML,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,AIML,exact,0,
+AIMR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,64,mapped,AIMR,exact,0,
+AINL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,45,mapped,AINL,exact,0,
+AINR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,44,mapped,AINR,exact,0,
+AIYL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,62,mapped,AIYL,exact,0,
+AIYR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,57,mapped,AIYR,exact,0,
+AIZL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,102,mapped,AIZL,exact,0,
+AIZR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,107,mapped,AIZR,exact,0,
+ALA,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,20,mapped,ALA,exact,0,
+ALML,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,36,mapped,ALML,exact,0,
+ALMR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,46,mapped,ALMR,exact,0,
+ALNL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,19,mapped,ALNL,exact,0,
+ALNR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,27,mapped,ALNR,exact,0,
+AQR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,79,mapped,AQR,exact,0,
+ASEL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,45,mapped,ASEL,exact,0,
+ASER,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,64,mapped,ASER,exact,0,
+ASGL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,29,mapped,ASGL,exact,0,
+ASGR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,23,mapped,ASGR,exact,0,
+ASHL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,75,mapped,ASHL,exact,0,
+ASHR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,75,mapped,ASHR,exact,0,
+ASIL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,38,mapped,ASIL,exact,0,
+ASIR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,34,mapped,ASIR,exact,0,
+ASJL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,26,mapped,ASJL,exact,0,
+ASJR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,17,mapped,ASJR,exact,0,
+ASKL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,41,mapped,ASKL,exact,0,
+ASKR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,41,mapped,ASKR,exact,0,
+AUAL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,42,mapped,AUAL,exact,0,
+AUAR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,AUAR,exact,0,
+AVAL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,83,mapped,AVAL,exact,0,
+AVAR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,81,mapped,AVAR,exact,0,
+AVBL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,85,mapped,AVBL,exact,0,
+AVBR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,86,mapped,AVBR,exact,0,
+AVDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,45,mapped,AVDL,exact,0,
+AVDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,57,mapped,AVDR,exact,0,
+AVEL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,121,mapped,AVEL,exact,0,
+AVER,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,104,mapped,AVER,exact,0,
+AVFL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,39,mapped,AVFL,exact,0,
+AVFR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,AVFR,exact,0,
+AVHL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,41,mapped,AVHL,exact,0,
+AVHR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,58,mapped,AVHR,exact,0,
+AVJL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,56,mapped,AVJL,exact,0,
+AVJR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,51,mapped,AVJR,exact,0,
+AVKL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,85,mapped,AVKL,exact,0,
+AVKR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,87,mapped,AVKR,exact,0,
+AVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,15,mapped,AVL,exact,0,
+AVM,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,52,mapped,AVM,exact,0,
+AWAL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,44,mapped,AWAL,exact,0,
+AWAR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,AWAR,exact,0,
+AWBL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,61,mapped,AWBL,exact,0,
+AWBR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,55,mapped,AWBR,exact,0,
+AWCL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,51,mapped,AWCL,exact,0,
+AWCR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,51,mapped,AWCR,exact,0,
+BAGL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,BAGL,exact,0,
+BAGR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,73,mapped,BAGR,exact,0,
+BDUL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,50,mapped,BDUL,exact,0,
+BDUR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,37,mapped,BDUR,exact,0,
+BWM-DL01,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,18,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL02,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,22,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL03,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,19,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL04,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,20,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL05,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,12,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL06,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,11,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL07,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,11,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DL08,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,5,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR01,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,18,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR02,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,28,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR03,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,16,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR04,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,21,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR05,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,16,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR06,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,15,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR07,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,8,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-DR08,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,7,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL01,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,17,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL02,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,20,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL03,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,22,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL04,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,23,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL05,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,17,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL06,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,15,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL07,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,8,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VL08,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,4,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR01,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,19,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR02,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,25,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR03,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,18,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR04,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,27,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR05,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,16,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR06,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,12,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR07,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,7,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+BWM-VR08,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,6,excluded,,non_neuronal,0,body wall muscle (NemaNode cell table type b)
+CANR,nemanode_baf8ec8__witvliet_2020_7.json,2,mapped,CANR,exact,0,
+CEPDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,75,mapped,CEPDL,exact,0,
+CEPDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,73,mapped,CEPDR,exact,0,
+CEPVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,77,mapped,CEPVL,exact,0,
+CEPVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,67,mapped,CEPVR,exact,0,
+CEPshDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,8,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+CEPshDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,11,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+CEPshVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,16,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+CEPshVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,21,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+DVA,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,92,mapped,DVA,exact,0,
+DVC,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,DVC,exact,0,
+FLPL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,46,mapped,FLPL,exact,0,
+FLPR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,30,mapped,FLPR,exact,0,
+Fragment,nemanode_baf8ec8__witvliet_2020_8.json,3,excluded,,non_neuronal,0,non-neuronal or pseudo-node: unidentified neurite fragment in the Witvliet et al. 2021 reconstruction; not attributable to any identified neuron (config/namespace/non_neuronal_names.csv)
+GLRDL,nemanode_baf8ec8__witvliet_2020_7.json,4,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+GLRDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,5,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+GLRL,nemanode_baf8ec8__witvliet_2020_7.json,6,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+GLRR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,10,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+GLRVL,nemanode_baf8ec8__witvliet_2020_8.json,1,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+GLRVR,nemanode_baf8ec8__witvliet_2020_7.json,2,excluded,,non_neuronal,0,non-neuronal cell (NemaNode cell table type u)
+HSNL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,56,mapped,HSNL,exact,0,
+HSNR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,56,mapped,HSNR,exact,0,
+IL1DL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,44,mapped,IL1DL,exact,0,
+IL1DR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,47,mapped,IL1DR,exact,0,
+IL1L,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,58,mapped,IL1L,exact,0,
+IL1R,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,69,mapped,IL1R,exact,0,
+IL1VL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,46,mapped,IL1VL,exact,0,
+IL1VR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,IL1VR,exact,0,
+IL2DL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,33,mapped,IL2DL,exact,0,
+IL2DR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,29,mapped,IL2DR,exact,0,
+IL2L,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,51,mapped,IL2L,exact,0,
+IL2R,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,59,mapped,IL2R,exact,0,
+IL2VL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,28,mapped,IL2VL,exact,0,
+IL2VR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,33,mapped,IL2VR,exact,0,
+NR_fragment,nemanode_baf8ec8__witvliet_2020_7.json,1,excluded,,non_neuronal,0,non-neuronal or pseudo-node: unidentified nerve-ring neurite fragment in the Witvliet et al. 2021 reconstruction; not attributable to any identified neuron (config/namespace/non_neuronal_names.csv)
+OLLL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,74,mapped,OLLL,exact,0,
+OLLR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,61,mapped,OLLR,exact,0,
+OLQDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,OLQDL,exact,0,
+OLQDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,57,mapped,OLQDR,exact,0,
+OLQVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,OLQVL,exact,0,
+OLQVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,58,mapped,OLQVR,exact,0,
+PLNL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,15,mapped,PLNL,exact,0,
+PLNR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,15,mapped,PLNR,exact,0,
+PVCL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,63,mapped,PVCL,exact,0,
+PVCR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,55,mapped,PVCR,exact,0,
+PVNL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,42,mapped,PVNL,exact,0,
+PVNR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,40,mapped,PVNR,exact,0,
+PVPL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,50,mapped,PVPL,exact,0,
+PVPR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,45,mapped,PVPR,exact,0,
+PVQL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,32,mapped,PVQL,exact,0,
+PVQR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,35,mapped,PVQR,exact,0,
+PVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,44,mapped,PVR,exact,0,
+PVT,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,58,mapped,PVT,exact,0,
+RIAL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,108,mapped,RIAL,exact,0,
+RIAR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,104,mapped,RIAR,exact,0,
+RIBL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,123,mapped,RIBL,exact,0,
+RIBR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,122,mapped,RIBR,exact,0,
+RICL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,77,mapped,RICL,exact,0,
+RICR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,88,mapped,RICR,exact,0,
+RID,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,20,mapped,RID,exact,0,
+RIFL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,44,mapped,RIFL,exact,0,
+RIFR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,48,mapped,RIFR,exact,0,
+RIGL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,114,mapped,RIGL,exact,0,
+RIGR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,112,mapped,RIGR,exact,0,
+RIH,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,105,mapped,RIH,exact,0,
+RIML,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,130,mapped,RIML,exact,0,
+RIMR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,113,mapped,RIMR,exact,0,
+RIPL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,24,mapped,RIPL,exact,0,
+RIPR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,32,mapped,RIPR,exact,0,
+RIR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,78,mapped,RIR,exact,0,
+RIS,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,89,mapped,RIS,exact,0,
+RIVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,59,mapped,RIVL,exact,0,
+RIVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,70,mapped,RIVR,exact,0,
+RMDDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,102,mapped,RMDDL,exact,0,
+RMDDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,100,mapped,RMDDR,exact,0,
+RMDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,114,mapped,RMDL,exact,0,
+RMDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,112,mapped,RMDR,exact,0,
+RMDVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,98,mapped,RMDVL,exact,0,
+RMDVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,96,mapped,RMDVR,exact,0,
+RMED,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,66,mapped,RMED,exact,0,
+RMEL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,RMEL,exact,0,
+RMER,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,59,mapped,RMER,exact,0,
+RMEV,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,58,mapped,RMEV,exact,0,
+RMFL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,67,mapped,RMFL,exact,0,
+RMFR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,76,mapped,RMFR,exact,0,
+RMGL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,95,mapped,RMGL,exact,0,
+RMGR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,94,mapped,RMGR,exact,0,
+RMHL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,54,mapped,RMHL,exact,0,
+RMHR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,66,mapped,RMHR,exact,0,
+SAADL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,44,mapped,SAADL,exact,0,
+SAADR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,49,mapped,SAADR,exact,0,
+SAAVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,SAAVL,exact,0,
+SAAVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,36,mapped,SAAVR,exact,0,
+SDQL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,39,mapped,SDQL,exact,0,
+SDQR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,32,mapped,SDQR,exact,0,
+SIADL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,21,mapped,SIADL,exact,0,
+SIADR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,13,mapped,SIADR,exact,0,
+SIAVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,16,mapped,SIAVL,exact,0,
+SIAVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,14,mapped,SIAVR,exact,0,
+SIBDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,27,mapped,SIBDL,exact,0,
+SIBDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,25,mapped,SIBDR,exact,0,
+SIBVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,27,mapped,SIBVL,exact,0,
+SIBVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,32,mapped,SIBVR,exact,0,
+SMBDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,63,mapped,SMBDL,exact,0,
+SMBDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,65,mapped,SMBDR,exact,0,
+SMBVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,62,mapped,SMBVL,exact,0,
+SMBVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,61,mapped,SMBVR,exact,0,
+SMDDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,76,mapped,SMDDL,exact,0,
+SMDDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,74,mapped,SMDDR,exact,0,
+SMDVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,79,mapped,SMDVL,exact,0,
+SMDVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,70,mapped,SMDVR,exact,0,
+URADL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,25,mapped,URADL,exact,0,
+URADR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,26,mapped,URADR,exact,0,
+URAVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,28,mapped,URAVL,exact,0,
+URAVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,29,mapped,URAVR,exact,0,
+URBL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,59,mapped,URBL,exact,0,
+URBR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,URBR,exact,0,
+URXL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,74,mapped,URXL,exact,0,
+URXR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,69,mapped,URXR,exact,0,
+URYDL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,48,mapped,URYDL,exact,0,
+URYDR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,43,mapped,URYDR,exact,0,
+URYVL,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,53,mapped,URYVL,exact,0,
+URYVR,nemanode_baf8ec8__witvliet_2020_7.json;nemanode_baf8ec8__witvliet_2020_8.json,53,mapped,URYVR,exact,0,
+VAn,nemanode_baf8ec8__witvliet_2020_8.json,1,excluded,,non_neuronal,0,non-neuronal or pseudo-node: unidentified VA-class fragment in the Witvliet et al. 2021 reconstruction (individual VA neuron not identified); not attributable to one neuron (config/namespace/non_neuronal_names.csv)
+vncfrag,nemanode_baf8ec8__witvliet_2020_7.json,2,excluded,,non_neuronal,0,non-neuronal or pseudo-node: unidentified ventral-nerve-cord fragment in the Witvliet et al. 2021 reconstruction; not attributable to any identified neuron (config/namespace/non_neuronal_names.csv)

@@ -1,0 +1,21 @@
+source_id,file,distinct_names,mapped,excluded_non_neuronal,excluded_unrecognised,pct_mapped_of_neuron_like,canonical_302_covered,pct_canonical_302_covered,extension_ids_covered
+randi2023,funatlas.h5:neuron_ids,300,300,0,0,100.00,298,98.68,AWCOFF;AWCON
+randi2023,funatlas_release-2023-06-14.h5:neuron_ids,300,300,0,0,100.00,298,98.68,AWCOFF;AWCON
+randi2023,aconnectome_ids_ganglia.json:head,188,188,0,0,100.00,188,62.25,
+white1986,wna__aconnectome_white_1986_A.csv,221,180,41,0,100.00,180,59.60,
+white1986,wna__aconnectome_white_1986_L4.csv,215,178,37,0,100.00,178,58.94,
+white1986,wna__aconnectome_white_1986_whole.csv,309,300,9,0,100.00,300,99.34,
+witvliet2021,nemanode_baf8ec8__witvliet_2020_7.json,224,181,43,0,100.00,181,59.93,
+witvliet2021,nemanode_baf8ec8__witvliet_2020_8.json,221,180,41,0,100.00,180,59.60,
+fenyves2020,journal.pcbi.1007974.s003.xlsx:5. Sign prediction,297,297,0,0,100.00,297,98.34,
+fenyves2020,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,08062023_neuropeptide_connectome_short_range_model.csv,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,08062023_neuropeptide_connectome_mid_range_model.csv,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,08062023_neuropeptide_connectome_long_range_model.csv,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,01022024_neuropeptide_connectome_short_range_model.csv,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,01022024_neuropeptide_connectome_mid_range_model.csv,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,01022024_neuropeptide_connectome_long_range_model.csv,302,302,0,0,100.00,302,100.00,
+ripollsanchez2023,08062023_monoamine_connectome.csv,302,302,0,0,100.00,302,100.00,
+bentley2016,edgelist_MA.csv,237,237,0,0,100.00,237,78.48,
+bentley2016,edgelist_NP.csv,239,239,0,0,100.00,239,79.14,
+taylor2021,cengen_021821 cell types (one-to-many),128,128,0,0,100.00,300,99.34,AWCOFF;AWCON

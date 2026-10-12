@@ -1,0 +1,305 @@
+name,neuron_class,is_pharyngeal,is_extension,nemanode_inhead,wormatlas_description
+ADAL,ADA,0,0,1,Ring interneuron
+ADAR,ADA,0,0,1,Ring interneuron
+ADEL,ADE,0,0,1,"Anterior deirid, sensory neuron"
+ADER,ADE,0,0,1,"Anterior deirid, sensory neuron"
+ADFL,ADF,0,0,1,Amphid neuron
+ADFR,ADF,0,0,1,Amphid neuron
+ADLL,ADL,0,0,1,Amphid neuron
+ADLR,ADL,0,0,1,Amphid neuron
+AFDL,AFD,0,0,1,Amphid finger cell
+AFDR,AFD,0,0,1,Amphid finger cell
+AIAL,AIA,0,0,1,Amphid interneuron
+AIAR,AIA,0,0,1,Amphid interneuron
+AIBL,AIB,0,0,1,Amphid interneuron
+AIBR,AIB,0,0,1,Amphid interneuron
+AIML,AIM,0,0,1,Ring interneuron
+AIMR,AIM,0,0,1,Ring interneuron
+AINL,AIN,0,0,1,Ring interneuron
+AINR,AIN,0,0,1,Ring interneuron
+AIYL,AIY,0,0,1,Amphid interneuron
+AIYR,AIY,0,0,1,Amphid interneuron
+AIZL,AIZ,0,0,1,Amphid interneuron
+AIZR,AIZ,0,0,1,Amphid interneuron
+ALA,ALA,0,0,1,"Neuron, sends processes laterally and along dorsal cord"
+ALML,ALM,0,0,1,Anterior lateral microtubule cell
+ALMR,ALM,0,0,1,Anterior lateral microtubule cell
+ALNL,ALN,0,0,1,Neuron associated with ALM
+ALNR,ALN,0,0,1,Neuron associated with ALM
+AQR,AQR,0,0,1,"Neuron, basal body. Not part of a sensillum, projects into ring"
+AS1,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS10,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS11,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS2,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS3,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS4,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS5,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS6,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS7,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS8,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+AS9,ASn,0,0,0,"Ventral cord motor neuron, innervates dorsal muscles, no ventral counterpart"
+ASEL,ASE,0,0,1,"Amphid neurons, single ciliated endings"
+ASER,ASE,0,0,1,"Amphid neurons, single ciliated endings"
+ASGL,ASG,0,0,1,"Amphid neurons, single ciliated endings"
+ASGR,ASG,0,0,1,"Amphid neurons, single ciliated endings"
+ASHL,ASH,0,0,1,"Amphid neurons, single ciliated endings"
+ASHR,ASH,0,0,1,"Amphid neurons, single ciliated endings"
+ASIL,ASI,0,0,1,"Amphid neurons, single ciliated endings"
+ASIR,ASI,0,0,1,"Amphid neurons, single ciliated endings"
+ASJL,ASJ,0,0,1,"Amphid neurons, single ciliated endings"
+ASJR,ASJ,0,0,1,"Amphid neurons, single ciliated endings"
+ASKL,ASK,0,0,1,"Amphid neurons, single ciliated endings"
+ASKR,ASK,0,0,1,"Amphid neurons, single ciliated endings"
+AUAL,AUA,0,0,1,"Neuron, process runs with amphid processes but lacks ciliated ending"
+AUAR,AUA,0,0,1,"Neuron, process runs with amphid processes but lacks ciliated ending"
+AVAL,AVA,0,0,1,Ventral cord interneuron
+AVAR,AVA,0,0,1,Ventral cord interneuron
+AVBL,AVB,0,0,1,Ventral cord interneuron
+AVBR,AVB,0,0,1,Ventral cord interneuron
+AVDL,AVD,0,0,1,Ventral cord interneuron
+AVDR,AVD,0,0,1,Ventral cord interneuron
+AVEL,AVE,0,0,1,"Ventral cord interneuron, like AVD but outputs restricted to anterior cord"
+AVER,AVE,0,0,1,"Ventral cord interneuron, like AVD but outputs restricted to anterior cord"
+AVFL,AVF,0,0,1,Interneuron
+AVFR,AVF,0,0,1,Interneuron
+AVG,AVG,0,0,0,Ventral cord interneuron
+AVHL,AVH,0,0,1,"Neuron, mainly postsynaptic in ventral cord and presynaptic in the ring"
+AVHR,AVH,0,0,1,"Neuron, mainly postsynaptic in ventral cord and presynaptic in the ring"
+AVJL,AVJ,0,0,1,"Neuron, synapses like AVHL/R"
+AVJR,AVJ,0,0,1,"Neuron, synapses like AVHL/R"
+AVKL,AVK,0,0,1,Ring and ventral cord interneuron
+AVKR,AVK,0,0,1,Ring and ventral cord interneuron
+AVL,AVL,0,0,1,Ring and ventral cord interneuron and an excitatory GABAergic motor neuron for rectal muscles. Few synapses
+AVM,AVM,0,0,1,"Anterior ventral microtubule cell, touch receptor"
+AWAL,AWA,0,0,1,"Amphid wing cells, neurons having ciliated sheet-like sensory endings closely associated with amphid sheath"
+AWAR,AWA,0,0,1,"Amphid wing cells, neurons having ciliated sheet-like sensory endings closely associated with amphid sheath"
+AWBL,AWB,0,0,1,"Amphid wing cells, neurons having ciliated sheet-like sensory endings closely associated with amphid sheath"
+AWBR,AWB,0,0,1,"Amphid wing cells, neurons having ciliated sheet-like sensory endings closely associated with amphid sheath"
+AWCL,AWC,0,0,1,"Amphid wing cells, neurons having ciliated sheet-like sensory endings closely associated with amphid sheath"
+AWCOFF,AWC,0,1,1,"Functional identity of an AWC neuron (str-2 expressing ON / non-expressing OFF); assigned per animal, not a position. Extension to the WormAtlas list."
+AWCON,AWC,0,1,1,"Functional identity of an AWC neuron (str-2 expressing ON / non-expressing OFF); assigned per animal, not a position. Extension to the WormAtlas list."
+AWCR,AWC,0,0,1,"Amphid wing cells, neurons having ciliated sheet-like sensory endings closely associated with amphid sheath"
+BAGL,BAG,0,0,1,"Neuron, ciliated ending in head, no supporting cells, associated with ILso"
+BAGR,BAG,0,0,1,"Neuron, ciliated ending in head, no supporting cells, associated with ILso"
+BDUL,BDU,0,0,1,"Neuron, process runs along excretory canal and into ring, unique darkly staining synaptic vesicles"
+BDUR,BDU,0,0,1,"Neuron, process runs along excretory canal and into ring, unique darkly staining synaptic vesicles"
+CANL,CAN,0,0,1,"Process runs along excretory canal, no synapses, essential for survival"
+CANR,CAN,0,0,1,"Process runs along excretory canal, no synapses, essential for survival"
+CEPDL,CEP,0,0,1,"Cephalic neurons, contain dopamine"
+CEPDR,CEP,0,0,1,"Cephalic neurons, contain dopamine"
+CEPVL,CEP,0,0,1,"Cephalic neurons, contain dopamine"
+CEPVR,CEP,0,0,1,"Cephalic neurons, contain dopamine"
+DA1,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA2,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA3,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA4,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA5,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA6,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA7,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA8,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DA9,DAn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles"
+DB1,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor (aka DB1/3)"
+DB2,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor (aka DB3/1)"
+DB3,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor"
+DB4,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor"
+DB5,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor"
+DB6,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor"
+DB7,DBn,0,0,0,"Ventral cord motor neurons, innervate dorsal muscles, reciprocal inhibitor"
+DD1,DDn,0,0,0,"Ventral cord motor neurons, reciprocal inhibitors, change synaptic pattern during L1"
+DD2,DDn,0,0,0,"Ventral cord motor neurons, reciprocal inhibitors, change synaptic pattern during L1"
+DD3,DDn,0,0,0,"Ventral cord motor neurons, reciprocal inhibitors, change synaptic pattern during L1"
+DD4,DDn,0,0,0,"Ventral cord motor neurons, reciprocal inhibitors, change synaptic pattern during L1"
+DD5,DDn,0,0,0,"Ventral cord motor neurons, reciprocal inhibitors, change synaptic pattern during L1"
+DD6,DDn,0,0,0,"Ventral cord motor neurons, reciprocal inhibitors, change synaptic pattern during L1"
+DVA,DVA,0,0,1,"Ring interneurons, cell bodies in dorsorectal ganglion"
+DVB,DVB,0,0,0,An excitatory GABAergic motor neuron/interneuron located in dorso-rectal ganglion. Innervates rectal muscles
+DVC,DVC,0,0,1,"Ring interneurons, cell bodies in dorsorectal ganglion"
+FLPL,FLP,0,0,1,"Neuron, ciliated ending in head, no supporting cells, associated with ILso"
+FLPR,FLP,0,0,1,"Neuron, ciliated ending in head, no supporting cells, associated with ILso"
+HSNL,HSN,0,0,1,"Hermaphrodite specific motor neurons (die in male embryo), innervate vulval muscles, serotonergic"
+HSNR,HSN,0,0,1,"Hermaphrodite specific motor neurons (die in male embryo), innervate vulval muscles, serotonergic"
+I1L,I1,1,0,0,"Pharyngeal interneurons: ant sensory, input from RIP"
+I1R,I1,1,0,0,"Pharyngeal interneurons: ant sensory, input from RIP"
+I2L,I2,1,0,0,"Pharyngeal interneurons, ant sensory"
+I2R,I2,1,0,0,"Pharyngeal interneurons, ant sensory"
+I3,I3,1,0,0,"Pharyngeal interneuron, ant sensory"
+I4,I4,1,0,0,Pharyngeal interneuron
+I5,I5,1,0,0,"Pharyngeal interneuron, post sensory"
+I6,I6,1,0,0,"Pharyngeal interneuron, post sensory"
+IL1DL,IL1,0,0,1,Inner labial neuron
+IL1DR,IL1,0,0,1,Inner labial neuron
+IL1L,IL1,0,0,1,Inner labial neuron
+IL1R,IL1,0,0,1,Inner labial neuron
+IL1VL,IL1,0,0,1,Inner labial neuron
+IL1VR,IL1,0,0,1,Inner labial neuron
+IL2DL,IL2,0,0,1,Inner labial neuron
+IL2DR,IL2,0,0,1,Inner labial neuron
+IL2L,IL2,0,0,1,Inner labial neuron
+IL2R,IL2,0,0,1,Inner labial neuron
+IL2VL,IL2,0,0,1,Inner labial neuron
+IL2VR,IL2,0,0,1,Inner labial neuron
+LUAL,LUA,0,0,0,"Interneuron, short process in post ventral cord"
+LUAR,LUA,0,0,0,"Interneuron, short process in post ventral cord"
+M1,M1,1,0,0,Pharyngeal motorneuron
+M2L,M2,1,0,0,Pharyngeal motorneurons
+M2R,M2,1,0,0,Pharyngeal motorneurons
+M3L,M3,1,0,0,Pharyngeal sensory-motorneurons
+M3R,M3,1,0,0,Pharyngeal sensory-motorneurons
+M4,M4,1,0,0,Pharyngeal motorneuron
+M5,M5,1,0,0,Pharyngeal motorneuron
+MCL,MC,1,0,0,Pharyngeal neurons that synapse onto marginal cells
+MCR,MC,1,0,0,Pharyngeal neurons that synapse onto marginal cells
+MI,MI,1,0,0,Pharyngeal motor neuron/interneuron
+NSML,NSM,1,0,0,"Pharyngeal neurosecretory motorneuron, contain serotonin"
+NSMR,NSM,1,0,0,"Pharyngeal neurosecretory motorneuron, contain serotonin"
+OLLL,OLL,0,0,1,Lateral outer labial neurons
+OLLR,OLL,0,0,1,Lateral outer labial neurons
+OLQDL,OLQ,0,0,1,Quadrant outer labial neuron
+OLQDR,OLQ,0,0,1,Quadrant outer labial neuron
+OLQVL,OLQ,0,0,1,Quadrant outer labial neuron
+OLQVR,OLQ,0,0,1,Quadrant outer labial neuron
+PDA,PDA,0,0,0,"Motor neuron, process in dorsal cord, same as Y cell in hermaphrodite, Y.a in male"
+PDB,PDB,0,0,0,"Motor neuron, process in dorsal cord, cell body in pre-anal ganglion"
+PDEL,PDE,0,0,0,"Neuron, dopaminergic of postderid sensillum"
+PDER,PDE,0,0,0,"Neuron, dopaminergic of postderid sensillum"
+PHAL,PHA,0,0,0,"Phasmid neurons, chemosensory"
+PHAR,PHA,0,0,0,"Phasmid neurons, chemosensory"
+PHBL,PHB,0,0,0,"Phasmid neurons, chemosensory"
+PHBR,PHB,0,0,0,"Phasmid neurons, chemosensory"
+PHCL,PHC,0,0,0,"Neuron, striated rootlet in male, possibly sensory in tail spike"
+PHCR,PHC,0,0,0,"Neuron, striated rootlet in male, possibly sensory in tail spike"
+PLML,PLM,0,0,0,"Posterior lateral microtubule cells, touch receptor neurons"
+PLMR,PLM,0,0,0,"Posterior lateral microtubule cells, touch receptor neurons"
+PLNL,PLN,0,0,1,"Interneuron, associated with PLM"
+PLNR,PLN,0,0,1,"Interneuron, associated with PLM"
+PQR,PQR,0,0,0,"Neuron, basal body, not part of a sensillum, projects into preanal ganglion"
+PVCL,PVC,0,0,1,"Ventral cord interneuron, cell body in lumbar ganglion, synapses onto VB and DB motor neurons, formerly called delta"
+PVCR,PVC,0,0,1,"Ventral cord interneuron, cell body in lumbar ganglion, synapses onto VB and DB motor neurons, formerly called delta"
+PVDL,PVD,0,0,0,"Neuron, lateral process adjacent to excretory canal"
+PVDR,PVD,0,0,0,"Neuron, lateral process adjacent to excretory canal"
+PVM,PVM,0,0,0,"Posterior ventral microtubule cell, touch receptor"
+PVNL,PVN,0,0,1,"Interneuron/motor neuron, post. vent. cord, few synapses"
+PVNR,PVN,0,0,1,"Interneuron/motor neuron, post. vent. cord, few synapses"
+PVPL,PVP,0,0,1,"Interneuron, cell body in preanal ganglion, projects along ventral cord to nerve ring"
+PVPR,PVP,0,0,1,"Interneuron, cell body in preanal ganglion, projects along ventral cord to nerve ring"
+PVQL,PVQ,0,0,1,"Interneuron, projects along ventral cord to ring"
+PVQR,PVQ,0,0,1,"Interneuron, projects along ventral cord to ring"
+PVR,PVR,0,0,1,"Interneuron, projects along ventral cord to ring"
+PVT,PVT,0,0,1,"Interneuron, projects along ventral cord to ring"
+PVWL,PVW,0,0,0,"Interneuron, posterior ventral cord, few synapses"
+PVWR,PVW,0,0,0,"Interneuron, posterior ventral cord, few synapses"
+RIAL,RIA,0,0,1,"Ring interneuron, many synapses"
+RIAR,RIA,0,0,1,"Ring interneuron, many synapses"
+RIBL,RIB,0,0,1,Ring interneuron
+RIBR,RIB,0,0,1,Ring interneuron
+RICL,RIC,0,0,1,Ring interneuron
+RICR,RIC,0,0,1,Ring interneuron
+RID,RID,0,0,1,"Ring interneuron, projects along dorsal cord"
+RIFL,RIF,0,0,1,Ring interneuron
+RIFR,RIF,0,0,1,Ring interneuron
+RIGL,RIG,0,0,1,Ring interneuron
+RIGR,RIG,0,0,1,Ring interneuron
+RIH,RIH,0,0,1,Ring interneuron
+RIML,RIM,0,0,1,Ring motor neuron
+RIMR,RIM,0,0,1,Ring motor neuron
+RIPL,RIP,0,0,1,"Ring/pharynx interneuron, only direct connection between pharynx and ring"
+RIPR,RIP,0,0,1,"Ring/pharynx interneuron, only direct connection between pharynx and ring"
+RIR,RIR,0,0,1,Ring interneuron
+RIS,RIS,0,0,1,Ring interneuron
+RIVL,RIV,0,0,1,Ring interneuron
+RIVR,RIV,0,0,1,Ring interneuron
+RMDDL,RMD,0,0,1,"Ring motor neuron/interneuron, many synapses"
+RMDDR,RMD,0,0,1,"Ring motor neuron/interneuron, many synapses"
+RMDL,RMD,0,0,1,"Ring motor neuron/interneuron, many synapses"
+RMDR,RMD,0,0,1,"Ring motor neuron/interneuron, many synapses"
+RMDVL,RMD,0,0,1,"Ring motor neuron/interneuron, many synapses"
+RMDVR,RMD,0,0,1,"Ring motor neuron/interneuron, many synapses"
+RMED,RME,0,0,1,Ring motor neuron
+RMEL,RME,0,0,1,Ring motor neuron
+RMER,RME,0,0,1,Ring motor neuron
+RMEV,RME,0,0,1,Ring motor neuron
+RMFL,RMF,0,0,1,Ring motor neuron/interneuron
+RMFR,RMF,0,0,1,Ring motor neuron/interneuron
+RMGL,RMG,0,0,1,Ring interneuron
+RMGR,RMG,0,0,1,Ring interneuron
+RMHL,RMH,0,0,1,Ring motor neuron/interneuron
+RMHR,RMH,0,0,1,Ring motor neuron/interneuron
+SAADL,SAA,0,0,1,"Ring interneuron, anteriorly projecting process that runs sublaterally"
+SAADR,SAA,0,0,1,"Ring interneuron, anteriorly projecting process that runs sublaterally"
+SAAVL,SAA,0,0,1,"Ring interneuron, anteriorly projecting process that runs sublaterally"
+SAAVR,SAA,0,0,1,"Ring interneuron, anteriorly projecting process that runs sublaterally"
+SABD,SAB,0,0,0,"Ring interneuron, anteriorly projecting process that runs sublaterally, synapses to anterior body muscles in L1"
+SABVL,SAB,0,0,0,"Ring interneuron, anteriorly projecting process that runs sublaterally, synapses to anterior body muscles in L1"
+SABVR,SAB,0,0,0,"Ring interneuron, anteriorly projecting process that runs sublaterally, synapses to anterior body muscles in L1"
+SDQL,SDQ,0,0,1,"Post. lateral interneuron, process projects into ring"
+SDQR,SDQ,0,0,1,"Ant. lateral interneuron, process projects into ring"
+SIADL,SIA,0,0,1,"Receive a few synapses in the ring, have posteriorly directed processes that run sublaterally"
+SIADR,SIA,0,0,1,"Receive a few synapses in the ring, have posteriorly directed processes that run sublaterally"
+SIAVL,SIA,0,0,1,"Receive a few synapses in the ring, have posteriorly directed processes that run sublaterally"
+SIAVR,SIA,0,0,1,"Receive a few synapses in the ring, have posteriorly directed processes that run sublaterally"
+SIBDL,SIB,0,0,1,Similar to SIA
+SIBDR,SIB,0,0,1,Similar to SIA
+SIBVL,SIB,0,0,1,Similar to SIA
+SIBVR,SIB,0,0,1,Similar to SIA
+SMBDL,SMB,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMBDR,SMB,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMBVL,SMB,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMBVR,SMB,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMDDL,SMD,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMDDR,SMD,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMDVL,SMD,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+SMDVR,SMD,0,0,1,"Ring motor neuron/interneuron, has a posteriorly directed process that runs sublaterally"
+URADL,URA,0,0,1,Ring motor neuron
+URADR,URA,0,0,1,Ring motor neuron
+URAVL,URA,0,0,1,Ring motor neuron
+URAVR,URA,0,0,1,Ring motor neuron
+URBL,URB,0,0,1,"Neuron, presynaptic in ring, ending in head"
+URBR,URB,0,0,1,"Neuron, presynaptic in ring, ending in head"
+URXL,URX,0,0,1,Ring interneuron
+URXR,URX,0,0,1,Ring interneuron
+URYDL,URY,0,0,1,"Neuron, presynaptic in ring, ending in head"
+URYDR,URY,0,0,1,"Neuron, presynaptic in ring, ending in head"
+URYVL,URY,0,0,1,"Neuron, presynaptic in ring, ending in head"
+URYVR,URY,0,0,1,"Neuron, presynaptic in ring, ending in head"
+VA1,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA10,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA11,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA12,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles, but also interneuron in preanal ganglion"
+VA2,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA3,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA4,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA5,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA6,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA7,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA8,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VA9,VAn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB1,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles, also interneuron in ring"
+VB10,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB11,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB2,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB3,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB4,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB5,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB6,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB7,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB8,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VB9,VBn,0,0,0,"Ventral cord motor neuron, innervates vent. body muscles"
+VC1,VCn,0,0,0,Hermaphrodite specific ventral cord motor neuron innervates vulval muscles and ventral body muscles
+VC2,VCn,0,0,0,Hermaphrodite specific ventral cord motor neuron innervates vulval muscles and ventral body muscles
+VC3,VCn,0,0,0,Hermaphrodite specific ventral cord motor neuron innervates vulval muscles and ventral body muscles
+VC4,VCn,0,0,0,Hermaphrodite specific ventral cord motor neuron innervates vulval muscles and ventral body muscles
+VC5,VCn,0,0,0,Hermaphrodite specific ventral cord motor neuron innervates vulval muscles and ventral body muscles
+VC6,VCn,0,0,0,Hermaphrodite specific ventral cord motor neuron innervates vulval muscles and ventral body muscles
+VD1,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD10,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD11,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD12,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD13,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD2,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD3,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD4,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD5,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD6,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD7,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD8,VDn,0,0,0,"Ventralcord motor neuron, innervates vent body muscles, reciprocal inhibitor"
+VD9,VDn,0,0,0,"Ventral cord motor neuron, innervates vent body muscles, reciprocal inhibitor"

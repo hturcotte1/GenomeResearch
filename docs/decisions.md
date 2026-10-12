@@ -142,3 +142,46 @@ Several build agents requested this. The per-module GitHub helpers (NemaNode,
 the Fenyves, Ripoll-Sánchez and Witvliet author repositories) are left as
 written because they work and are verified; consolidating them into one shared
 helper is a later clean-up, not a Phase 1 change.
+
+---
+
+## Provisional resolutions (made by Claude, 2026-10-12)
+
+On 2026-10-12 the owner wrote: "Continue. Keep going until you are fully done.
+Don't ask me anything again unless you need permission". The open questions
+below were therefore resolved provisionally rather than asked.
+
+Rules applied to every resolution:
+
+- prefer the choice that asserts nothing beyond the data;
+- keep the alternatives available as switches in `config/pipeline.json` or as
+  separate columns;
+- never discard data.
+
+**Every item here is PROVISIONAL and the owner may overturn it.** A switch
+change plus `python -m src.build` regenerates everything.
+
+| ID | Question | Provisional resolution | Alternatives kept | Reasoning |
+|---|---|---|---|---|
+| Q-001 / D-013 | Pair-count target and atlas release | Use the 2023-06-28 atlas release (`randi_release`); the Phase 3 test asserts 23,433 for it and also 23,427 for the 2023-06-14 release (both acquired) | `randi_release: "2023-06-14"` | 2023-06-28 reproduces the Nature article (23,433 / 1,310 / 53) and is the authors' "fix in export script" release. The brief's 23,427 is the preprint figure and is reproduced by the earlier release |
+| Q-001b | Self-pairs in the edge table | Excluded (`include_self_pairs: false`); written to the exclusions log with counts | `include_self_pairs: true` | A neuron's response to its own stimulation is not a signalling edge between two neurons, so categories A–E do not apply |
+| Q-002 | Evidence encoding | Per-strain five-state column `randi_state_wt/unc31` ∈ {connected, absent_confident, inconclusive, observed_all_trials_discarded, not_observed}; `randi_tested` = WT pair observed at least once (occ1 > 0) | raw q, q_eq, occ1 and n_trials columns are all carried | Keeps "tested, no response" apart from "never tested", and also separates confident absence from inconclusive |
+| Q-003 | No unc-31 data for a pair | `randi_state_unc31 = not_observed` and `unc31_delta` null; nothing is imputed | — | Rule 2 |
+| Q-004 | Category D rubric | Out of scope for this repository. The table exposes the inputs a rubric needs (pre/post classes; per-dataset anatomical weights; predicted sign; WT kernel peak and rise times), but computes no paths and no categories | — | The brief: "Do NOT classify anything into categories A–E" |
+| Q-005 | AWC | `awc_policy: "unresolved"`: AWCON/AWCOFF rows get no anatomical, polarity or extrasynaptic values, and are flagged | `"authors_convention"` (OFF=AWCL, ON=AWCR) | The per-animal L/R ↔ ON/OFF correspondence is random, so any fixed mapping asserts something false for about half of the animals |
+| Q-006 | Bilateral policy | `bilateral_policy: "split"`, with `pre_class` / `post_class` columns provided | `collapse` is documented but not implemented (see namespace-decisions §4) | Collapsing invalidates the measured statistics, and the null distributions needed to recompute them are not released |
+| Q-007 | Which "White 1986" | `anat_chem_white` = NemaNode N2U (the adult White animal, `white_primary: "n2u"`). JSH (L4) and "whole" (the Varshney 2011 + pharynx compilation Randi actually loaded) are separate columns | `white_primary: "jsh"` or `"whole"` | N2U is the original adult reconstruction. The Randi Methods describe individual animals; Randi's code used the compilation. All three are kept |
+| Q-W1 | Witvliet version | Published revision (NemaNode baf8ec8, which equals the paper's tables) | the pre-revision data Randi used is acquired, and documented in provenance | The published version is what the Witvliet paper reports |
+| Q-W3 | Combining Witvliet datasets 7 and 8 | `anat_chem_witvliet = d7 + d8` (summed, as Randi's code sums sources), plus per-dataset columns | `witvliet_combination` | Per-dataset values are never lost |
+| Q-W4 / gap | Gap-junction source | `anat_gap` = White N2U gap-junction count per unordered pair (single-counted); JSH and whole as separate columns; Witvliet gap junctions not used | `gap_primary` | Witvliet gap junctions were partially annotated and excluded from that paper's own analyses |
+| Q-W6 | Neurons outside a dataset's volume | Anatomical value null, plus flag `<dataset>_not_covered`, when either neuron never occurs in that dataset; 0 only when both occur | — | 0 would assert absence where there was no reconstruction |
+| Q-008 / FEN-2/6/7 | Predicted sign | Fenyves 2020 journal version (sheet 5 of the PLOS file): `+`→excitatory, `-`→inhibitory, `complex`→complex, `no pred`→unknown. Null when Fenyves's connectome has no chemical connection for the pair. The basis column lists the presynaptic transmitter(s), the matched receptor classes and the postsynaptic genes in those classes | preprint-version calls, Szilágyi 2026 and Wang 2024 not used | Fenyves 2020 is the brief's source, and the journal version reproduces the paper's published counts |
+| Q-RS-1/2 | Neuropeptide version | `np_edge_short/mid/long` = the 08062023 matrices (they reproduce Table S6 exactly; the authors' README names them as the figure data). The 01022024 post-publication update is in `np_edge_*_v2024` | 07072022 (preprint-era) acquired but not tabulated | Matches the published supplementary table |
+| Q-RS-5 | Neuropeptide edge value | Number of NPP–GPCR pairs supporting the edge (integer; 0 = no edge) | — | The matrices' own weights |
+| Q-009 / Q-B3 | Monoamine source | `monoamine_edge` = Bentley 2016 (the brief's source): the sorted, ';'-joined ligands supporting the edge, empty when none; `monoamine_edge_rs2023` = the Ripoll-Sánchez 08062023 monoamine matrix weight | — | Bentley 2016 reproduces its paper's totals exactly. Neither file reproduces Ripoll-Sánchez's quoted 0.0236 |
+| latency | `measured_latency_wt` | Effective rise time of the atlas's mean kernel for the pair: the authors' `get_effective_rise_time` algorithm (peak of abs(kernel) on a 0–200 s / 1,000-point axis; Brent root of kernel = peak/e before the peak), applied to the h5 kernels. `measured_peak_time_wt` is also carried | `kernel_time_axis_s` | The authors computed rise times per trial on fitted responses, which are not in the release. This is the closest reproducible quantity, and it is labelled as such |
+| head | Row universe | Randi head188 + RMHR = 189 neurons, 189 × 188 = 35,532 ordered pairs | `head_set` | RMHR is a head neuron omitted by a typo in the authors' list; it is included as never tested |
+
+### D-013 (2026-10-12, Phase 1, PROVISIONAL)
+**Atlas release.** The 2023-06-28 release is the table's source; the
+2023-06-14 release is kept for comparison. See the table above (Q-001).

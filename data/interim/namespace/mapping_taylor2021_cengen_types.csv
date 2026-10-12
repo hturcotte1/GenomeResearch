@@ -1,0 +1,129 @@
+cengen_type,members,n_members,rule,reason
+ADA,ADAL;ADAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ADE,ADEL;ADER,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ADF,ADFL;ADFR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ADL,ADLL;ADLR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AFD,AFDL;AFDR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AIA,AIAL;AIAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AIB,AIBL;AIBR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AIM,AIML;AIMR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AIN,AINL;AINR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AIY,AIYL;AIYR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AIZ,AIZL;AIZR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ALA,ALA,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ALM,ALML;ALMR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ALN,ALNL;ALNR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AQR,AQR,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AS,AS1;AS10;AS11;AS2;AS3;AS4;AS5;AS6;AS7;AS8;AS9,11,explicit_table,CeNGEN class AS = WormAtlas class ASn (all 11)
+ASEL,ASEL,1,explicit_table,CeNGEN profiles ASE left and right separately
+ASER,ASER,1,explicit_table,CeNGEN profiles ASE left and right separately
+ASG,ASGL;ASGR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ASH,ASHL;ASHR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ASI,ASIL;ASIR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ASJ,ASJL;ASJR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+ASK,ASKL;ASKR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AUA,AUAL;AUAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVA,AVAL;AVAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVB,AVBL;AVBR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVD,AVDL;AVDR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVE,AVEL;AVER,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVF,AVFL;AVFR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVG,AVG,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVH,AVHL;AVHR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVJ,AVJL;AVJR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVK,AVKL;AVKR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVL,AVL,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AVM,AVM,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AWA,AWAL;AWAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AWB,AWBL;AWBR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+AWC_OFF,AWCOFF,1,explicit_table,"CeNGEN separates AWC by functional identity; maps to the AWCOFF extension identity, not to AWCL/AWCR"
+AWC_ON,AWCON,1,explicit_table,"CeNGEN separates AWC by functional identity; maps to the AWCON extension identity, not to AWCL/AWCR"
+BAG,BAGL;BAGR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+BDU,BDUL;BDUR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+CAN,CANL;CANR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+CEP,CEPDL;CEPDR;CEPVL;CEPVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+DA,DA1;DA2;DA3;DA4;DA5;DA6;DA7;DA8,8,explicit_table,CeNGEN separates DA9 (own column); DA = the remaining DA class members (REVIEW: inferred from the separate DA9 column)
+DA9,DA9,1,explicit_table,CeNGEN profiles DA9 separately
+DB,DB2;DB3;DB4;DB5;DB6;DB7,6,explicit_table,CeNGEN separates DB01 (own column); DB = the remaining DB class members (REVIEW: inferred from the separate DB01 column)
+DB01,DB1,1,explicit_table,CeNGEN zero-padded individual neuron DB1
+DVA,DVA,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+DVB,DVB,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+DVC,DVC,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+FLP,FLPL;FLPR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+HSN,HSNL;HSNR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+I1,I1L;I1R,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+I2,I2L;I2R,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+I3,I3,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+I4,I4,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+I5,I5,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+I6,I6,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+IL1,IL1DL;IL1DR;IL1L;IL1R;IL1VL;IL1VR,6,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+IL2_DV,IL2DL;IL2DR;IL2VL;IL2VR,4,explicit_table,CeNGEN splits IL2 into dorsoventral and left/right subtypes
+IL2_LR,IL2L;IL2R,2,explicit_table,CeNGEN splits IL2 into dorsoventral and left/right subtypes
+LUA,LUAL;LUAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+M1,M1,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+M2,M2L;M2R,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+M3,M3L;M3R,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+M4,M4,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+M5,M5,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+MC,MCL;MCR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+MI,MI,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+NSM,NSML;NSMR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+OLL,OLLL;OLLR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+OLQ,OLQDL;OLQDR;OLQVL;OLQVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PDA,PDA,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PDB,PDB,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PDE,PDEL;PDER,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PHA,PHAL;PHAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PHB,PHBL;PHBR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PHC,PHCL;PHCR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PLM,PLML;PLMR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PLN,PLNL;PLNR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PQR,PQR,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVC,PVCL;PVCR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVD,PVDL;PVDR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVM,PVM,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVN,PVNL;PVNR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVP,PVPL;PVPR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVQ,PVQL;PVQR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVR,PVR,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVT,PVT,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+PVW,PVWL;PVWR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIA,RIAL;RIAR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIB,RIBL;RIBR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIC,RICL;RICR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RID,RID,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIF,RIFL;RIFR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIG,RIGL;RIGR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIH,RIH,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIM,RIML;RIMR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIP,RIPL;RIPR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIR,RIR,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIS,RIS,1,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RIV,RIVL;RIVR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RMD_DV,RMDDL;RMDDR;RMDVL;RMDVR,4,explicit_table,CeNGEN splits RMD into dorsoventral and left/right subtypes
+RMD_LR,RMDL;RMDR,2,explicit_table,CeNGEN splits RMD into dorsoventral and left/right subtypes
+RME_DV,RMED;RMEV,2,explicit_table,CeNGEN splits RME into dorsoventral and left/right subtypes
+RME_LR,RMEL;RMER,2,explicit_table,CeNGEN splits RME into dorsoventral and left/right subtypes
+RMF,RMFL;RMFR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RMG,RMGL;RMGR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+RMH,RMHL;RMHR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SAA,SAADL;SAADR;SAAVL;SAAVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SAB,SABD;SABVL;SABVR,3,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SDQ,SDQL;SDQR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SIA,SIADL;SIADR;SIAVL;SIAVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SIB,SIBDL;SIBDR;SIBVL;SIBVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SMB,SMBDL;SMBDR;SMBVL;SMBVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+SMD,SMDDL;SMDDR;SMDVL;SMDVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+URA,URADL;URADR;URAVL;URAVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+URB,URBL;URBR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+URX,URXL;URXR,2,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+URY,URYDL;URYDR;URYVL;URYVR,4,class_name,CeNGEN type name equals the canonical (NemaNode) class name
+VA,VA1;VA10;VA11;VA2;VA3;VA4;VA5;VA6;VA7;VA8;VA9,11,explicit_table,CeNGEN separates VA12 (own column); VA = the remaining VA class members (REVIEW: inferred from the separate VA12 column)
+VA12,VA12,1,explicit_table,CeNGEN profiles VA12 separately
+VB,VB10;VB11;VB3;VB4;VB5;VB6;VB7;VB8;VB9,9,explicit_table,CeNGEN separates VB01 and VB02 (own columns); VB = the remaining VB class members (REVIEW: inferred from the separate columns)
+VB01,VB1,1,explicit_table,CeNGEN zero-padded individual neuron VB1
+VB02,VB2,1,explicit_table,CeNGEN zero-padded individual neuron VB2
+VC,VC1;VC2;VC3;VC6,4,explicit_table,CeNGEN separates VC4/VC5 (VC_4_5); VC = the remaining VC class members (REVIEW: inferred from the separate VC_4_5 column)
+VC_4_5,VC4;VC5,2,explicit_table,CeNGEN type pooling VC4 and VC5
+VD_DD,DD1;DD2;DD3;DD4;DD5;DD6;VD1;VD10;VD11;VD12;VD13;VD2;VD3;VD4;VD5;VD6;VD7;VD8;VD9,19,explicit_table,CeNGEN type pooling the VD and DD classes (not separable in the scRNA-seq clusters)

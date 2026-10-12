@@ -1,0 +1,153 @@
+source_id,source_name,canonical_name,rule,reason
+fenyves2020,AS01,AS1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS02,AS2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS03,AS3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS04,AS4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS05,AS5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS06,AS6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS07,AS7,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS08,AS8,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,AS09,AS9,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA01,DA1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA02,DA2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA03,DA3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA04,DA4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA05,DA5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA06,DA6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA07,DA7,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA08,DA8,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DA09,DA9,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB01,DB1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB02,DB2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB03,DB3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB04,DB4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB05,DB5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB06,DB6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DB07,DB7,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DD01,DD1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DD02,DD2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DD03,DD3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DD04,DD4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DD05,DD5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,DD06,DD6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA01,VA1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA02,VA2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA03,VA3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA04,VA4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA05,VA5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA06,VA6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA07,VA7,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA08,VA8,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VA09,VA9,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB01,VB1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB02,VB2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB03,VB3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB04,VB4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB05,VB5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB06,VB6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB07,VB7,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB08,VB8,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VB09,VB9,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VC01,VC1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VC02,VC2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VC03,VC3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VC04,VC4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VC05,VC5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VC06,VC6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD01,VD1,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD02,VD2,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD03,VD3,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD04,VD4,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD05,VD5,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD06,VD6,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD07,VD7,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD08,VD8,vnc_zero_padding,zero-padded ventral-cord number
+fenyves2020,VD09,VD9,vnc_zero_padding,zero-padded ventral-cord number
+randi2023,AWCOF,AWCOFF,alias,"funatlas.h5 stores neuron ids as |S5 bytes, truncating AWCOFF to AWCOF (the package's own neuron_ids.txt spells AWCOFF; its loader excuses exactly this mismatch)"
+ripollsanchez2023,AS01,AS1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS02,AS2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS03,AS3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS04,AS4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS05,AS5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS06,AS6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS07,AS7,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS08,AS8,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,AS09,AS9,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA01,DA1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA02,DA2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA03,DA3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA04,DA4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA05,DA5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA06,DA6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA07,DA7,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA08,DA8,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DA09,DA9,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB01,DB1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB02,DB2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB03,DB3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB04,DB4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB05,DB5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB06,DB6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DB07,DB7,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DD01,DD1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DD02,DD2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DD03,DD3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DD04,DD4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DD05,DD5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,DD06,DD6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA01,VA1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA02,VA2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA03,VA3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA04,VA4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA05,VA5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA06,VA6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA07,VA7,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA08,VA8,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VA09,VA9,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB01,VB1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB02,VB2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB03,VB3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB04,VB4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB05,VB5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB06,VB6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB07,VB7,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB08,VB8,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VB09,VB9,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VC01,VC1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VC02,VC2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VC03,VC3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VC04,VC4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VC05,VC5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VC06,VC6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD01,VD1,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD02,VD2,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD03,VD3,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD04,VD4,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD05,VD5,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD06,VD6,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD07,VD7,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD08,VD8,vnc_zero_padding,zero-padded ventral-cord number
+ripollsanchez2023,VD09,VD9,vnc_zero_padding,zero-padded ventral-cord number
+taylor2021,AS,AS1;AS10;AS11;AS2;AS3;AS4;AS5;AS6;AS7;AS8;AS9,explicit_table,CeNGEN class AS = WormAtlas class ASn (all 11)
+taylor2021,ASEL,ASEL,explicit_table,CeNGEN profiles ASE left and right separately
+taylor2021,ASER,ASER,explicit_table,CeNGEN profiles ASE left and right separately
+taylor2021,AWC_OFF,AWCOFF,explicit_table,"CeNGEN separates AWC by functional identity; maps to the AWCOFF extension identity, not to AWCL/AWCR"
+taylor2021,AWC_ON,AWCON,explicit_table,"CeNGEN separates AWC by functional identity; maps to the AWCON extension identity, not to AWCL/AWCR"
+taylor2021,DA,DA1;DA2;DA3;DA4;DA5;DA6;DA7;DA8,explicit_table,CeNGEN separates DA9 (own column); DA = the remaining DA class members (REVIEW: inferred from the separate DA9 column)
+taylor2021,DA9,DA9,explicit_table,CeNGEN profiles DA9 separately
+taylor2021,DB,DB2;DB3;DB4;DB5;DB6;DB7,explicit_table,CeNGEN separates DB01 (own column); DB = the remaining DB class members (REVIEW: inferred from the separate DB01 column)
+taylor2021,DB01,DB1,explicit_table,CeNGEN zero-padded individual neuron DB1
+taylor2021,IL2_DV,IL2DL;IL2DR;IL2VL;IL2VR,explicit_table,CeNGEN splits IL2 into dorsoventral and left/right subtypes
+taylor2021,IL2_LR,IL2L;IL2R,explicit_table,CeNGEN splits IL2 into dorsoventral and left/right subtypes
+taylor2021,RMD_DV,RMDDL;RMDDR;RMDVL;RMDVR,explicit_table,CeNGEN splits RMD into dorsoventral and left/right subtypes
+taylor2021,RMD_LR,RMDL;RMDR,explicit_table,CeNGEN splits RMD into dorsoventral and left/right subtypes
+taylor2021,RME_DV,RMED;RMEV,explicit_table,CeNGEN splits RME into dorsoventral and left/right subtypes
+taylor2021,RME_LR,RMEL;RMER,explicit_table,CeNGEN splits RME into dorsoventral and left/right subtypes
+taylor2021,VA,VA1;VA10;VA11;VA2;VA3;VA4;VA5;VA6;VA7;VA8;VA9,explicit_table,CeNGEN separates VA12 (own column); VA = the remaining VA class members (REVIEW: inferred from the separate VA12 column)
+taylor2021,VA12,VA12,explicit_table,CeNGEN profiles VA12 separately
+taylor2021,VB,VB10;VB11;VB3;VB4;VB5;VB6;VB7;VB8;VB9,explicit_table,CeNGEN separates VB01 and VB02 (own columns); VB = the remaining VB class members (REVIEW: inferred from the separate columns)
+taylor2021,VB01,VB1,explicit_table,CeNGEN zero-padded individual neuron VB1
+taylor2021,VB02,VB2,explicit_table,CeNGEN zero-padded individual neuron VB2
+taylor2021,VC,VC1;VC2;VC3;VC6,explicit_table,CeNGEN separates VC4/VC5 (VC_4_5); VC = the remaining VC class members (REVIEW: inferred from the separate VC_4_5 column)
+taylor2021,VC_4_5,VC4;VC5,explicit_table,CeNGEN type pooling VC4 and VC5
+taylor2021,VD_DD,DD1;DD2;DD3;DD4;DD5;DD6;VD1;VD10;VD11;VD12;VD13;VD2;VD3;VD4;VD5;VD6;VD7;VD8;VD9,explicit_table,CeNGEN type pooling the VD and DD classes (not separable in the scRNA-seq clusters)

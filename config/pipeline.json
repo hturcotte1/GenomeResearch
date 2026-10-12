@@ -1,0 +1,17 @@
+{
+  "_comment": "Every setting here is a choice the project owner may change. Each one is documented, with its alternatives and its PROVISIONAL status, in docs/decisions.md (section 'Provisional resolutions'). Changing a value and re-running `python -m src.build` regenerates every derived artifact deterministically.",
+  "randi_release": "2023-06-28",
+  "awc_policy": "unresolved",
+  "bilateral_policy": "split",
+  "include_self_pairs": false,
+  "head_set": "randi_head188_plus_rmhr",
+  "white_primary": "n2u",
+  "witvliet_version": "published_baf8ec8",
+  "witvliet_combination": "sum_d7_d8",
+  "gap_primary": "white_n2u",
+  "neuropeptide_version": "08062023",
+  "neuropeptide_alternate_versions": ["01022024"],
+  "monoamine_primary": "bentley2016",
+  "fenyves_version": "journal_xlsx",
+  "kernel_time_axis_s": [0.0, 200.0, 1000]
+}

@@ -1,0 +1,4 @@
+source_id,source_name,canonical_name,reason
+randi2023,AWCOF,AWCOFF,"funatlas.h5 stores neuron ids as |S5 bytes, truncating AWCOFF to AWCOF (the package's own neuron_ids.txt spells AWCOFF; its loader excuses exactly this mismatch)"
+white1986,avfl,AVFL,"NeuronConnect.xls (Varshney 2011) writes this one receive-side record in lower case; every other record of the same pair is upper case (white1986 verifier)"
+white1986,avfr,AVFR,"NeuronConnect.xls (Varshney 2011) writes this one receive-side record in lower case; every other record of the same pair is upper case (white1986 verifier)"

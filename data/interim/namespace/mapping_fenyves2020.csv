@@ -1,0 +1,303 @@
+source_name,files,n_occurrences,status,canonical_name,rule,needs_review,reason
+ADAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,38,mapped,ADAL,exact,0,
+ADAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,35,mapped,ADAR,exact,0,
+ADEL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,41,mapped,ADEL,exact,0,
+ADER,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,37,mapped,ADER,exact,0,
+ADFL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,30,mapped,ADFL,exact,0,
+ADFR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,39,mapped,ADFR,exact,0,
+ADLL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,34,mapped,ADLL,exact,0,
+ADLR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,45,mapped,ADLR,exact,0,
+AFDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,AFDL,exact,0,
+AFDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,AFDR,exact,0,
+AIAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,41,mapped,AIAL,exact,0,
+AIAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,AIAR,exact,0,
+AIBL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,57,mapped,AIBL,exact,0,
+AIBR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,58,mapped,AIBR,exact,0,
+AIML,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,AIML,exact,0,
+AIMR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,AIMR,exact,0,
+AINL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,AINL,exact,0,
+AINR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,AINR,exact,0,
+AIYL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,25,mapped,AIYL,exact,0,
+AIYR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,AIYR,exact,0,
+AIZL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,44,mapped,AIZL,exact,0,
+AIZR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,35,mapped,AIZR,exact,0,
+ALA,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,ALA,exact,0,
+ALML,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,ALML,exact,0,
+ALMR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,ALMR,exact,0,
+ALNL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,ALNL,exact,0,
+ALNR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,ALNR,exact,0,
+AQR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,30,mapped,AQR,exact,0,
+AS01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,AS1,vnc_zero_padding,1,zero-padded ventral-cord number
+AS02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,AS2,vnc_zero_padding,1,zero-padded ventral-cord number
+AS03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,AS3,vnc_zero_padding,1,zero-padded ventral-cord number
+AS04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,AS4,vnc_zero_padding,1,zero-padded ventral-cord number
+AS05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,10,mapped,AS5,vnc_zero_padding,1,zero-padded ventral-cord number
+AS06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,AS6,vnc_zero_padding,1,zero-padded ventral-cord number
+AS07,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,AS7,vnc_zero_padding,1,zero-padded ventral-cord number
+AS08,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,AS8,vnc_zero_padding,1,zero-padded ventral-cord number
+AS09,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,7,mapped,AS9,vnc_zero_padding,1,zero-padded ventral-cord number
+AS10,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,11,mapped,AS10,exact,0,
+AS11,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,AS11,exact,0,
+ASEL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,31,mapped,ASEL,exact,0,
+ASER,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,39,mapped,ASER,exact,0,
+ASGL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,ASGL,exact,0,
+ASGR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,ASGR,exact,0,
+ASHL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,31,mapped,ASHL,exact,0,
+ASHR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,40,mapped,ASHR,exact,0,
+ASIL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,ASIL,exact,0,
+ASIR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,ASIR,exact,0,
+ASJL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,ASJL,exact,0,
+ASJR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,ASJR,exact,0,
+ASKL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,ASKL,exact,0,
+ASKR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,ASKR,exact,0,
+AUAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,AUAL,exact,0,
+AUAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,AUAR,exact,0,
+AVAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,106,mapped,AVAL,exact,0,
+AVAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,103,mapped,AVAR,exact,0,
+AVBL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,67,mapped,AVBL,exact,0,
+AVBR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,67,mapped,AVBR,exact,0,
+AVDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,63,mapped,AVDL,exact,0,
+AVDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,72,mapped,AVDR,exact,0,
+AVEL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,64,mapped,AVEL,exact,0,
+AVER,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,70,mapped,AVER,exact,0,
+AVFL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,37,mapped,AVFL,exact,0,
+AVFR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,AVFR,exact,0,
+AVG,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,37,mapped,AVG,exact,0,
+AVHL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,41,mapped,AVHL,exact,0,
+AVHR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,36,mapped,AVHR,exact,0,
+AVJL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,42,mapped,AVJL,exact,0,
+AVJR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,42,mapped,AVJR,exact,0,
+AVKL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,AVKL,exact,0,
+AVKR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,30,mapped,AVKR,exact,0,
+AVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,35,mapped,AVL,exact,0,
+AVM,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,AVM,exact,0,
+AWAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,AWAL,exact,0,
+AWAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,25,mapped,AWAR,exact,0,
+AWBL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,AWBL,exact,0,
+AWBR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,AWBR,exact,0,
+AWCL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,AWCL,exact,0,
+AWCR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,AWCR,exact,0,
+BAGL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,BAGL,exact,0,
+BAGR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,BAGR,exact,0,
+BDUL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,BDUL,exact,0,
+BDUR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,BDUR,exact,0,
+CANL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression,1,mapped,CANL,exact,0,
+CANR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression,1,mapped,CANR,exact,0,
+CEPDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,47,mapped,CEPDL,exact,0,
+CEPDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,34,mapped,CEPDR,exact,0,
+CEPVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,35,mapped,CEPVL,exact,0,
+CEPVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,42,mapped,CEPVR,exact,0,
+DA01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,DA1,vnc_zero_padding,1,zero-padded ventral-cord number
+DA02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,DA2,vnc_zero_padding,1,zero-padded ventral-cord number
+DA03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,DA3,vnc_zero_padding,1,zero-padded ventral-cord number
+DA04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,DA4,vnc_zero_padding,1,zero-padded ventral-cord number
+DA05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,DA5,vnc_zero_padding,1,zero-padded ventral-cord number
+DA06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,DA6,vnc_zero_padding,1,zero-padded ventral-cord number
+DA07,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,DA7,vnc_zero_padding,1,zero-padded ventral-cord number
+DA08,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,DA8,vnc_zero_padding,1,zero-padded ventral-cord number
+DA09,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,DA9,vnc_zero_padding,1,zero-padded ventral-cord number
+DB01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,DB1,vnc_zero_padding,1,zero-padded ventral-cord number
+DB02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,DB2,vnc_zero_padding,1,zero-padded ventral-cord number
+DB03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,DB3,vnc_zero_padding,1,zero-padded ventral-cord number
+DB04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,DB4,vnc_zero_padding,1,zero-padded ventral-cord number
+DB05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,11,mapped,DB5,vnc_zero_padding,1,zero-padded ventral-cord number
+DB06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,9,mapped,DB6,vnc_zero_padding,1,zero-padded ventral-cord number
+DB07,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,DB7,vnc_zero_padding,1,zero-padded ventral-cord number
+DD01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,DD1,vnc_zero_padding,1,zero-padded ventral-cord number
+DD02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,DD2,vnc_zero_padding,1,zero-padded ventral-cord number
+DD03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,DD3,vnc_zero_padding,1,zero-padded ventral-cord number
+DD04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,DD4,vnc_zero_padding,1,zero-padded ventral-cord number
+DD05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,11,mapped,DD5,vnc_zero_padding,1,zero-padded ventral-cord number
+DD06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,DD6,vnc_zero_padding,1,zero-padded ventral-cord number
+DVA,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,71,mapped,DVA,exact,0,
+DVB,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,11,mapped,DVB,exact,0,
+DVC,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,35,mapped,DVC,exact,0,
+FLPL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,FLPL,exact,0,
+FLPR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,FLPR,exact,0,
+HSNL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,42,mapped,HSNL,exact,0,
+HSNR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,55,mapped,HSNR,exact,0,
+I1L,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,I1L,exact,0,
+I1R,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,I1R,exact,0,
+I2L,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,I2L,exact,0,
+I2R,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,I2R,exact,0,
+I3,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,I3,exact,0,
+I4,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,I4,exact,0,
+I5,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,I5,exact,0,
+I6,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,I6,exact,0,
+IL1DL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,IL1DL,exact,0,
+IL1DR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,IL1DR,exact,0,
+IL1L,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,IL1L,exact,0,
+IL1R,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,IL1R,exact,0,
+IL1VL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,IL1VL,exact,0,
+IL1VR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,IL1VR,exact,0,
+IL2DL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,IL2DL,exact,0,
+IL2DR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,IL2DR,exact,0,
+IL2L,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,IL2L,exact,0,
+IL2R,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,IL2R,exact,0,
+IL2VL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,IL2VL,exact,0,
+IL2VR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,IL2VR,exact,0,
+LUAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,LUAL,exact,0,
+LUAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,LUAR,exact,0,
+M1,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,M1,exact,0,
+M2L,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,M2L,exact,0,
+M2R,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,9,mapped,M2R,exact,0,
+M3L,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,M3L,exact,0,
+M3R,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,M3R,exact,0,
+M4,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,M4,exact,0,
+M5,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression,1,mapped,M5,exact,0,
+MCL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,7,mapped,MCL,exact,0,
+MCR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,4,mapped,MCR,exact,0,
+MI,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,MI,exact,0,
+NSML,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,NSML,exact,0,
+NSMR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,NSMR,exact,0,
+OLLL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,OLLL,exact,0,
+OLLR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,43,mapped,OLLR,exact,0,
+OLQDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,OLQDL,exact,0,
+OLQDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,OLQDR,exact,0,
+OLQVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,OLQVL,exact,0,
+OLQVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,OLQVR,exact,0,
+PDA,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,PDA,exact,0,
+PDB,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,5,mapped,PDB,exact,0,
+PDEL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,3,mapped,PDEL,exact,0,
+PDER,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,7,mapped,PDER,exact,0,
+PHAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,PHAL,exact,0,
+PHAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,PHAR,exact,0,
+PHBL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,PHBL,exact,0,
+PHBR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,PHBR,exact,0,
+PHCL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,PHCL,exact,0,
+PHCR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,PHCR,exact,0,
+PLML,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression,1,mapped,PLML,exact,0,
+PLMR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression,1,mapped,PLMR,exact,0,
+PLNL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,PLNL,exact,0,
+PLNR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,9,mapped,PLNR,exact,0,
+PQR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,PQR,exact,0,
+PVCL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,67,mapped,PVCL,exact,0,
+PVCR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,66,mapped,PVCR,exact,0,
+PVDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,PVDL,exact,0,
+PVDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,PVDR,exact,0,
+PVM,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,PVM,exact,0,
+PVNL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,33,mapped,PVNL,exact,0,
+PVNR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,49,mapped,PVNR,exact,0,
+PVPL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,PVPL,exact,0,
+PVPR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,38,mapped,PVPR,exact,0,
+PVQL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,PVQL,exact,0,
+PVQR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,PVQR,exact,0,
+PVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,43,mapped,PVR,exact,0,
+PVT,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,31,mapped,PVT,exact,0,
+PVWL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,PVWL,exact,0,
+PVWR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,11,mapped,PVWR,exact,0,
+RIAL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,64,mapped,RIAL,exact,0,
+RIAR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,63,mapped,RIAR,exact,0,
+RIBL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,41,mapped,RIBL,exact,0,
+RIBR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,42,mapped,RIBR,exact,0,
+RICL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,38,mapped,RICL,exact,0,
+RICR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,44,mapped,RICR,exact,0,
+RID,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,RID,exact,0,
+RIFL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,RIFL,exact,0,
+RIFR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,36,mapped,RIFR,exact,0,
+RIGL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,40,mapped,RIGL,exact,0,
+RIGR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,35,mapped,RIGR,exact,0,
+RIH,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,54,mapped,RIH,exact,0,
+RIML,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,52,mapped,RIML,exact,0,
+RIMR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,47,mapped,RIMR,exact,0,
+RIPL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,RIPL,exact,0,
+RIPR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,RIPR,exact,0,
+RIR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,48,mapped,RIR,exact,0,
+RIS,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,46,mapped,RIS,exact,0,
+RIVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,RIVL,exact,0,
+RIVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,RIVR,exact,0,
+RMDDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,36,mapped,RMDDL,exact,0,
+RMDDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,25,mapped,RMDDR,exact,0,
+RMDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,54,mapped,RMDL,exact,0,
+RMDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,43,mapped,RMDR,exact,0,
+RMDVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,RMDVL,exact,0,
+RMDVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,37,mapped,RMDVR,exact,0,
+RMED,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,RMED,exact,0,
+RMEL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,RMEL,exact,0,
+RMER,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,RMER,exact,0,
+RMEV,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,RMEV,exact,0,
+RMFL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,RMFL,exact,0,
+RMFR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,RMFR,exact,0,
+RMGL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,51,mapped,RMGL,exact,0,
+RMGR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,42,mapped,RMGR,exact,0,
+RMHL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,RMHL,exact,0,
+RMHR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,25,mapped,RMHR,exact,0,
+SAADL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,SAADL,exact,0,
+SAADR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,SAADR,exact,0,
+SAAVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,37,mapped,SAAVL,exact,0,
+SAAVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,SAAVR,exact,0,
+SABD,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,SABD,exact,0,
+SABVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,SABVL,exact,0,
+SABVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,10,mapped,SABVR,exact,0,
+SDQL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,SDQL,exact,0,
+SDQR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,SDQR,exact,0,
+SIADL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,SIADL,exact,0,
+SIADR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,23,mapped,SIADR,exact,0,
+SIAVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,SIAVL,exact,0,
+SIAVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,SIAVR,exact,0,
+SIBDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,SIBDL,exact,0,
+SIBDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,SIBDR,exact,0,
+SIBVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,SIBVL,exact,0,
+SIBVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,SIBVR,exact,0,
+SMBDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,27,mapped,SMBDL,exact,0,
+SMBDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,SMBDR,exact,0,
+SMBVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,33,mapped,SMBVL,exact,0,
+SMBVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,SMBVR,exact,0,
+SMDDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,45,mapped,SMDDL,exact,0,
+SMDDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,46,mapped,SMDDR,exact,0,
+SMDVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,46,mapped,SMDVL,exact,0,
+SMDVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,41,mapped,SMDVR,exact,0,
+URADL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,10,mapped,URADL,exact,0,
+URADR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,10,mapped,URADR,exact,0,
+URAVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,URAVL,exact,0,
+URAVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,URAVR,exact,0,
+URBL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,URBL,exact,0,
+URBR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,33,mapped,URBR,exact,0,
+URXL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,43,mapped,URXL,exact,0,
+URXR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,48,mapped,URXR,exact,0,
+URYDL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,URYDL,exact,0,
+URYDR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,URYDR,exact,0,
+URYVL,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,URYVL,exact,0,
+URYVR,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,URYVR,exact,0,
+VA01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,VA1,vnc_zero_padding,1,zero-padded ventral-cord number
+VA02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,VA2,vnc_zero_padding,1,zero-padded ventral-cord number
+VA03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,VA3,vnc_zero_padding,1,zero-padded ventral-cord number
+VA04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,VA4,vnc_zero_padding,1,zero-padded ventral-cord number
+VA05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,VA5,vnc_zero_padding,1,zero-padded ventral-cord number
+VA06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,VA6,vnc_zero_padding,1,zero-padded ventral-cord number
+VA07,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,VA7,vnc_zero_padding,1,zero-padded ventral-cord number
+VA08,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,VA8,vnc_zero_padding,1,zero-padded ventral-cord number
+VA09,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,VA9,vnc_zero_padding,1,zero-padded ventral-cord number
+VA10,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,VA10,exact,0,
+VA11,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,VA11,exact,0,
+VA12,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,32,mapped,VA12,exact,0,
+VB01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,26,mapped,VB1,vnc_zero_padding,1,zero-padded ventral-cord number
+VB02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,VB2,vnc_zero_padding,1,zero-padded ventral-cord number
+VB03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,VB3,vnc_zero_padding,1,zero-padded ventral-cord number
+VB04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,16,mapped,VB4,vnc_zero_padding,1,zero-padded ventral-cord number
+VB05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,VB5,vnc_zero_padding,1,zero-padded ventral-cord number
+VB06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,VB6,vnc_zero_padding,1,zero-padded ventral-cord number
+VB07,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,9,mapped,VB7,vnc_zero_padding,1,zero-padded ventral-cord number
+VB08,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,9,mapped,VB8,vnc_zero_padding,1,zero-padded ventral-cord number
+VB09,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,VB9,vnc_zero_padding,1,zero-padded ventral-cord number
+VB10,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,VB10,exact,0,
+VB11,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,13,mapped,VB11,exact,0,
+VC01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,22,mapped,VC1,vnc_zero_padding,1,zero-padded ventral-cord number
+VC02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,24,mapped,VC2,vnc_zero_padding,1,zero-padded ventral-cord number
+VC03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,29,mapped,VC3,vnc_zero_padding,1,zero-padded ventral-cord number
+VC04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,7,mapped,VC4,vnc_zero_padding,1,zero-padded ventral-cord number
+VC05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,VC5,vnc_zero_padding,1,zero-padded ventral-cord number
+VC06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,8,mapped,VC6,vnc_zero_padding,1,zero-padded ventral-cord number
+VD01,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,15,mapped,VD1,vnc_zero_padding,1,zero-padded ventral-cord number
+VD02,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,VD2,vnc_zero_padding,1,zero-padded ventral-cord number
+VD03,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,VD3,vnc_zero_padding,1,zero-padded ventral-cord number
+VD04,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,18,mapped,VD4,vnc_zero_padding,1,zero-padded ventral-cord number
+VD05,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,20,mapped,VD5,vnc_zero_padding,1,zero-padded ventral-cord number
+VD06,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,19,mapped,VD6,vnc_zero_padding,1,zero-padded ventral-cord number
+VD07,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,VD7,vnc_zero_padding,1,zero-padded ventral-cord number
+VD08,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,11,mapped,VD8,vnc_zero_padding,1,zero-padded ventral-cord number
+VD09,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,14,mapped,VD9,vnc_zero_padding,1,zero-padded ventral-cord number
+VD10,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,12,mapped,VD10,exact,0,
+VD11,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,VD11,exact,0,
+VD12,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,21,mapped,VD12,exact,0,
+VD13,journal.pcbi.1007974.s003.xlsx:3. Receptor Gene expression;journal.pcbi.1007974.s003.xlsx:5. Sign prediction,17,mapped,VD13,exact,0,
