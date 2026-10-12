@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "origin": "secondary",
+      "primary_reference": "https://pypi.org/project/wormneuroatlas/0.0.7.3/ (redistribution archive; each member names its own primary)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "size": 37760635,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl"
+    }
+  ],
+  "source": "_distributions"
+}

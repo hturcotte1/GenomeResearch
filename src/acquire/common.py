@@ -285,7 +285,11 @@ def write_manifest(source_id: str, entries: list[dict]) -> Path:
     for e in sorted(entries, key=lambda x: x["filename"]):
         e = dict(e)
         prev = previous.get(e["filename"])
-        if e.pop("_fetched_now"):
+        retrieved = e.pop("_retrieved", None)
+        fetched_now = e.pop("_fetched_now", False)
+        if retrieved is not None:
+            e["retrieved_utc_date"] = retrieved
+        elif fetched_now:
             e["retrieved_utc_date"] = _today_utc()
         elif prev is not None and prev.get("sha256") == e["sha256"]:
             e["retrieved_utc_date"] = prev["retrieved_utc_date"]
@@ -299,13 +303,47 @@ def write_manifest(source_id: str, entries: list[dict]) -> Path:
     return path
 
 
+def _record_archive(rf: RemoteFile, downloaded_now: bool) -> str:
+    """Record a distribution archive in ``data/raw/_distributions/MANIFEST.json``.
+
+    Returns the archive's retrieval date, i.e. the day its bytes were
+    downloaded from the distributor. Members extracted from it carry this
+    date, because extraction is a local copy, not a retrieval.
+    """
+    manifest = _load_manifest(DIST_DIR.name)
+    entries = {e["filename"]: e for e in manifest.get("files", [])}
+    prev = entries.get(rf.filename)
+    if downloaded_now:
+        date = _today_utc()
+    elif prev is not None and prev.get("sha256") == rf.sha256:
+        date = prev["retrieved_utc_date"]
+    else:
+        date = "UNKNOWN"
+    entries[rf.filename] = {
+        "filename": rf.filename,
+        "sha256": rf.sha256,
+        "size": rf.size,
+        "url": rf.url,
+        "distributor": rf.distributor,
+        "origin": rf.origin,
+        "primary_reference": rf.primary_reference,
+        "retrieved_utc_date": date,
+    }
+    out = {"source": DIST_DIR.name, "files": [entries[k] for k in sorted(entries)]}
+    path = DIST_DIR / MANIFEST_NAME
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(out, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    return date
+
+
 def acquire_source(source_id: str, files: tuple, extra_checks: dict[str, list[str]] | None = None) -> list[dict]:
     """Fetch and verify every declared file for one source, then write its manifest.
 
     ``extra_checks`` maps a filename to further check descriptions, for checks
     the source module performed itself (e.g. a PyPI digest lookup). Archive
-    members share their archive's retrieval: if the archive was fetched in
-    this run, so were they.
+    members carry their archive's retrieval date from
+    ``data/raw/_distributions/MANIFEST.json``, not the date they were
+    extracted.
     """
     extra_checks = extra_checks or {}
     dest_dir = RAW_ROOT / source_id
@@ -331,8 +369,9 @@ def acquire_source(source_id: str, files: tuple, extra_checks: dict[str, list[st
         elif isinstance(f, ArchiveMember):
             archive_existed = (DIST_DIR / f.archive.filename).exists()
             path, fetched, checks = ensure_member(f, dest_dir)
-            fetched = fetched or not archive_existed
+            archive_date = _record_archive(f.archive, downloaded_now=not archive_existed)
             entry = {
+                "_retrieved": archive_date,
                 "filename": f.filename,
                 "sha256": f.sha256,
                 "size": f.size,
@@ -351,7 +390,7 @@ def acquire_source(source_id: str, files: tuple, extra_checks: dict[str, list[st
         entry["_fetched_now"] = fetched
         entries.append(entry)
     write_manifest(source_id, entries)
-    return [{k: v for k, v in e.items() if k != "_fetched_now"} for e in entries]
+    return [{k: v for k, v in e.items() if not k.startswith("_")} for e in entries]
 
 
 def verify_source_offline(source_id: str, files: tuple) -> list[str]:

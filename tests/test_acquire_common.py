@@ -84,3 +84,44 @@ def test_member_pin_must_agree_with_wheel_record(tmp_path, monkeypatch):
     path, extracted, checks = common.ensure_member(right_pin, tmp_path / "src")
     assert extracted and path.read_bytes() == payload
     assert any("RECORD" in c for c in checks)
+
+
+def test_member_retrieval_date_is_the_archive_download_date(tmp_path, monkeypatch):
+    """Extracting a member later must not change when its bytes were retrieved."""
+    import base64
+    import json
+
+    payload = b"payload"
+    digest = hashlib.sha256(payload).digest()
+    wheel = tmp_path / "pkg-0-py3-none-any.whl"
+    with zipfile.ZipFile(wheel, "w") as zf:
+        zf.writestr("pkg/data/x.bin", payload)
+        rec = base64.urlsafe_b64encode(digest).rstrip(b"=").decode()
+        zf.writestr("pkg-0.dist-info/RECORD", f"pkg/data/x.bin,sha256={rec},{len(payload)}\n")
+    raw = tmp_path / "raw"
+    dist = raw / "_distributions"
+    dist.mkdir(parents=True)
+    wheel_bytes = wheel.read_bytes()
+    (dist / wheel.name).write_bytes(wheel_bytes)
+    archive = RemoteFile(
+        url="https://example.invalid/w",
+        filename=wheel.name,
+        sha256=hashlib.sha256(wheel_bytes).hexdigest(),
+        size=len(wheel_bytes),
+        distributor="test",
+        origin="secondary",
+        primary_reference="test",
+    )
+    seeded = {"source": "_distributions", "files": [{
+        "filename": wheel.name, "sha256": archive.sha256, "size": archive.size, "url": archive.url,
+        "distributor": "test", "origin": "secondary", "primary_reference": "test",
+        "retrieved_utc_date": "2000-01-01"}]}
+    (dist / common.MANIFEST_NAME).write_text(json.dumps(seeded), encoding="utf-8")
+    monkeypatch.setattr(common, "RAW_ROOT", raw)
+    monkeypatch.setattr(common, "DIST_DIR", dist)
+    member = ArchiveMember(archive, "pkg/data/x.bin", "x.bin", digest.hex(), len(payload), "test")
+    common.acquire_source("src_a", (member,))
+    manifest = json.loads((raw / "src_a" / common.MANIFEST_NAME).read_text(encoding="utf-8"))
+    (entry,) = manifest["files"]
+    assert entry["retrieved_utc_date"] == "2000-01-01"
+    assert not any(k.startswith("_") for k in entry)

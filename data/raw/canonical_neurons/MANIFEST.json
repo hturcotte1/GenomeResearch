@@ -1,0 +1,157 @@
+{
+  "files": [
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/owmeta @ 945f7172f0dff1d022ce0574f3c630ee53297386 (OpenWorm)",
+      "filename": "C. elegans Cell List - WormAtlas.tsv",
+      "git_blob_sha1": "cff6d256cc97bfb9446d8e9ba8439016b8cf59d1",
+      "note": "OpenWorm copy of the WormAtlas complete cell list (Cell, Lineage Name, Description), all cells. Same blob at openworm/OpenWormData 69ecfd5.",
+      "origin": "secondary",
+      "primary_reference": "http://www.wormatlas.org/celllist.htm (WormAtlas 'Complete Cell List'; named as the source by owmeta docs/data_sources.rst and owmeta/data_trans/wormatlas.py)",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "972665abe3ade4ead6bd0265282a09010b19772a7c7376c2e442ea9ca1c59fa1",
+      "size": 83494,
+      "url": "https://raw.githubusercontent.com/openworm/owmeta/945f7172f0dff1d022ce0574f3c630ee53297386/OpenWormData/aux_data/C.%20elegans%20Cell%20List%20-%20WormAtlas.tsv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/owmeta @ 945f7172f0dff1d022ce0574f3c630ee53297386 (OpenWorm)",
+      "filename": "C. elegans Cell List - WormBase.csv",
+      "git_blob_sha1": "667305bf777e51c5d7be744cd11e638a7b227b23",
+      "note": "OpenWorm cell spreadsheet with 0/1 category columns and a totals row. Same blob at openworm/OpenWormData 69ecfd5.",
+      "origin": "secondary",
+      "primary_reference": "OpenWorm Google Sheet https://docs.google.com/spreadsheets/d/1NDx9LRF_B2phR5w4HlEtxJzxx1ZIPT2gA0ZmNmozjos (named in the file's first row as the 'latest version'); compiled by OpenWorm from WormBase (http://wormbase.org) and WormAtlas",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "1fa858cc10d8a0d0eb87f8bbc0693d2821cfeed8e007d267c09507a8bde6c571",
+      "size": 169029,
+      "url": "https://raw.githubusercontent.com/openworm/owmeta/945f7172f0dff1d022ce0574f3c630ee53297386/OpenWormData/aux_data/C.%20elegans%20Cell%20List%20-%20WormBase.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "Cells.py",
+      "git_blob_sha1": "09a7384f5c1b8ae8c4ea4f2eacff18600b50ab0a",
+      "note": "Python source acquired as data. Parsed with ast only, never imported or executed. Holds the literal 302-name list PREFERRED_HERM_NEURON_NAMES and Cook 2019 category lists.",
+      "origin": "secondary",
+      "primary_reference": "No primary copy: curated in ConnectomeToolbox source code (header: 'Much of this data taken from supplementary info of Cook et al 2019', doi:10.1038/s41586-019-1352-7)",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "9ad91db16d4825617a03070ff8fc81e680d24028cbc1e29ee63f0f71f47b90b5",
+      "size": 76075,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/Cells.py"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "IndividualNeurons.csv",
+      "git_blob_sha1": "f37e334763659bc0d74cb9ec99c4b817800e1e7c",
+      "note": "Copy of WormAtlas NeuronNames.htm: name; expanded name; lineage; description. Hermaphrodite and male neurons. Read by the toolbox's CellInfo.load_individual_neuron_info().",
+      "origin": "secondary",
+      "primary_reference": "https://www.wormatlas.org/NeuronNames.htm (WormAtlas neuron-names table, named in the file's own first line); the toolbox's reader comment names https://wormatlas.org/neurons/Individual%20Neurons/Neuronframeset.html",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "b69c0e994270493535994a69a47210dda04319592697eec2f4a65a9df8886195",
+      "size": 43664,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/IndividualNeurons.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "all_cell_info.csv",
+      "git_blob_sha1": "76994dc81d58a4c331a6f186d04dcabff3c955dc",
+      "note": "Toolbox-generated table of every preferred cell name. Derived from Cells.py and IndividualNeurons.csv; not an independent list.",
+      "origin": "secondary",
+      "primary_reference": "No primary copy: generated by ConnectomeToolbox cect/CellInfo.py (generate_cell_info_pages) from cect/Cells.py, cect/data/IndividualNeurons.csv and https://www.wormatlas.org/colorcode.htm",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "63c6fc5f55c90df092b24afe1cbfc96da63f577288e74621d6395fc195e6221d",
+      "size": 77388,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/all_cell_info.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/cell_lineage.txt",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "cell_lineage.txt",
+      "note": "Wheel copy of the WormAtlas complete cell list, read by wormneuroatlas CellLineage. Differs from the OpenWorm copy (lineage separators, PHRB for PHBR, duplicate ADFL, MCML/MCMR).",
+      "origin": "secondary",
+      "primary_reference": "http://www.wormatlas.org/celllist.htm (WormAtlas 'Complete Cell List'; named as the source by owmeta docs/data_sources.rst and owmeta/data_trans/wormatlas.py)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "d1f22fd7cdf125bf515e4c399f040319103139c34c4425a3c0e8411cddb3e840",
+      "size": 83696,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/cell_lineage.txt"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ da8ca7e2fc0eece4b21c30625880b41f39961c76 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_da8ca7e__neurons.json",
+      "git_blob_sha1": "81da4572b20674dcc852cfa9fd041e66a3c7a73c",
+      "note": "NemaNode cell table with an explicit per-cell 'classes' field. Byte-identical to white1986/nemanode_da8ca7e__neurons.json.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ (NemaNode cell table)",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492",
+      "size": 58575,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/da8ca7e2fc0eece4b21c30625880b41f39961c76/src/server/populate-db/raw-data/neurons.json"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/neuron_ids.txt",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "neuron_ids.txt",
+      "note": "Randi et al. atlas package's 300-id list (no CANL/CANR; AWCON/AWCOFF). Byte-identical to randi2023/neuron_ids.txt.",
+      "origin": "secondary",
+      "primary_reference": "https://funconn.princeton.edu/ (atlas portal); raw data https://osf.io/e2syt/",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "e2c7e54af611c1e85aa0705588fcf096ede5f0c28f7fd1d5f0cbec5480b786cc",
+      "size": 2645,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/neuron_ids.txt"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/owmeta @ 945f7172f0dff1d022ce0574f3c630ee53297386 (OpenWorm)",
+      "filename": "neurons.csv",
+      "git_blob_sha1": "1405f5b3af7b55297163a359d84d361e22c85f40",
+      "note": "OpenWorm neuron table, name;type;lineage, no header. Same blob at openworm/OpenWormData 69ecfd5.",
+      "origin": "secondary",
+      "primary_reference": "No documented primary: OpenWorm aux data (owmeta 'neurons' data source, described in owmeta save_data.py as 'the principle such list for OpenWorm'); origin not stated",
+      "retrieved_utc_date": "2026-10-12",
+      "sha256": "1bf39be45c40605320f92d4fe105760021fc2bf41c25dea24522d0309d63468b",
+      "size": 11899,
+      "url": "https://raw.githubusercontent.com/openworm/owmeta/945f7172f0dff1d022ce0574f3c630ee53297386/OpenWormData/aux_data/neurons.csv"
+    }
+  ],
+  "source": "canonical_neurons"
+}

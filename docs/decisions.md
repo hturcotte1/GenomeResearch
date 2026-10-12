@@ -118,3 +118,27 @@ picked as canonical in Phase 1.**
 Examples: the White-lineage connectome variants, and the wheel vs toolbox
 copies of Bentley 2016. Which variant feeds which Phase 4 column is the
 owner's call (Q-007, Q-009).
+
+### D-011 (2026-10-12, Phase 1, DECIDED, engineering)
+**A file extracted from a distribution archive carries the archive's download
+date as its `retrieved_utc_date`, not the date it was extracted.**
+
+Archive downloads are recorded in `data/raw/_distributions/MANIFEST.json`.
+
+Reasoning: the canonical_neurons build showed that wheel members extracted on
+2026-10-12 were stamped 2026-10-12, although the wheel bytes were downloaded
+from PyPI on 2026-10-11. Rule 5 asks for the date the bytes were retrieved.
+
+The `_distributions` manifest was seeded once, by hand, with the wheel's date
+2026-10-11. That date was taken from `randi2023/MANIFEST.json`: the wheel was
+downloaded and those members extracted in the same run. A regression test
+covers the rule.
+
+### D-012 (2026-10-12, Phase 1, DECIDED, engineering)
+**`connectome_toolbox_file()` percent-encodes repository paths itself and keeps
+existing `%XX` escapes**, so raw and pre-encoded paths give the same URL.
+
+Several build agents requested this. The per-module GitHub helpers (NemaNode,
+the Fenyves, Ripoll-Sánchez and Witvliet author repositories) are left as
+written because they work and are verified; consolidating them into one shared
+helper is a later clean-up, not a Phase 1 change.
