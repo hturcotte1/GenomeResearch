@@ -9,6 +9,8 @@ still pending and blocks the Phase 4 freeze.
 
 from __future__ import annotations
 
+from urllib.parse import quote, unquote
+
 from .common import RemoteFile
 
 # The `wormneuroatlas` Python package, by F. Randi (first author of Randi et al.
@@ -52,11 +54,15 @@ def connectome_toolbox_file(
     """Declare one file from the pinned ConnectomeToolbox commit.
 
     ``path`` is the path inside the repository, e.g. "cect/data/edgelist_MA.csv".
-    ``filename`` defaults to the basename of ``path``.
+    It may be given raw ("witvliet_2020_7 adult.xlsx") or already
+    percent-encoded ("witvliet_2020_7%20adult.xlsx"). Existing %XX escapes are
+    kept, so both forms give the same URL. ``filename`` defaults to the decoded
+    basename of ``path``.
     """
+    encoded = quote(path, safe="/%")
     return RemoteFile(
-        url=f"https://raw.githubusercontent.com/{CONNECTOME_TOOLBOX_REPO}/{CONNECTOME_TOOLBOX_COMMIT}/{path}",
-        filename=filename or path.rsplit("/", 1)[-1],
+        url=f"https://raw.githubusercontent.com/{CONNECTOME_TOOLBOX_REPO}/{CONNECTOME_TOOLBOX_COMMIT}/{encoded}",
+        filename=filename or unquote(path.rsplit("/", 1)[-1]),
         sha256=sha256,
         size=size,
         distributor=f"GitHub {CONNECTOME_TOOLBOX_REPO} @ {CONNECTOME_TOOLBOX_COMMIT}",

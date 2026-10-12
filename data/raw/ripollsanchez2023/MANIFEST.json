@@ -1,0 +1,213 @@
+{
+  "files": [
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (master head; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "01022024_neuropeptide_connectome_long_range_model.csv",
+      "git_blob_sha1": "d1b7e6539df4a2acd6cabbaa0ebdf632f2651747",
+      "note": "long-range model. POST-PUBLICATION version: README says the matrices 'were updated on 02/02/2024 with updated scRNAseq data for dmsr-5 and npr-34'. Header row and column, 302 neurons, row = sender (ligand), column = receiver (receptor). The same git blob id is recorded for cect/data/01022024_neuropeptide_connectome_long_range_model.csv in openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465 (checked when pinned), i.e. the toolbox copy has identical bytes.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "57ebc0919860bafcb866e63f5ae06b8b5d59427897d8bd230b4461bfa833f6fe",
+      "size": 186132,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Adjacency%20matrices%20for%20networks/01022024_neuropeptide_connectome_long_range_model.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (master head; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "01022024_neuropeptide_connectome_mid_range_model.csv",
+      "git_blob_sha1": "17672bb56d4e828b86c8854319bf9ed2fb97632d",
+      "note": "mid-range model. POST-PUBLICATION version: README says the matrices 'were updated on 02/02/2024 with updated scRNAseq data for dmsr-5 and npr-34'. Header row and column, 302 neurons, row = sender (ligand), column = receiver (receptor). The same git blob id is recorded for cect/data/01022024_neuropeptide_connectome_mid_range_model.csv in openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465 (checked when pinned), i.e. the toolbox copy has identical bytes.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "97569885d58d947c2526e6ecc26c8b191b074d1b065f4da224102298203ad141",
+      "size": 185866,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Adjacency%20matrices%20for%20networks/01022024_neuropeptide_connectome_mid_range_model.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (master head; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "01022024_neuropeptide_connectome_short_range_model.csv",
+      "git_blob_sha1": "10c5739462fea24e9221753e2fe02ab466fd4927",
+      "note": "short-range model. POST-PUBLICATION version: README says the matrices 'were updated on 02/02/2024 with updated scRNAseq data for dmsr-5 and npr-34'. Header row and column, 302 neurons, row = sender (ligand), column = receiver (receptor). The same git blob id is recorded for cect/data/01022024_neuropeptide_connectome_short_range_model.csv in openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465 (checked when pinned), i.e. the toolbox copy has identical bytes.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "ee630f66dbb78a49d1818bd5209f1f9a0ee46400c061126e30d0d0a4b9d2e44d",
+      "size": 185765,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Adjacency%20matrices%20for%20networks/01022024_neuropeptide_connectome_short_range_model.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f (tag 'Paper'; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "07072022_neuropeptide_connectome_long_range_model",
+      "git_blob_sha1": "73cb72b52fe7ec99f2d75d2f9e4947fe6474836c",
+      "note": "long-range model. Version at the repository's only tag 'Paper' (2023-06-02); no header row or column, no file extension; neuron order from 26012022_num_neuronID.txt at the same commit. Reproduces the paper's quoted densities. Row = sender, column = receiver.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "4da3a7b558b9ae02aedd39eb154cfee09a2ce2b35da5674856703bf39148af2f",
+      "size": 183108,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f/Adjacency%20matrices%20for%20networks/07072022_neuropeptide_connectome_long_range_model"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f (tag 'Paper'; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "07072022_neuropeptide_connectome_mid_range_model",
+      "git_blob_sha1": "9b5176395cc90363ff108800e8241b805a73ef71",
+      "note": "mid-range model. Version at the repository's only tag 'Paper' (2023-06-02); no header row or column, no file extension; neuron order from 26012022_num_neuronID.txt at the same commit. Reproduces the paper's quoted densities. Row = sender, column = receiver.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "7a8434d6cca231bdb78cb6ce43f37f5befd953f7d8599dd3b900395323872c18",
+      "size": 182832,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f/Adjacency%20matrices%20for%20networks/07072022_neuropeptide_connectome_mid_range_model"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f (tag 'Paper'; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "07072022_neuropeptide_connectome_short_range_model",
+      "git_blob_sha1": "ce6aca4934fc6b0c2f3a1e7b7aa7ec7465d3e7c0",
+      "note": "short-range model. Version at the repository's only tag 'Paper' (2023-06-02); no header row or column, no file extension; neuron order from 26012022_num_neuronID.txt at the same commit. Reproduces the paper's quoted densities. Row = sender, column = receiver.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "598cc7d2bba39862e20882fee2365eba9e42c5856d083e57882695f9e8a8f719",
+      "size": 182735,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f/Adjacency%20matrices%20for%20networks/07072022_neuropeptide_connectome_short_range_model"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (master head; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "08062023_monoamine_connectome.csv",
+      "git_blob_sha1": "7a9db13b346963f8a564836e2b64254684724271",
+      "note": "Monoamine -> GPCR network (serotonin, dopamine, octopamine, tyramine; 14 ligand-receptor pairs from '05062023_Ligand-receptor-interactions_Mon_from_Barry_Bentley.csv'), built by the same code as the neuropeptide matrices, no spatial constraint. Unchanged since 2023-11-17. NOT the Bentley et al. 2016 file. Candidate for owner question Q-009 only. The same git blob id is recorded for cect/data/08062023_monoamine_connectome.csv in openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465 (checked when pinned), i.e. the toolbox copy has identical bytes.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "629c99a54190940be954b5281fb414553dcb2e4913ced34f355aab27b3c9650f",
+      "size": 185444,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Adjacency%20matrices%20for%20networks/08062023_monoamine_connectome.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ fb0ba8452aaee88793d731609dcff563d6265ec4 (last commit before the 2024-02-02 update; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "08062023_neuropeptide_connectome_long_range_model.csv",
+      "git_blob_sha1": "e229d102823d788d995e0355160c93b0d88ee575",
+      "note": "long-range model. Version present 2023-11-17 to 2024-02-02, named in the README as the data behind Figs 1 and 5; its per-neuron degrees equal Table S6/mmc7 exactly. Header row and column, 302 neurons, row = sender (ligand), column = receiver (receptor).",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "cd3769c27427e972216e6faf7f3cb924fcc4e3e052586bf8f695f694bbcc0b3d",
+      "size": 186152,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/fb0ba8452aaee88793d731609dcff563d6265ec4/Adjacency%20matrices%20for%20networks/08062023_neuropeptide_connectome_long_range_model.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ fb0ba8452aaee88793d731609dcff563d6265ec4 (last commit before the 2024-02-02 update; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "08062023_neuropeptide_connectome_mid_range_model.csv",
+      "git_blob_sha1": "7c24a9dfd7bfc29feaf0887b47fb6015d984b3e8",
+      "note": "mid-range model. Version present 2023-11-17 to 2024-02-02, named in the README as the data behind Figs 1 and 5; its per-neuron degrees equal Table S6/mmc7 exactly. Header row and column, 302 neurons, row = sender (ligand), column = receiver (receptor).",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "e2b5f3ae7a760933e47e5c5bc449c915df11e537c2fa33e30728745a49b78cd4",
+      "size": 185874,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/fb0ba8452aaee88793d731609dcff563d6265ec4/Adjacency%20matrices%20for%20networks/08062023_neuropeptide_connectome_mid_range_model.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ fb0ba8452aaee88793d731609dcff563d6265ec4 (last commit before the 2024-02-02 update; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "08062023_neuropeptide_connectome_short_range_model.csv",
+      "git_blob_sha1": "6acbee7ed59273f80ef5f972f4452810d5891dd5",
+      "note": "short-range model. Version present 2023-11-17 to 2024-02-02, named in the README as the data behind Figs 1 and 5; its per-neuron degrees equal Table S6/mmc7 exactly. Header row and column, 302 neurons, row = sender (ligand), column = receiver (receptor).",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "7a9fd18305c4f145c51881ed145e09b442acd8cfda2836c0e87c1bce48c0c1a1",
+      "size": 185773,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/fb0ba8452aaee88793d731609dcff563d6265ec4/Adjacency%20matrices%20for%20networks/08062023_neuropeptide_connectome_short_range_model.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "1-s2.0-S0896627323007560-mmc7.xlsx",
+      "git_blob_sha1": "5dd66158db8b855a59e6f37ebe742c991e3d0097",
+      "note": "Named as the journal's supplementary file mmc7 (= Table S6 'Neuron information'). Re-saved in Excel by the toolbox maintainer: workbook.xml absPath /Users/padraig/git/ConnectomeToolbox/cect/data/, docProps modified 2024-11-20 by 'Microsoft Office User'. Same cell values and formulas as the author's 'Table S6. Neuron information.xlsx'.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cell.com/neuron/fulltext/S0896-6273(23)00756-0 Supplementary Table S6 'Neuron information', journal file 1-s2.0-S0896627323007560-mmc7.xlsx (Elsevier supplementary host, blocked; the mmc7 <-> Table S6 correspondence rests on identical cell contents, not on the journal page)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "df379d1eff235b8c7289162048de593b79c94e9bd7cd0e724014e7f92a340654",
+      "size": 36734,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/1-s2.0-S0896627323007560-mmc7.xlsx"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f (tag 'Paper'; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "26012022_num_neuronID.txt",
+      "git_blob_sha1": "698102a1340e8bac054e0e286fe0a18e1038dce1",
+      "note": "Neuron order for the matrices (tab-separated nodeID, nodeLabel; header line LF, data lines CRLF, no final newline). Same blob at HEAD as 'Scripts & data/26012022_num_neuronID.txt'. The only source of row/column labels for the headerless 07072022 matrices.",
+      "origin": "secondary",
+      "primary_reference": "Figshare collection doi:10.6084/m9.figshare.c.6895870.v1 (the paper's data deposit per its data availability statement, as reported by web search; a newer version is reported to exist; contents and file correspondence UNVERIFIED, host blocked)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "0f3a73e4f3cda8c9693c75f3c8df18c5b51dd64da6b05a840df7fb18827f954b",
+      "size": 2933,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/36ecbbffc3582a99f49e4a4f81e6a50fa0b9e32f/26012022_num_neuronID.txt"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (master head; L. Ripoll-S\u00e1nchez, first author)",
+      "filename": "Table S6. Neuron information.xlsx",
+      "git_blob_sha1": "913c96f69ff849a76084c2977b18f68bd7b3c139",
+      "note": "The author's copy of Table S6 'Neuron information' (one sheet, 302 neurons: type, segment, degree/in/out at EC50 500 nM for mid- and short-range, rich club formulas, cluster, self-loops). Unchanged since 2023-11-20; docProps modified 2023-11-14. Cell values and formulas identical to the toolbox's mmc7.xlsx; bytes differ.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cell.com/neuron/fulltext/S0896-6273(23)00756-0 Supplementary Table S6 'Neuron information', journal file 1-s2.0-S0896627323007560-mmc7.xlsx (Elsevier supplementary host, blocked; the mmc7 <-> Table S6 correspondence rests on identical cell contents, not on the journal page)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "8cc3817a0efa76347688331c1a34f940bacab5941b4b205f9ce517382ed90f04",
+      "size": 36794,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Supplementary%20Tables/Table%20S6.%20Neuron%20information.xlsx"
+    }
+  ],
+  "source": "ripollsanchez2023"
+}

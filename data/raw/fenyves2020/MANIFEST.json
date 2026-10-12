@@ -1,0 +1,121 @@
+{
+  "files": [
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub bank-fenyves/CeConn-SignPrediction @ e657d5f3c3986e99ccd39601b245b9b32c22d949 (B. G. Fenyves, first author)",
+      "filename": "Data (rev 12-09-2020).csv",
+      "git_blob_sha1": "660e2100158cc40bf37262075dba59c82ed4d1e1",
+      "note": "Uploaded 2020-09-14 (commit b2ae4a9). 3,638 chemical rows, 17 columns = xlsx sheet 5 A..Q, cell-for-cell equal to the xlsx values. ';'-separated, UTF-8 with BOM, CRLF, no final newline.",
+      "origin": "secondary",
+      "primary_reference": "https://github.com/bank-fenyves/CeConn-SignPrediction (the first author's own repository; no other copy known). Journal counterpart for the prediction table: https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "8748f968d759157e9e955b325d59314cc0ad8f4bf4501521f380a73a674c66ff",
+      "size": 321820,
+      "url": "https://raw.githubusercontent.com/bank-fenyves/CeConn-SignPrediction/e657d5f3c3986e99ccd39601b245b9b32c22d949/Data%20%28rev%2012-09-2020%29.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub bank-fenyves/CeConn-SignPrediction @ e657d5f3c3986e99ccd39601b245b9b32c22d949 (B. G. Fenyves, first author)",
+      "filename": "README.md",
+      "git_blob_sha1": "ce6c7c596f601f2bdb937dd746b3bc0bf479d849",
+      "note": "The authors' repository README: links the repository to the paper; describes data.csv only.",
+      "origin": "secondary",
+      "primary_reference": "https://github.com/bank-fenyves/CeConn-SignPrediction (the first author's own repository; no other copy known). Journal counterpart for the prediction table: https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "beff99dfcb1b79f34b56b11c6e83c19291ccff20a61c30be3ebab693c52c0142",
+      "size": 968,
+      "url": "https://raw.githubusercontent.com/bank-fenyves/CeConn-SignPrediction/e657d5f3c3986e99ccd39601b245b9b32c22d949/README.md"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub bank-fenyves/CeConn-SignPrediction @ e657d5f3c3986e99ccd39601b245b9b32c22d949 (B. G. Fenyves, first author)",
+      "filename": "Search Tool",
+      "git_blob_sha1": "ebd78dfe12369207cabbad276b09720a39ad3595",
+      "note": "R script (authors' code): interactive lookup of one connection. Documentation only; never executed.",
+      "origin": "secondary",
+      "primary_reference": "https://github.com/bank-fenyves/CeConn-SignPrediction (the first author's own repository; no other copy known). Journal counterpart for the prediction table: https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "94641ae0887ea955477ae348f40ccf3e0fa759532d3e66aba4c8db6449b49d15",
+      "size": 465,
+      "url": "https://raw.githubusercontent.com/bank-fenyves/CeConn-SignPrediction/e657d5f3c3986e99ccd39601b245b9b32c22d949/Search%20Tool"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub bank-fenyves/CeConn-SignPrediction @ e657d5f3c3986e99ccd39601b245b9b32c22d949 (B. G. Fenyves, first author)",
+      "filename": "SignPred Calc",
+      "git_blob_sha1": "98f566a3632b81f82484cb945eec1bc57462c99a",
+      "note": "R script (authors' code): sums Synapses by Pred_pol over Type == 'chemical' rows of data.csv. Kept as documentation of the authors' count definitions; never executed.",
+      "origin": "secondary",
+      "primary_reference": "https://github.com/bank-fenyves/CeConn-SignPrediction (the first author's own repository; no other copy known). Journal counterpart for the prediction table: https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "0966414de2c990ecd70747127797d00e7f54e8eff808ad345a6a4edb895adb8b",
+      "size": 2509,
+      "url": "https://raw.githubusercontent.com/bank-fenyves/CeConn-SignPrediction/e657d5f3c3986e99ccd39601b245b9b32c22d949/SignPred%20Calc"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub bank-fenyves/CeConn-SignPrediction @ e657d5f3c3986e99ccd39601b245b9b32c22d949 (B. G. Fenyves, first author)",
+      "filename": "data.csv",
+      "git_blob_sha1": "2442ce8f225cdc82c8d8f3363f38f83ea9c2f1fb",
+      "note": "Uploaded 2020-01-23 (commit 623f4fb), never modified. EARLIER prediction version: 3,638 chemical + 2,167 electrical rows + 1 legend row; booleans IGAZ/HAMIS. 13 chemical predictions differ from the xlsx. ';'-separated, no BOM, CRLF, no final newline. The repository README still describes this file.",
+      "origin": "secondary",
+      "primary_reference": "https://github.com/bank-fenyves/CeConn-SignPrediction (the first author's own repository; no other copy known). Journal counterpart for the prediction table: https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "0d45dcf0970b94a90f23eef51695f9a47a69bbef9615920915c824877959c9f7",
+      "size": 531133,
+      "url": "https://raw.githubusercontent.com/bank-fenyves/CeConn-SignPrediction/e657d5f3c3986e99ccd39601b245b9b32c22d949/data.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "herm_full_edgelist.csv",
+      "git_blob_sha1": "89ffc2a2d9e1934ddc462d51032acead5e4cfc91",
+      "note": "WormWiring hermaphrodite edge list (chemical + electrical, neurons + muscles/other). Its neuron-to-neuron chemical rows equal xlsx sheet 5 exactly. The toolbox labels it 'legacy dataset (based on Cook et al. 2019) ... Do not use!' (UpdatedSpreadsheetDataReader.py @ ffe5702). Not the Cook 2019 SI 5 matrix. Every name is space-padded.",
+      "origin": "secondary",
+      "primary_reference": "WormWiring (Emmons lab) data downloads, https://wormwiring.org/series/ ('Edge list (.csv)' for the adult hermaphrodite); exact file URL and WormWiring release date UNVERIFIED. Same blob (89ffc2a2) is in openworm/c302 master at c302/data/herm_full_edgelist.csv, added there 2018-07-06.",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "142693f17556148d7f962835b18ac6dd5af18b7467eef61815ebc1dd5474c0ca",
+      "size": 245463,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/herm_full_edgelist.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/journal.pcbi.1007974.s003.xlsx",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "journal.pcbi.1007974.s003.xlsx",
+      "note": "NT+R sign-prediction workbook (USER GUIDE: 'Source data: Wormwiring connectome reconstruction'; 'Method of prediction: NT+R'). docProps: created 2019-07-01T09:46:44Z, modified 2020-09-10T23:15:24Z, lastModifiedBy 'Fenyves B\u00e1nk'. wormneuroatlas SynapseSign reads sheets 1-2 only and recomputes signs from CeNGEN; pumpprobe Funatlas reads sheet 5 from doi .s003. Byte-identical to GitHub francescorandi/wormneuroatlas@b2e13d88 blob 0457b2fa.",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "85959066fd7cbdbc2024d0ebb323b71c4365f4083bc85e555ee973f470697c47",
+      "size": 983199,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/journal.pcbi.1007974.s003.xlsx"
+    }
+  ],
+  "source": "fenyves2020"
+}

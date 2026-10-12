@@ -1,0 +1,277 @@
+{
+  "files": [
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (L. Ripoll-Sanchez, first author of Ripoll-Sanchez et al. 2023)",
+      "filename": "13112020_CENGEN_threshold3_expression_NPP_NPR_MR_LGC_allneurons.csv",
+      "git_blob_sha1": "d26fca9c52c95ef47e5f90330b0b7865236fee53",
+      "note": "Ripoll-Sanchez et al.'s CeNGEN threshold-3 input for their sensitivity analysis (362 genes x 302 neurons, ';'-separated, UTF-8 BOM). Values equal the 021821 threshold-3 matrix (record_counts checks this).",
+      "origin": "secondary",
+      "primary_reference": "Ripoll-Sanchez et al. 2023, Neuron 111:3570, doi:10.1016/j.neuron.2023.09.043; input data in the authors' repository https://github.com/LidiaRipollSanchez/Neuropeptide-Connectome ; underlying expression: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "72fdc4f4c617d70c1606d7d6d8fd9e7c2d53514478669c770f00d43327df5b80",
+      "size": 394413,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Sensitivity%20Analysis/Input%20data/13112020_CENGEN_threshold3_expression_NPP_NPR_MR_LGC_allneurons.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub LidiaRipollSanchez/Neuropeptide-Connectome @ 6689619236ba1b4681a9a77b3d918d513416336c (L. Ripoll-Sanchez, first author of Ripoll-Sanchez et al. 2023)",
+      "filename": "30072020_CENGEN_threshold4_expression_NPP_NPR_MR_LGC_allneurons.csv",
+      "git_blob_sha1": "4401afd4815514a75e9da7e0de936fe7a8aac0f0",
+      "note": "Ripoll-Sanchez et al.'s CeNGEN threshold-4 input (362 WormBase genes x 302 neurons, ';'-separated, CRLF). Values equal the 021821 threshold-4 matrix (record_counts checks this); cell types were expanded to neurons by those authors.",
+      "origin": "secondary",
+      "primary_reference": "Ripoll-Sanchez et al. 2023, Neuron 111:3570, doi:10.1016/j.neuron.2023.09.043; input data in the authors' repository https://github.com/LidiaRipollSanchez/Neuropeptide-Connectome ; underlying expression: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "b3055e3e954273a9f15e9ad288f3d7e0f14f6a5ad7c2580861cf7a7750f4f3e5",
+      "size": 354171,
+      "url": "https://raw.githubusercontent.com/LidiaRipollSanchez/Neuropeptide-Connectome/6689619236ba1b4681a9a77b3d918d513416336c/Scripts%20%26%20data/30072020_CENGEN_threshold4_expression_NPP_NPR_MR_LGC_allneurons.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-daf-2-thrs2.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-daf-2-thrs2.csv",
+      "note": "CeNGEN app export: cell types expressing daf-2 at threshold 2, values to 3 decimals. Byte-identical (same git blob b7011ae72a5b41d65155af45a1339941326cca13) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-daf-2-thrs2.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-daf-2-thrs2.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "bf2d2e920ad018a1993948f115ba9d7d8b2f11f7f8274f8e858ee423f020683b",
+      "size": 1905,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-daf-2-thrs2.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-neuropeptide-receptors.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-neuropeptide-receptors.csv",
+      "note": "CeNGEN app export: 141 receptor genes x 128 cell types, threshold 2 (NeuroAtlas/Funatlas fname_neuropeptide_receptors). One row (F59D12.1) carries a sequence name in the WormBase-ID column. Byte-identical (same git blob 848f504fae31f9c5050c339f70fffb4968a57c25) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-neuropeptide-receptors.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-neuropeptide-receptors.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "1e88e1047a8a8ecd545907f7336212889e59d8dd1ff4ce9731d9c3bf935087c9",
+      "size": 80763,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-neuropeptide-receptors.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-neuropeptides.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-neuropeptides.csv",
+      "note": "CeNGEN app export: 137 neuropeptide genes x 128 cell types, threshold 2 (NeuroAtlas/Funatlas fname_neuropeptides). Byte-identical (same git blob 16ad3744224f52e3fd7ac720d1ee66069b65453b) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-neuropeptides.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-neuropeptides.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "6f47ec2b853d4aa3433ea98b75253024f01c585c60be01fa45a27fb9ec99a07b",
+      "size": 63665,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-neuropeptides.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-npr-11-thrs2.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-npr-11-thrs2.csv",
+      "note": "CeNGEN app export: cell types expressing npr-11 at threshold 2 (read by pumpprobe RID figure scripts). Byte-identical (same git blob c9230d0f5f8faf3b4246ae7c47b3ea1866ad1c66) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-npr-11-thrs2.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-npr-11-thrs2.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "37e5fadb7c00f4b382388172a28afca631132bced87c3c0f57a0619230000f73",
+      "size": 652,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-npr-11-thrs2.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-npr-4-thrs2.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-npr-4-thrs2.csv",
+      "note": "CeNGEN app export: cell types expressing npr-4 at threshold 2 (read by pumpprobe RID figure scripts). Byte-identical (same git blob 38f7afd37c7223b7c251f9b4710c742acd8e270b) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-npr-4-thrs2.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-npr-4-thrs2.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "20df91002182487d6bb6e24dff82324ff4281a21b0f552dae7c3fe1634e93a8a",
+      "size": 1294,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-npr-4-thrs2.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-pdfr-1-thrs2.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-pdfr-1-thrs2.csv",
+      "note": "CeNGEN app export: cell types expressing pdfr-1 at threshold 2 (read by pumpprobe RID figure scripts). Byte-identical (same git blob ae25011375351f7e2b4b6e5a348a6c7ae1d2c7a2) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-pdfr-1-thrs2.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-pdfr-1-thrs2.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "1a0523ddf5633e21a9fc7dcbb0daad4047c3ed67d1e8bf910717d76676ff7515",
+      "size": 1999,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-pdfr-1-thrs2.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/GenesExpressing-unc-7-unc-9-inx-_-eat-5-thrs2.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "GenesExpressing-unc-7-unc-9-inx-_-eat-5-thrs2.csv",
+      "note": "CeNGEN app export: 21 innexin genes x 128 cell types, threshold 2 (NeuroAtlas/Funatlas fname_innexins). UTF-8 BOM; AWC columns named AWCOFF/AWCON here, AWC_OFF/AWC_ON elsewhere. Byte-identical (same git blob 2ccf9f9eb6c74cace0c14645be24aa0112bf929b) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/GenesExpressing-unc-7-unc-9-inx-_-eat-5-thrs2.csv. Also byte-identical to leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 pumpprobe/GenesExpressing-unc-7-unc-9-inx-_-eat-5-thrs2.csv.",
+      "origin": "secondary",
+      "primary_reference": "CeNGEN L4 web app (https://cengen.shinyapps.io/L4app/, 'Gene expression by cell type', threshold 2) as exported by the Randi et al. authors; underlying data: https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "ac96905ac5d89068412966cd8e6ab0bca653fe3d94394b7aec44b22fb2bb7954",
+      "size": 12761,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/GenesExpressing-unc-7-unc-9-inx-_-eat-5-thrs2.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/cengen.h5",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "cengen.h5",
+      "note": "Derived by the wheel author from the four 021821 CSVs (scripts/build_datasets/cengen_make_h5_from_csv.py in francescorandi/wormneuroatlas): tpm_th{1..4} = float32 of the CSV values, TRANSPOSED to [cell type, gene]. This is what wormneuroatlas.Cengen reads. Byte-identical (same git blob cef51ed6f9996ed9963c5d34cbc32a1518e8a91b) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/cengen.h5.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "d8e6f6f2a25e05211676cfd9c3dd18b8a8bb5c3db4d673fd87b61ed91637ed23",
+      "size": 32852608,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/cengen.h5"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/cengen_021821_conservative_threshold3.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "cengen_021821_conservative_threshold3.csv",
+      "note": "CeNGEN release 021821, threshold 3 (more conservative). Byte-identical (same git blob e7ae755fa5c9c3a1d0adbd3cb226240361cdb00a) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/cengen_021821_conservative_threshold3.csv.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "2454624b7b0409b8ce62c5687c431e0c9b9dd5f38148e0bc9b0fb48c26887236",
+      "size": 11612055,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/cengen_021821_conservative_threshold3.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/cengen_021821_liberal_threshold1.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "cengen_021821_liberal_threshold1.csv",
+      "note": "CeNGEN release 021821, threshold 1 (most permissive). Genes x 128 cell types; 0 = not called expressed, >0 = expression value (TPM per cengen.org). Byte-identical (same git blob c2a1e19165841b5d560c2868a05a30a566c948fa) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/cengen_021821_liberal_threshold1.csv.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "74ac7e400f3f841d8784946db67bdbc211598c8682020ef57730b29e564e0cb6",
+      "size": 14921760,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/cengen_021821_liberal_threshold1.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/cengen_021821_medium_threshold2.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "cengen_021821_medium_threshold2.csv",
+      "note": "CeNGEN release 021821, threshold 2 (medium; cengen.org's recommended default). Byte-identical (same git blob 8f607c34d578c1856308d9f946d02ef013ee2765) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/cengen_021821_medium_threshold2.csv.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "de03fc03cacdf4c1aa7ffd7565df89135ed72eab68d0b3cf03f542932abc63c8",
+      "size": 13555783,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/cengen_021821_medium_threshold2.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/cengen_021821_stringent_threshold4.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "cengen_021821_stringent_threshold4.csv",
+      "note": "CeNGEN release 021821, threshold 4 (most stringent; the package's default th=4, and the threshold Ripoll-Sanchez et al. used). Byte-identical (same git blob cd18e969c1f862eeb754a20065553666f407f3b8) to francescorandi/wormneuroatlas @ b2e13d88b670efcb3438aeacba2ad4bd6c383933 wormneuroatlas/data/cengen_021821_stringent_threshold4.csv.",
+      "origin": "secondary",
+      "primary_reference": "https://www.cengen.org/downloads/ (CeNGEN portal; thresholded csv files, thresholds 1-4, release 021821 per the file names); paper doi:10.1016/j.cell.2021.06.023",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "478791be7f43d46e11cb751cf12016ae517d59b34db3325f29703646853df875",
+      "size": 9818818,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/cengen_021821_stringent_threshold4.csv"
+    }
+  ],
+  "source": "taylor2021"
+}

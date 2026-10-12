@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "edgelist_MA.csv",
+      "git_blob_sha1": "a83c4b617244d2fd29b8890bfe87f59b6aad9aa7",
+      "note": "Monoamine edge list: 2,626 rows of source,target,ligand,receptor; no header; LF. Added to the toolbox 2026-06-24 (commit f052c0d) as an extraction of the S1 Dataset zip.",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING. Corresponds to edge_lists/edgelist_MA.csv in the zip (per the toolbox).",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "5a206a6743479f4ae11eb82456378051c5d9aeb56ea5c1f82b121671c7fa2aa3",
+      "size": 66718,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/edgelist_MA.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "edgelist_NP.csv",
+      "git_blob_sha1": "7c23acadf96bccaf77718210c7fc1bd372c59727",
+      "note": "Neuropeptide edge list: 8,931 rows of source,target,peptide,receptor; no header; LF. Added to the toolbox 2026-06-24 (commit f052c0d) as an extraction of the S1 Dataset zip.",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING. Corresponds to edge_lists/edgelist_NP.csv in the zip (per the toolbox).",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "bec5f0c9526db1523ed73fb6a8b386de95d48a2fd5eae75a9a4889758102389b",
+      "size": 202657,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/edgelist_NP.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/esconnectome_monoamines_Bentley_2016.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "esconnectome_monoamines_Bentley_2016.csv",
+      "note": "The monoamine file Randi et al.'s package loads. Equals a 53-byte '#source neuron, ...' header line followed by the exact bytes of the toolbox's edgelist_MA.csv.",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING.",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "16a1527028c6d8eece4d8a2d792e5a19cc416650e45066612180c42adc83654e",
+      "size": 66771,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/esconnectome_monoamines_Bentley_2016.csv"
+    },
+    {
+      "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
+      "archive_member": "wormneuroatlas/data/esconnectome_neuropeptides_Bentley_2016.csv",
+      "archive_sha256": "166289031784c9565f6b9205e30dc718bafbc092db3b46f1aef73d93dc4d1325",
+      "checks": [
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: size and SHA-256 match the pin in the source module",
+        "size and SHA-256 match the pin in the source module",
+        "SHA-256 and size match the wheel's own RECORD entry",
+        "archive wormneuroatlas-0.0.7.3-py3-none-any.whl: SHA-256 equals the digest PyPI publishes for wormneuroatlas 0.0.7.3 (wormneuroatlas-0.0.7.3-py3-none-any.whl)"
+      ],
+      "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
+      "filename": "esconnectome_neuropeptides_Bentley_2016.csv",
+      "note": "The neuropeptide file Randi et al.'s package loads. Header line + the toolbox's 8,931 rows, each with a 5th field appended (a receptor sequence name, filled on only some rows). That field is absent from the toolbox's S1 extraction and from the first commit of this file in GitHub francescorandi/wormneuroatlas (5ebe7f4, 2022-12-13); it appears in commit 7a7c653 (2022-12-23).",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING.",
+      "retrieved_utc_date": "2026-10-11",
+      "sha256": "0abea9f09112e5d7af88823dd6e4ef91f181af7e919ce997fa12356c92c99e64",
+      "size": 217695,
+      "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/esconnectome_neuropeptides_Bentley_2016.csv"
+    }
+  ],
+  "source": "bentley2016"
+}
