@@ -11,7 +11,42 @@ anatomy_edge_non_neuronal_endpoint,witvliet2021,nemanode_baf8ec8__witvliet_2020_
 anatomy_edge_non_neuronal_endpoint,witvliet2021,nemanode_baf8ec8__witvliet_2020_8.json,253,chemical records with a non-neuronal or fragment endpoint
 anatomy_gap_not_used,witvliet2021,nemanode_baf8ec8__witvliet_2020_7.json,579,Witvliet gap junctions were partially annotated and excluded from that paper's analyses; not tabulated (decision Q-W4)
 anatomy_gap_not_used,witvliet2021,nemanode_baf8ec8__witvliet_2020_8.json,616,Witvliet gap junctions were partially annotated and excluded from that paper's analyses; not tabulated (decision Q-W4)
-out_of_head_scope,randi2023,funatlas.h5,642,WT measured pairs involving at least one non-head neuron (Rule 6: head only)
+awc_identity_unresolved,bentley2016,edgelist_MA.csv,4,"distinct ordered monoamine neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,fenyves2020,journal.pcbi.1007974.s003.xlsx,55,"distinct ordered sign-prediction neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,01022024_neuropeptide_connectome_long_range_model.csv,400,"distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,01022024_neuropeptide_connectome_mid_range_model.csv,400,"distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,01022024_neuropeptide_connectome_short_range_model.csv,364,"distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,08062023_monoamine_connectome.csv,8,"distinct ordered monoamine neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,08062023_neuropeptide_connectome_long_range_model.csv,376,"distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,08062023_neuropeptide_connectome_mid_range_model.csv,376,"distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,ripollsanchez2023,08062023_neuropeptide_connectome_short_range_model.csv,340,"distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,white1986,wna__aconnectome_white_1986_A.csv,30,"distinct ordered chemical neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,white1986,wna__aconnectome_white_1986_L4.csv,1,"distinct unordered electrical neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,white1986,wna__aconnectome_white_1986_L4.csv,30,"distinct ordered chemical neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,white1986,wna__aconnectome_white_1986_whole.csv,30,"distinct ordered chemical neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,witvliet2021,nemanode_baf8ec8__witvliet_2020_7.json,40,"distinct ordered chemical neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+awc_identity_unresolved,witvliet2021,nemanode_baf8ec8__witvliet_2020_8.json,45,"distinct ordered chemical neuron pairs with nonzero weight: pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved"
+out_of_head_scope,bentley2016,edgelist_MA.csv,1114,distinct ordered monoamine neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,fenyves2020,journal.pcbi.1007974.s003.xlsx,1338,distinct ordered sign-prediction neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,randi2023,funatlas.h5,0,unc-31 pairs with a q-value involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,randi2023,funatlas.h5,642,WT pairs with a q-value involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,01022024_neuropeptide_connectome_long_range_model.csv,33730,distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,01022024_neuropeptide_connectome_mid_range_model.csv,20597,distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,01022024_neuropeptide_connectome_short_range_model.csv,16052,distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,08062023_monoamine_connectome.csv,1373,distinct ordered monoamine neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,08062023_neuropeptide_connectome_long_range_model.csv,34187,distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,08062023_neuropeptide_connectome_mid_range_model.csv,20678,distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,ripollsanchez2023,08062023_neuropeptide_connectome_short_range_model.csv,16133,distinct ordered neuropeptide neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,white1986,wna__aconnectome_white_1986_A.csv,37,distinct unordered electrical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,white1986,wna__aconnectome_white_1986_A.csv,307,distinct ordered chemical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,white1986,wna__aconnectome_white_1986_L4.csv,36,distinct unordered electrical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,white1986,wna__aconnectome_white_1986_L4.csv,240,distinct ordered chemical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,white1986,wna__aconnectome_white_1986_whole.csv,246,distinct unordered electrical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,white1986,wna__aconnectome_white_1986_whole.csv,957,distinct ordered chemical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,witvliet2021,nemanode_baf8ec8__witvliet_2020_7.json,421,distinct ordered chemical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+out_of_head_scope,witvliet2021,nemanode_baf8ec8__witvliet_2020_8.json,380,distinct ordered chemical neuron pairs with nonzero weight: pairs involving at least one non-head neuron (Rule 6: head only)
+self_pair,bentley2016,edgelist_MA.csv,10,distinct ordered monoamine neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,fenyves2020,journal.pcbi.1007974.s003.xlsx,27,distinct ordered sign-prediction neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
 self_pair,randi2023,funatlas.h5,1,ADAL->ADAL: self-pairs excluded by config include_self_pairs=false (WT occ1=12)
 self_pair,randi2023,funatlas.h5,1,ADAR->ADAR: self-pairs excluded by config include_self_pairs=false (WT occ1=16)
 self_pair,randi2023,funatlas.h5,1,ADEL->ADEL: self-pairs excluded by config include_self_pairs=false (WT occ1=4)
@@ -201,3 +236,14 @@ self_pair,randi2023,funatlas.h5,1,VB1->VB1: self-pairs excluded by config includ
 self_pair,randi2023,funatlas.h5,1,VB2->VB2: self-pairs excluded by config include_self_pairs=false (WT occ1=21)
 self_pair,randi2023,funatlas.h5,1,VD1->VD1: self-pairs excluded by config include_self_pairs=false (WT occ1=0)
 self_pair,randi2023,funatlas.h5,1,VD2->VD2: self-pairs excluded by config include_self_pairs=false (WT occ1=0)
+self_pair,ripollsanchez2023,01022024_neuropeptide_connectome_long_range_model.csv,102,distinct ordered neuropeptide neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,ripollsanchez2023,01022024_neuropeptide_connectome_mid_range_model.csv,102,distinct ordered neuropeptide neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,ripollsanchez2023,01022024_neuropeptide_connectome_short_range_model.csv,102,distinct ordered neuropeptide neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,ripollsanchez2023,08062023_monoamine_connectome.csv,11,distinct ordered monoamine neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,ripollsanchez2023,08062023_neuropeptide_connectome_long_range_model.csv,102,distinct ordered neuropeptide neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,ripollsanchez2023,08062023_neuropeptide_connectome_mid_range_model.csv,102,distinct ordered neuropeptide neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,ripollsanchez2023,08062023_neuropeptide_connectome_short_range_model.csv,102,distinct ordered neuropeptide neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,white1986,wna__aconnectome_white_1986_A.csv,2,distinct unordered electrical neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,white1986,wna__aconnectome_white_1986_L4.csv,2,distinct unordered electrical neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,white1986,wna__aconnectome_white_1986_whole.csv,5,distinct unordered electrical neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false
+self_pair,witvliet2021,nemanode_baf8ec8__witvliet_2020_7.json,10,distinct ordered chemical neuron pairs with nonzero weight: self-pairs excluded by config include_self_pairs=false

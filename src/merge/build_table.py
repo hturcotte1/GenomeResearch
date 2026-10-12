@@ -379,12 +379,61 @@ def build_rows(cfg: dict) -> tuple[list[str], list[dict], list[list], dict]:
             excl.append(["self_pair", "randi2023", release_file, 1,
                          f"{n}->{n}: self-pairs excluded by config include_self_pairs=false (WT occ1={occ})"])
     head_idx = [pos[n] for n in head if n in pos]
-    fin = np.isfinite(atlas["wt"]["q"])
-    mask = np.zeros_like(fin)
-    mask[np.ix_(head_idx, head_idx)] = True
-    excl.append(["out_of_head_scope", "randi2023", release_file, int((fin & ~mask).sum()),
-                 "WT measured pairs involving at least one non-head neuron (Rule 6: head only)"])
+    for s, label in (("wt", "WT"), ("unc31", "unc-31")):
+        fin = np.isfinite(atlas[s]["q"])
+        mask = np.zeros_like(fin)
+        mask[np.ix_(head_idx, head_idx)] = True
+        excl.append(["out_of_head_scope", "randi2023", release_file, int((fin & ~mask).sum()),
+                     f"{label} pairs with a q-value involving at least one non-head neuron (Rule 6: head only)"])
+
+    # source records that were mapped to neurons but have no row: count them per source and reason
+    anat_head = {x for x in (_anat_identity(n, awc) for n in head) if x is not None}
+    scoped = [(ds["source"], ds["file"], "chemical", ds["chem"]) for ds in anat.values()]
+    scoped += [(ds["source"], ds["file"], "electrical", ds["gap"]) for ds in anat.values() if ds["gap"] is not None]
+    scoped.append(("fenyves2020", readers.FENYVES_XLSX, "sign-prediction", fen))
+    scoped += [("ripollsanchez2023", NP_FILES[k], "neuropeptide", npm[k]) for k in sorted(NP_FILES)]
+    scoped.append(("ripollsanchez2023", RS_MONOAMINE, "monoamine", npm["rs_monoamine"]))
+    scoped.append(("bentley2016", "edgelist_MA.csv", "monoamine", bma))
+    for source, fn, kind, pairs in scoped:
+        _log_scope(excl, source, fn, kind, pairs, anat_head, awc, cfg["include_self_pairs"])
     return head, rows, excl, {"kernel_status": dict(sorted(kstat.items())), "release_file": release_file}
+
+
+AWC_POSITIONAL = frozenset({"AWCL", "AWCR"})
+
+
+def _log_scope(excl: list, source: str, fn: str, kind: str, pairs, anat_head: set, awc: str,
+               include_self: bool) -> None:
+    """Log the distinct neuron pairs of one source that have no place in the table.
+
+    ``pairs`` maps (pre, post) tuples, or frozensets for gap junctions, to a
+    value; zero values are not edges and are skipped. Each pair falls into
+    exactly one category: self-pair (both ends the same head neuron), AWC
+    (only AWCL/AWCR keep it out, under awc_policy=unresolved) or out of head
+    scope.
+    """
+    n = Counter()
+    for key, value in pairs.items():
+        if not value:
+            continue
+        ends = tuple(key) if not isinstance(key, frozenset) else (tuple(key) * 2)[:2]
+        if all(x in anat_head for x in ends):
+            if ends[0] == ends[1] and not include_self:
+                n["self_pair"] += 1
+            continue
+        if awc == "unresolved" and all(x in anat_head or x in AWC_POSITIONAL for x in ends):
+            n["awc_identity_unresolved"] += 1
+        else:
+            n["out_of_head_scope"] += 1
+    reasons = {
+        "self_pair": "self-pairs excluded by config include_self_pairs=false",
+        "awc_identity_unresolved": "pairs involving AWCL/AWCR, which cannot be matched to AWCON/AWCOFF under awc_policy=unresolved",
+        "out_of_head_scope": "pairs involving at least one non-head neuron (Rule 6: head only)",
+    }
+    for cat in ("awc_identity_unresolved", "out_of_head_scope", "self_pair"):
+        if n[cat]:
+            unit = "unordered" if kind == "electrical" else "ordered"
+            excl.append([cat, source, fn, n[cat], f"distinct {unit} {kind} neuron pairs with nonzero weight: {reasons[cat]}"])
 
 
 COLUMN_ORDER = [

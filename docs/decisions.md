@@ -185,3 +185,25 @@ change plus `python -m src.build` regenerates everything.
 ### D-013 (2026-10-12, Phase 1, PROVISIONAL)
 **Atlas release.** The 2023-06-28 release is the table's source; the
 2023-06-14 release is kept for comparison. See the table above (Q-001).
+
+## Phase 4
+
+### D-014 (2026-10-12, Phase 4, DECIDED, engineering)
+**Every neuron pair that a source contributes but the table has no place for
+is counted in `data/processed/merged_edges_exclusions.csv`, per source file
+and reason.**
+
+The reasons are:
+- `out_of_head_scope`: Rule 6, head only;
+- `awc_identity_unresolved`: AWCL/AWCR pairs under `awc_policy=unresolved`;
+- `self_pair`: excluded by `include_self_pairs=false`.
+
+Reasoning: before this, only name-level exclusions were logged, together with
+the Randi WT measurements outside the head. Edges of the anatomical,
+polarity, neuropeptide and monoamine sources that leave the head were not
+logged, which Rule 3 forbids. `tests/test_merged_table.py` now checks, for
+every White export and every 2023 neuropeptide range, that the pairs present
+in the table plus the logged pairs equal the source's distinct neuron pairs.
+
+The table itself is unchanged by this (same CSV and Parquet hashes). Only the
+exclusion log and `SHA256SUMS` changed.

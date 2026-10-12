@@ -12,6 +12,7 @@ forbids.
 
 from __future__ import annotations
 
+import csv
 import json
 from collections import Counter
 
@@ -113,11 +114,15 @@ def generate() -> str:
     out.append(_table(["flag", "rows"], [[f"`{k}`", v] for k, v in sorted(fc.items())]) + "\n")
 
     out.append("## Exclusions (nothing dropped silently)\n")
-    cats = Counter()
-    for line in excl[1:]:
-        cat = line.split(",", 1)[0]
-        cats[cat] += 1
-    out.append(_table(["category", "log lines"], [[k, v] for k, v in sorted(cats.items())]))
+    lines, records = Counter(), Counter()
+    for r in csv.DictReader(excl):
+        key = (r["category"], r["source_id"])
+        lines[key] += 1
+        records[key] += int(r["n_records"])
+    out.append("Counts are per source and are not comparable across sources: a record is a pair, an edge "
+               "record or a name, as each log line's `reason` states.\n")
+    out.append(_table(["category", "source", "log lines", "records"],
+                      [[c, s, lines[(c, s)], f"{records[(c, s)]:,}"] for c, s in sorted(lines)]))
     out.append("\nFull log: `data/processed/merged_edges_exclusions.csv`. Name-level exclusions are in "
                "`data/interim/namespace/exclusions.csv`.\n")
 

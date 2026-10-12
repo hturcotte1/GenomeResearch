@@ -91,3 +91,41 @@ def test_build_is_byte_identical_to_the_committed_artifact():
         for n in sorted(p.name for p in OUT_DIR.iterdir() if p.name.startswith(TABLE))
     )
     assert rebuilt == recorded
+
+
+def _excluded(source_id, filename, unit):
+    with open(OUT_DIR / f"{TABLE}_exclusions.csv", encoding="utf-8", newline="") as fh:
+        return sum(int(r["n_records"]) for r in csv.DictReader(fh)
+                   if r["source_id"] == source_id and r["file"] == filename
+                   and r["category"] in ("awc_identity_unresolved", "out_of_head_scope", "self_pair")
+                   and r["reason"].startswith(f"distinct {unit} "))
+
+
+@pytest.mark.parametrize("key", ["n2u", "jsh", "whole"])
+def test_every_white_pair_is_in_the_table_or_logged(rows, key):
+    """No silent drops: neuron pairs in a source = pairs with a row value + logged exclusions."""
+    from src.merge import readers
+
+    fn = build_table.WHITE_FILES[key]
+    names = build_table._name_map("white1986")
+    chem, gap = set(), set()
+    for e in readers.nemanode_tsv("white1986", fn):
+        a, b = names.get(e.pre), names.get(e.post)
+        if a is None or b is None or not e.weight:
+            continue
+        (chem.add((a, b)) if e.kind == "chemical" else gap.add(frozenset((a, b))))
+    in_chem = sum(1 for r in rows if (r[f"anat_chem_white_{key}"] or 0) > 0)
+    in_gap = sum(1 for r in rows if (r[f"anat_gap_white_{key}"] or 0) > 0 and r["pre"] < r["post"])
+    assert in_chem + _excluded("white1986", fn, "ordered chemical") == len(chem)
+    assert in_gap + _excluded("white1986", fn, "unordered electrical") == len(gap)
+
+
+@pytest.mark.parametrize("rng", ["short", "mid", "long"])
+def test_every_neuropeptide_pair_is_in_the_table_or_logged(rows, rng):
+    from src.merge import readers
+
+    fn = build_table.NP_FILES[("08062023", rng)]
+    names = build_table._name_map("ripollsanchez2023")
+    pairs = {(names[e.pre], names[e.post]) for e in readers.ripoll_matrix(fn) if e.weight}
+    in_table = sum(1 for r in rows if (r[f"np_edge_{rng}"] or 0) > 0)
+    assert in_table + _excluded("ripollsanchez2023", fn, "ordered neuropeptide") == len(pairs)
