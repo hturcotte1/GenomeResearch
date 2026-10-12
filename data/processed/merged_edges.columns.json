@@ -1,0 +1,665 @@
+{
+  "_table": {
+    "config": {
+      "_comment": "Every setting here is a choice the project owner may change. Each one is documented, with its alternatives and its PROVISIONAL status, in docs/decisions.md (section 'Provisional resolutions'). Changing a value and re-running `python -m src.build` regenerates every derived artifact deterministically.",
+      "awc_policy": "unresolved",
+      "bilateral_policy": "split",
+      "fenyves_version": "journal_xlsx",
+      "gap_primary": "white_n2u",
+      "head_set": "randi_head188_plus_rmhr",
+      "include_self_pairs": false,
+      "kernel_time_axis_s": [
+        0.0,
+        200.0,
+        1000
+      ],
+      "monoamine_primary": "bentley2016",
+      "neuropeptide_alternate_versions": [
+        "01022024"
+      ],
+      "neuropeptide_version": "08062023",
+      "randi_release": "2023-06-28",
+      "white_primary": "n2u",
+      "witvliet_combination": "sum_d7_d8",
+      "witvliet_version": "published_baf8ec8"
+    },
+    "head_set": "randi_head188_plus_rmhr",
+    "nulls": "null = value does not exist for this pair (see source_flags); 0 = measured/reconstructed absence",
+    "row": "one ordered pair (pre, post) of distinct head neurons; pre = stimulated / presynaptic / sender, post = responding / postsynaptic / receiver"
+  },
+  "anat_chem_white": {
+    "decision": "Q-007 (primary = n2u)",
+    "definition": "chemical synapse count pre->post in NemaNode n2u export; null if either neuron absent from the dataset",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_A.csv",
+        "sha256": "6b63f6c0281b7bbc3be75fa3962e26caa020ddf3756bfc8dd9aad6577655fc16"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_chem_white_jsh": {
+    "decision": "Q-007",
+    "definition": "chemical synapse count pre->post in NemaNode jsh export; null if either neuron absent from the dataset",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_L4.csv",
+        "sha256": "afe7a37a5bae62630a773b5e7815a408e3a72063caf0ed49ecc91e213077fb12"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_chem_white_n2u": {
+    "decision": "Q-007",
+    "definition": "chemical synapse count pre->post in NemaNode n2u export; null if either neuron absent from the dataset",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_A.csv",
+        "sha256": "6b63f6c0281b7bbc3be75fa3962e26caa020ddf3756bfc8dd9aad6577655fc16"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_chem_white_whole": {
+    "decision": "Q-007",
+    "definition": "chemical synapse count pre->post in NemaNode whole export; null if either neuron absent from the dataset",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_whole.csv",
+        "sha256": "768d2b16557d768b51f81548f630adb45d76c1f99586e8fd4c90279293cc9dae"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_chem_witvliet": {
+    "decision": "Q-W3",
+    "definition": "anat_chem_witvliet_d7 + anat_chem_witvliet_d8; null unless both datasets cover both neurons",
+    "files": [
+      {
+        "filename": "nemanode_baf8ec8__witvliet_2020_7.json",
+        "sha256": "350b247214763fe6b5a89b76a95cc018f7551c0446ad6501bd9c4774fb05fbae"
+      },
+      {
+        "filename": "nemanode_baf8ec8__witvliet_2020_8.json",
+        "sha256": "465aeb3c1f42d84273023cef8e5f5d8ebbcf63248550b2219db68fccb9787033"
+      }
+    ],
+    "paper": "Witvliet D, Mulcahy B, Mitchell JK, et al. Connectomes across development reveal principles of brain maturation. Nature 596, 257-261 (2021). doi:10.1038/s41586-021-03778-8",
+    "source_id": "witvliet2021"
+  },
+  "anat_chem_witvliet_d7": {
+    "decision": "Q-W1",
+    "definition": "chemical synapse records pre->post, published Witvliet d7; null if not covered",
+    "files": [
+      {
+        "filename": "nemanode_baf8ec8__witvliet_2020_7.json",
+        "sha256": "350b247214763fe6b5a89b76a95cc018f7551c0446ad6501bd9c4774fb05fbae"
+      }
+    ],
+    "paper": "Witvliet D, Mulcahy B, Mitchell JK, et al. Connectomes across development reveal principles of brain maturation. Nature 596, 257-261 (2021). doi:10.1038/s41586-021-03778-8",
+    "source_id": "witvliet2021"
+  },
+  "anat_chem_witvliet_d8": {
+    "decision": "Q-W1",
+    "definition": "chemical synapse records pre->post, published Witvliet d8; null if not covered",
+    "files": [
+      {
+        "filename": "nemanode_baf8ec8__witvliet_2020_8.json",
+        "sha256": "465aeb3c1f42d84273023cef8e5f5d8ebbcf63248550b2219db68fccb9787033"
+      }
+    ],
+    "paper": "Witvliet D, Mulcahy B, Mitchell JK, et al. Connectomes across development reveal principles of brain maturation. Nature 596, 257-261 (2021). doi:10.1038/s41586-021-03778-8",
+    "source_id": "witvliet2021"
+  },
+  "anat_gap": {
+    "decision": "Q-W4 (primary = white_n2u)",
+    "definition": "gap-junction count for the unordered pair in NemaNode n2u export (each pair listed once); null if not covered",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_A.csv",
+        "sha256": "6b63f6c0281b7bbc3be75fa3962e26caa020ddf3756bfc8dd9aad6577655fc16"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_gap_white_jsh": {
+    "decision": "Q-W4",
+    "definition": "gap-junction count for the unordered pair in NemaNode jsh export (each pair listed once); null if not covered",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_L4.csv",
+        "sha256": "afe7a37a5bae62630a773b5e7815a408e3a72063caf0ed49ecc91e213077fb12"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_gap_white_n2u": {
+    "decision": "Q-W4",
+    "definition": "gap-junction count for the unordered pair in NemaNode n2u export (each pair listed once); null if not covered",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_A.csv",
+        "sha256": "6b63f6c0281b7bbc3be75fa3962e26caa020ddf3756bfc8dd9aad6577655fc16"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "anat_gap_white_whole": {
+    "decision": "Q-W4",
+    "definition": "gap-junction count for the unordered pair in NemaNode whole export (each pair listed once); null if not covered",
+    "files": [
+      {
+        "filename": "wna__aconnectome_white_1986_whole.csv",
+        "sha256": "768d2b16557d768b51f81548f630adb45d76c1f99586e8fd4c90279293cc9dae"
+      }
+    ],
+    "paper": "White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Phil Trans R Soc Lond B 314, 1-340 (1986). doi:10.1098/rstb.1986.0056",
+    "source_id": "white1986"
+  },
+  "measured_amplitude_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "mean dF/F over retained trials (h5 wt/dFF[post, pre]); null if no retained trial (unc-31 strain)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_amplitude_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "mean dF/F over retained trials (h5 wt/dFF[post, pre]); null if no retained trial",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_latency_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "effective rise time (s) of the atlas kernel for the pair: authors' get_effective_rise_time on a 0-200 s / 1000-point axis; null if no kernel or undefined (see source_flags)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_n_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "number of retained trials, len(dFF_all) (unc-31 strain)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_n_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "number of retained trials, len(dFF_all)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_occurrences_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "occ1: stimulation/response occurrences including discarded trials (unc-31 strain)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_occurrences_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "occ1: stimulation/response occurrences including discarded trials",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_peak_time_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "time (s) of max |kernel| on the same axis",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_q_eq_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "q-value of the equivalence (TOST) test for non-connection (h5 wt/q_eq) (unc-31 strain)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_q_eq_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "q-value of the equivalence (TOST) test for non-connection (h5 wt/q_eq)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_q_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "q-value for functional connection (h5 wt/q) (unc-31 strain)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_q_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "q-value for functional connection (h5 wt/q)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_sign_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "sign of mean dF/F when randi_state_wt=connected: excitatory (>0) | inhibitory (<0) | undefined (NaN); null otherwise (unc-31 strain)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "measured_sign_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "sign of mean dF/F when randi_state_wt=connected: excitatory (>0) | inhibitory (<0) | undefined (NaN); null otherwise",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "monoamine_edge": {
+    "decision": "Q-009",
+    "definition": "';'-joined sorted monoamines (dopamine, octopamine, serotonin, tyramine) with an edge pre->post; 'none' if no edge",
+    "files": [
+      {
+        "filename": "edgelist_MA.csv",
+        "sha256": "5a206a6743479f4ae11eb82456378051c5d9aeb56ea5c1f82b121671c7fa2aa3"
+      }
+    ],
+    "paper": "Bentley B, Branicky R, Barnes CL, Chew YL, Yemini E, Bullmore ET, V\u00e9rtes PE, Schafer WR. The Multilayer Connectome of Caenorhabditis elegans. PLoS Comput Biol 12(12): e1005283 (2016). doi:10.1371/journal.pcbi.1005283",
+    "source_id": "bentley2016"
+  },
+  "monoamine_edge_rs2023": {
+    "decision": "Q-009",
+    "definition": "weight of pre->post in the Ripoll-Sanchez 08062023 monoamine-GPCR network; 0 = no edge",
+    "files": [
+      {
+        "filename": "08062023_monoamine_connectome.csv",
+        "sha256": "629c99a54190940be954b5281fb414553dcb2e4913ced34f355aab27b3c9650f"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "np_edge_long": {
+    "decision": "Q-RS-1",
+    "definition": "number of NPP-GPCR pairs supporting pre->post, long-range model, 2023 (Table S6) version; 0 = no edge",
+    "files": [
+      {
+        "filename": "08062023_neuropeptide_connectome_long_range_model.csv",
+        "sha256": "cd3769c27427e972216e6faf7f3cb924fcc4e3e052586bf8f695f694bbcc0b3d"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "np_edge_long_v2024": {
+    "decision": "Q-RS-1",
+    "definition": "as np_edge_long, authors' 2024-02-02 post-publication update",
+    "files": [
+      {
+        "filename": "01022024_neuropeptide_connectome_long_range_model.csv",
+        "sha256": "57ebc0919860bafcb866e63f5ae06b8b5d59427897d8bd230b4461bfa833f6fe"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "np_edge_mid": {
+    "decision": "Q-RS-1",
+    "definition": "number of NPP-GPCR pairs supporting pre->post, mid-range model, 2023 (Table S6) version; 0 = no edge",
+    "files": [
+      {
+        "filename": "08062023_neuropeptide_connectome_mid_range_model.csv",
+        "sha256": "e2b5f3ae7a760933e47e5c5bc449c915df11e537c2fa33e30728745a49b78cd4"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "np_edge_mid_v2024": {
+    "decision": "Q-RS-1",
+    "definition": "as np_edge_mid, authors' 2024-02-02 post-publication update",
+    "files": [
+      {
+        "filename": "01022024_neuropeptide_connectome_mid_range_model.csv",
+        "sha256": "97569885d58d947c2526e6ecc26c8b191b074d1b065f4da224102298203ad141"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "np_edge_short": {
+    "decision": "Q-RS-1",
+    "definition": "number of NPP-GPCR pairs supporting pre->post, short-range model, 2023 (Table S6) version; 0 = no edge",
+    "files": [
+      {
+        "filename": "08062023_neuropeptide_connectome_short_range_model.csv",
+        "sha256": "7a9fd18305c4f145c51881ed145e09b442acd8cfda2836c0e87c1bce48c0c1a1"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "np_edge_short_v2024": {
+    "decision": "Q-RS-1",
+    "definition": "as np_edge_short, authors' 2024-02-02 post-publication update",
+    "files": [
+      {
+        "filename": "01022024_neuropeptide_connectome_short_range_model.csv",
+        "sha256": "ee630f66dbb78a49d1818bd5209f1f9a0ee46400c061126e30d0d0a4b9d2e44d"
+      }
+    ],
+    "paper": "Ripoll-S\u00e1nchez L, Watteyne J, Sun H, Fernandez R, Taylor SR, Weinreb A, Bentley BL, Hammarlund M, Miller DM 3rd, Hobert O, Beets I, V\u00e9rtes PE, Schafer WR. The neuropeptidergic connectome of C. elegans. Neuron 111(22), 3570-3589.e5 (2023). doi:10.1016/j.neuron.2023.09.043",
+    "source_id": "ripollsanchez2023"
+  },
+  "post": {
+    "decision": "",
+    "definition": "canonical neuron name of the responding/postsynaptic neuron",
+    "files": [
+      {
+        "filename": "IndividualNeurons.csv",
+        "sha256": "b69c0e994270493535994a69a47210dda04319592697eec2f4a65a9df8886195"
+      },
+      {
+        "filename": "C. elegans Cell List - WormBase.csv",
+        "sha256": "1fa858cc10d8a0d0eb87f8bbc0693d2821cfeed8e007d267c09507a8bde6c571"
+      }
+    ],
+    "paper": "White et al. 1986 nomenclature via WormAtlas (OpenWorm copies)",
+    "source_id": "canonical_neurons"
+  },
+  "post_class": {
+    "decision": "",
+    "definition": "neuron class of post",
+    "files": [
+      {
+        "filename": "nemanode_da8ca7e__neurons.json",
+        "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+      }
+    ],
+    "paper": "NemaNode cell table (Witvliet et al. 2021 portal)",
+    "source_id": "canonical_neurons"
+  },
+  "pre": {
+    "decision": "",
+    "definition": "canonical neuron name (src/namespace/canonical.py); AWCON/AWCOFF are extension identities",
+    "files": [
+      {
+        "filename": "IndividualNeurons.csv",
+        "sha256": "b69c0e994270493535994a69a47210dda04319592697eec2f4a65a9df8886195"
+      },
+      {
+        "filename": "C. elegans Cell List - WormBase.csv",
+        "sha256": "1fa858cc10d8a0d0eb87f8bbc0693d2821cfeed8e007d267c09507a8bde6c571"
+      }
+    ],
+    "paper": "White et al. 1986 nomenclature via WormAtlas (OpenWorm copies)",
+    "source_id": "canonical_neurons"
+  },
+  "pre_class": {
+    "decision": "",
+    "definition": "neuron class of pre (118 classes)",
+    "files": [
+      {
+        "filename": "nemanode_da8ca7e__neurons.json",
+        "sha256": "c780e0b7cab28b311a7e0916a7b8e37b9cf72de152712bd4a5eb29fd9d595492"
+      }
+    ],
+    "paper": "NemaNode cell table (Witvliet et al. 2021 portal)",
+    "source_id": "canonical_neurons"
+  },
+  "predicted_sign": {
+    "decision": "Q-008",
+    "definition": "excitatory | inhibitory | complex | unknown (Fenyves 'no pred'); null when Fenyves's connectome has no chemical connection pre->post",
+    "files": [
+      {
+        "filename": "journal.pcbi.1007974.s003.xlsx",
+        "sha256": "85959066fd7cbdbc2024d0ebb323b71c4365f4083bc85e555ee973f470697c47"
+      }
+    ],
+    "paper": "Fenyves BG, Szil\u00e1gyi GS, Vassy Z, S\u0151ti C, Csermely P. Synaptic polarity and sign-balance prediction using gene expression data in the Caenorhabditis elegans chemical synapse neuronal connectome network. PLoS Comput Biol 16(12): e1007974 (2020). doi:10.1371/journal.pcbi.1007974",
+    "source_id": "fenyves2020"
+  },
+  "predicted_sign_basis": {
+    "decision": "Q-008",
+    "definition": "presynaptic transmitter(s) and matched receptor classes with the postsynaptic genes expressed in each",
+    "files": [
+      {
+        "filename": "journal.pcbi.1007974.s003.xlsx",
+        "sha256": "85959066fd7cbdbc2024d0ebb323b71c4365f4083bc85e555ee973f470697c47"
+      }
+    ],
+    "paper": "Fenyves BG, Szil\u00e1gyi GS, Vassy Z, S\u0151ti C, Csermely P. Synaptic polarity and sign-balance prediction using gene expression data in the Caenorhabditis elegans chemical synapse neuronal connectome network. PLoS Comput Biol 16(12): e1007974 (2020). doi:10.1371/journal.pcbi.1007974",
+    "source_id": "fenyves2020"
+  },
+  "predicted_sign_connectome_synapses": {
+    "decision": "Q-008",
+    "definition": "synapse count of the pair in the WormWiring connectome Fenyves used (0 = none)",
+    "files": [
+      {
+        "filename": "journal.pcbi.1007974.s003.xlsx",
+        "sha256": "85959066fd7cbdbc2024d0ebb323b71c4365f4083bc85e555ee973f470697c47"
+      }
+    ],
+    "paper": "Fenyves BG, Szil\u00e1gyi GS, Vassy Z, S\u0151ti C, Csermely P. Synaptic polarity and sign-balance prediction using gene expression data in the Caenorhabditis elegans chemical synapse neuronal connectome network. PLoS Comput Biol 16(12): e1007974 (2020). doi:10.1371/journal.pcbi.1007974",
+    "source_id": "fenyves2020"
+  },
+  "randi_state_unc31": {
+    "decision": "D-013; Q-002",
+    "definition": "as randi_state_wt, unc-31 strain",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "randi_state_wt": {
+    "decision": "D-013; Q-002",
+    "definition": "connected (q<0.05) | absent_confident (q_eq<0.05) | inconclusive | observed_all_trials_discarded (occ1>0, no retained trial, no q) | not_observed (occ1=0)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "randi_strict_extrasynaptic_candidate": {
+    "decision": "D-013; Q-002",
+    "definition": "authors' rule (wt_unc31_differences.py): WT q<0.05 and unc-31 q_eq<0.05 and unc-31 q>0.05",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "randi_tested": {
+    "decision": "D-013; Q-002",
+    "definition": "WT: pair observed at least once (occ1[post, pre] > 0)",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  },
+  "source_flags": {
+    "decision": "",
+    "definition": "';'-joined row-specific flags explaining nulls and caveats (e.g. awc_identity_unresolved, white_n2u_not_covered, no_chemical_connection_in_fenyves_connectome)",
+    "files": [],
+    "paper": "",
+    "source_id": "derived"
+  },
+  "unc31_delta": {
+    "decision": "D-013; Q-002",
+    "definition": "measured_amplitude_wt - measured_amplitude_unc31 when both exist",
+    "files": [
+      {
+        "filename": "funatlas.h5",
+        "sha256": "53a99055667b853e1d3d6be573ec2613d38c9f6989f302ec38ecd38dd50c7975"
+      },
+      {
+        "filename": "aconnectome_ids_ganglia.json",
+        "sha256": "e754fcb703b39b5f0db977d0b654ba2ac5ce09111f4e19aef3a85fb09ee2e0a2"
+      }
+    ],
+    "paper": "Randi F, Sharma AK, Dvali S, Leifer AM. Neural signal propagation atlas of Caenorhabditis elegans. Nature 623, 406-414 (2023). doi:10.1038/s41586-023-06683-4",
+    "source_id": "randi2023"
+  }
+}
