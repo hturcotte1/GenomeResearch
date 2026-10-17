@@ -173,8 +173,15 @@ def test_cook2019_hermaphrodite_chemical_edges_4887():
 
 @pytest.mark.parametrize("dataset, edges, synapses", [(7, 2202, 7467), (8, 2186, 7970)])
 def test_witvliet_published_adult_chemical_counts(dataset, edges, synapses):
-    """Witvliet et al. 2021, author's supplementary synapse-count tables (dwitvliet/nature2021):
-    dataset 7: 2,202 connections / 7,467 synapses; dataset 8: 2,186 / 7,970."""
+    """Witvliet et al. 2021 datasets 7 / 8: 2,202 / 2,186 chemical connections and 7,467 / 7,970 synapses.
+
+    Where these figures come from: NOT the paper text or the Nature ESM (both unreachable here; the
+    provenance record marks them UNVERIFIED). They are the first author's own table export
+    tables/synapse_count_matrices.xlsx (dwitvliet/nature2021 @0646af9, written 2021-02-10), and the
+    ConnectomeToolbox validation yaml WitvlietDataReader{7,8}_expected_data.yaml (total_nonzero_conns
+    2202 / 2186; the toolbox does not say where that value came from, and it equals the nonzero chemical
+    cells of the toolbox's own xlsx; its WitvlietEtAl2021.md attributes only the sampled chemical weights
+    to the ESM MOESM4). Checked here against the post-revision NemaNode export baf8ec8."""
     e = [x for x in readers.nemanode_json("witvliet2021", f"nemanode_baf8ec8__witvliet_2020_{dataset}.json")
          if x.kind == "chemical"]
     pairs = Counter()
@@ -286,3 +293,61 @@ def test_white1986_302_neurons_in_118_classes():
     plain = [c for c in canonical_neurons() if not c.is_extension]
     assert len(plain) == 302
     assert len({c.neuron_class for c in plain}) == 118
+
+
+# ------------------------------------------------------------------ Witvliet et al. 2021: paper-text figures, PRE-revision data
+#
+# The two figures below are known only from a paraphrase of the paper text (ConnectomeToolbox
+# docs/Witvliet_2021.md, openworm.org/ConnectomeToolbox/Witvliet_2021/): "3,113 connections (averaging
+# 1,292 per dataset) were assigned as stable, variable or developmentally dynamic". The paper text itself
+# was not reached. Both figures are reproduced exactly by the PRE-revision NemaNode data (classification
+# head.annotations.json, datasets at 859641e), not by the authors' post-revision (Feb 2021) tables.
+
+def _witvliet_prerevision_classified_pairs():
+    ann = json.loads((RAW_ROOT / "witvliet2021" / "nemanode_859641e__head.annotations.json").read_text(encoding="utf-8"))
+    assert set(ann) == {"stable", "variable", "increase", "decrease", "postembryonic"}
+    return {tuple(p) for cat, pairs in ann.items() if cat != "postembryonic" for p in pairs}
+
+
+def test_witvliet_3113_classified_connections_from_prerevision_annotations():
+    """Paper text (paraphrase): "3,113 connections ... were assigned as stable, variable or developmentally dynamic".
+    Reproduced from the PRE-revision data (the provenance record keeps it UNVERIFIED: paper text not reached).
+    PRE-revision NemaNode head.annotations.json (blob dae8701a): stable 823 + variable 1,987 + increase 280
+    + decrease 23 = 3,113 distinct (pre, post) pairs, none in two categories."""
+    ann = json.loads((RAW_ROOT / "witvliet2021" / "nemanode_859641e__head.annotations.json").read_text(encoding="utf-8"))
+    sizes = {cat: len(pairs) for cat, pairs in ann.items()}
+    assert sizes == {"stable": 823, "variable": 1987, "increase": 280, "decrease": 23, "postembryonic": 552}
+    assert len(_witvliet_prerevision_classified_pairs()) == 3113 == 823 + 1987 + 280 + 23
+
+
+def test_witvliet_1292_classified_connections_per_dataset_from_prerevision_data():
+    """Paper text (paraphrase): "(averaging 1,292 per dataset)". Reproduced from the PRE-revision data (the
+    provenance record keeps it UNVERIFIED: paper text not reached). The 3,113 PRE-revision classified pairs that
+    occur as chemical (pre, post) pairs in NemaNode 859641e datasets 1-8: 775, 986, 1,006, 1,074, 1,391,
+    1,393, 1,839, 1,872; sum 10,336; 10,336 / 8 = 1,292.0."""
+    classified = _witvliet_prerevision_classified_pairs()
+    present = []
+    for k in range(1, 9):
+        entries = json.loads((RAW_ROOT / "witvliet2021" / f"nemanode_859641e__witvliet_2020_{k}.json").read_text(encoding="utf-8"))
+        chem = {(e["pre"], e["post"]) for e in entries if e["typ"] == 0}
+        present.append(len(chem & classified))
+    assert present == [775, 986, 1006, 1074, 1391, 1393, 1839, 1872]
+    assert sum(present) / len(present) == 1292.0
+
+
+def test_witvliet_postrevision_tables_do_not_give_3113_or_1292():
+    """The authors' Feb-2021 connection_classifications.csv (post-revision, dwitvliet/nature2021 @0646af9) gives
+    3,122 classified connections and 10,389 / 8 = 1,298.625 per dataset (presence in synapse_list.csv): the
+    paraphrased paper figures match the PRE-revision data, not these tables."""
+    import csv
+
+    with open(RAW_ROOT / "witvliet2021" / "connection_classifications.csv", newline="", encoding="utf-8") as fh:
+        classified = {(r["pre"], r["post"]) for r in csv.DictReader(fh)
+                      if r["classification"] != "post-embryonic brain integration"}
+    with open(RAW_ROOT / "witvliet2021" / "synapse_list.csv", newline="", encoding="utf-8") as fh:
+        pairs = {}
+        for r in csv.DictReader(fh):
+            pairs.setdefault(r["dataset"], set()).add((r["pre"], r["post"]))
+    present = [len(pairs[f"Dataset{k}"] & classified) for k in range(1, 9)]
+    assert len(classified) == 3122 != 3113
+    assert sum(present) == 10389 and sum(present) / 8 != 1292

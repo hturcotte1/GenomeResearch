@@ -5,6 +5,70 @@
         "size and SHA-256 match the pin in the source module",
         "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
       ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "WitvlietDataReader7_expected_data.yaml",
+      "git_blob_sha1": "879672e7f78b97dda2dc7b0fd0ad7d2d67821f50",
+      "note": "Toolbox expected values for its dataset-7 reader: 3 sampled chemical and 3 electrical weights, and total_nonzero_conns per synapse class. Evidence only; not a Witvliet file.",
+      "origin": "secondary",
+      "primary_reference": "none other: written by the ConnectomeToolbox itself; per its WitvlietEtAl2021.md the chemical weights listed were read from the Nature supplement 41586_2021_3778_MOESM4_ESM.xlsx (https://www.nature.com/articles/s41586-021-03778-8)",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "e68d150f07cf3c30164e78607a43768188e4154d471c64d70c456fd5a81c9a95",
+      "size": 440,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/validation/WitvlietDataReader7_expected_data.yaml"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "WitvlietDataReader8_expected_data.yaml",
+      "git_blob_sha1": "041a0e3ef3e7e783001c568afea41f1464be6f8a",
+      "note": "Toolbox expected values for its dataset-8 reader: 3 sampled chemical and 3 electrical weights, and total_nonzero_conns per synapse class. Evidence only; not a Witvliet file.",
+      "origin": "secondary",
+      "primary_reference": "none other: written by the ConnectomeToolbox itself; per its WitvlietEtAl2021.md the chemical weights listed were read from the Nature supplement 41586_2021_3778_MOESM4_ESM.xlsx (https://www.nature.com/articles/s41586-021-03778-8)",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "1e99bfe82b5f1b4b1bf5f2d40360198aeac6c34739720fbdd496b83c2ba89bda",
+      "size": 435,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/validation/WitvlietDataReader8_expected_data.yaml"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "WitvlietEtAl2021.md",
+      "git_blob_sha1": "7e5d091debb2ef06cf7f17ed4b31db0dd7df6a01",
+      "note": "The toolbox's note on its Witvliet readers: names the Nature MOESM4 file, says the xlsx came from WormWiring, and says which expected weights were read from which file.",
+      "origin": "secondary",
+      "primary_reference": "none other: ConnectomeToolbox documentation text",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "452c0977a771a3c08bb3e5ac0dbc7ae9e400cd46c359d0a9a455a3ec8ba73f6c",
+      "size": 1035,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/validation/WitvlietEtAl2021.md"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "Witvliet_2021.md",
+      "git_blob_sha1": "0a8961df039d5adb0c5559b0ad62f871b255998b",
+      "note": "The toolbox's paraphrase of the paper; the only source reached for the figures 3,113 and 1,292 (paper text unreachable). Evidence only.",
+      "origin": "secondary",
+      "primary_reference": "none other: ConnectomeToolbox summary of the paper (https://www.nature.com/articles/s41586-021-03778-8), whose text it paraphrases",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "4fad03369d8613eb4cae9745d6db556d35e4bc31f40e0af9d3cbae39b23eebc4",
+      "size": 3263,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/docs/Witvliet_2021.md"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
       "distributor": "GitHub dwitvliet/nature2021 @ 0646af9d25896ae660f97d462eab2d67282f5625 (D. Witvliet, first author; figure code for the paper)",
       "filename": "_neurons.csv",
       "git_blob_sha1": "bef93bfd871caa8c3fbea910741d01bc9c960ac8",
@@ -28,9 +92,9 @@
       ],
       "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
       "filename": "aconnectome_witvliet_2020_7.csv",
-      "note": "Dataset 7 (adult) as loaded by Randi et al.'s NeuroAtlas. Tab-separated. Content equals NemaNode pre-revision commit 859641e, not the post-revision data.",
+      "note": "Dataset 7 (adult). Tab-separated. Read by wormneuroatlas NeuroAtlas only for non-default parameters (default: aconnectome_default.h5, compiled from it); byte-identical to leiferlab/pumpprobe @1dbc5e0a pumpprobe/aconnectome_witvliet_2020_7.csv (blob f312c4db), which Randi et al.'s Funatlas reads. Content equals NemaNode 859641e, not the post-revision data.",
       "origin": "secondary",
-      "primary_reference": "https://nemanode.org/ (dataset ids witvliet_2020_7, witvliet_2020_8); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "1370d2a7e26a17e0765edfa834c95ca59ab44d8587efb5fda330432233074165",
       "size": 55102,
@@ -48,9 +112,9 @@
       ],
       "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
       "filename": "aconnectome_witvliet_2020_8.csv",
-      "note": "Dataset 8 (adult) as loaded by Randi et al.'s NeuroAtlas. Tab-separated. Content equals NemaNode pre-revision commit 859641e, not the post-revision data.",
+      "note": "Dataset 8 (adult). Tab-separated. Read by wormneuroatlas NeuroAtlas only for non-default parameters (default: aconnectome_default.h5, compiled from it); byte-identical to leiferlab/pumpprobe @1dbc5e0a pumpprobe/aconnectome_witvliet_2020_8.csv (blob b16614e2), which Randi et al.'s Funatlas reads. Content equals NemaNode 859641e, not the post-revision data.",
       "origin": "secondary",
-      "primary_reference": "https://nemanode.org/ (dataset ids witvliet_2020_7, witvliet_2020_8); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "530a6d6b1c0c621d70a019e478ac79c8107cde475b55e79f225582f77b342ce4",
       "size": 55153,
@@ -78,11 +142,123 @@
         "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
       ],
       "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__head.annotations.json",
+      "git_blob_sha1": "dae8701a1ffc09152261ce840f842d9bfdd46ad5",
+      "note": "NemaNode's connection classification: {category: [[pre, post], ...]} with categories stable, variable, increase, decrease, postembryonic. One blob from the root commit 8a50236 (2020-05-14) to 6b7ca03; a0ff6f3 only moved its folder; the 2021 revision (baf8ec8) did not change it.",
+      "origin": "secondary",
+      "primary_reference": "https://nemanode.org/ connection annotations (same blob at master head 6b7ca03; whether nemanode.org serves it is unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "65f1e2b629f6966312861be1f0b1455e7a5948e650dd388b0c5f6a1ac9124fdb",
+      "size": 156426,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/annotations/head.annotations.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__witvliet_2020_1.json",
+      "git_blob_sha1": "7cdc94fd3fa57c8084b0df81344787198e3eeab4",
+      "note": "Dataset 1 (juvenile), pre-revision. Same blob since b6dfd28 (as SEM_L1_3.head.json); 859641e only renamed it. Acquired only to count classified connections per dataset (the 1,292 figure); not used for edges.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "130f5b6cfefa824958374ec9f8f964202faf56baa8634f6b79d58e49962b84d0",
+      "size": 227839,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/connections/witvliet_2020_1.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__witvliet_2020_2.json",
+      "git_blob_sha1": "e5ea2884d2a03fe364b082e86e4d1f7cde7472a0",
+      "note": "Dataset 2 (juvenile), pre-revision. Same blob since b6dfd28 (as TEM_L1_5.head.json); 859641e only renamed it. Acquired only to count classified connections per dataset (the 1,292 figure); not used for edges.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "83ad7f2410eeec903a2454882b35fd5210e6dae48bc652902cf3dc32665389aa",
+      "size": 309957,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/connections/witvliet_2020_2.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__witvliet_2020_3.json",
+      "git_blob_sha1": "da46eb7d634a02fead622adb4284ac32a0b01215",
+      "note": "Dataset 3 (juvenile), pre-revision. Same blob since b6dfd28 (as SEM_L1_4.head.json); 859641e only renamed it. Acquired only to count classified connections per dataset (the 1,292 figure); not used for edges.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "c2295e45df692a6d85004ebb70632b25f80fc2be59c4bec7ea3492912005c7c3",
+      "size": 314899,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/connections/witvliet_2020_3.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__witvliet_2020_4.json",
+      "git_blob_sha1": "fe65dd81a6ab47bbb63fa0d84d0f6560fc6b001a",
+      "note": "Dataset 4 (juvenile), pre-revision. Same blob since b6dfd28 (as SEM_L1_2.head.json); 859641e only renamed it. Acquired only to count classified connections per dataset (the 1,292 figure); not used for edges.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "d5c50a6f4248842a3155ef0d12bbe3b24ca0444d25a847404d41cf12cf077b62",
+      "size": 416671,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/connections/witvliet_2020_4.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__witvliet_2020_5.json",
+      "git_blob_sha1": "cda01e99b9ab3fa406eec704b26f9aeef9bf219b",
+      "note": "Dataset 5 (juvenile), pre-revision. Same blob since b6dfd28 (as SEM_L2_2.head.json); 859641e only renamed it. Acquired only to count classified connections per dataset (the 1,292 figure); not used for edges.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "879ae9ae44db9804b869841fd067e0d3eb584bf55faa2dd8c78c952d59269355",
+      "size": 596438,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/connections/witvliet_2020_5.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_859641e__witvliet_2020_6.json",
+      "git_blob_sha1": "e1e460f380ccc9cb910dcd616053769062f3b7ff",
+      "note": "Dataset 6 (juvenile), pre-revision. Same blob since b6dfd28 (as TEM_L3.head.json); 859641e only renamed it. Acquired only to count classified connections per dataset (the 1,292 figure); not used for edges.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "c31e90ab7d677b7a19fad18b57aaa81ff7b6d1b4b13a08c23b0393503ecc1423",
+      "size": 580169,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/859641e20748f5313a99eaa862227ae9f6d369ca/src/server/populate-db/raw-data/connections/witvliet_2020_6.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
       "filename": "nemanode_859641e__witvliet_2020_7.json",
       "git_blob_sha1": "8ec3eab48416e4ea390fbcdf6be2085c14333f8d",
-      "note": "Dataset 7, pre-revision ('Renamed datasets to be consistent with manuscript', 2020-05-22). Superseded in the repository on 2021-03-15. Source of the wheel CSV's content.",
+      "note": "Dataset 7, pre-revision. Same blob since b6dfd28 (2020-05-18, as TEM_adult.head.json); 859641e (2020-05-22) only renamed it. Replaced in the repository by baf8ec8 (2021-03-15). Its chemical edges and weights, and gap junctions as unordered pairs, equal the wheel CSV.",
       "origin": "secondary",
-      "primary_reference": "https://nemanode.org/ (dataset ids witvliet_2020_7, witvliet_2020_8); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "caff48ff6cde87983d616a67d1d5d1967871548a965f86722ab2b666fe0315c3",
       "size": 897485,
@@ -96,9 +272,9 @@
       "distributor": "GitHub zhenlab-ltri/NemaNode @ 859641e20748f5313a99eaa862227ae9f6d369ca (Zhen lab; source data of nemanode.org)",
       "filename": "nemanode_859641e__witvliet_2020_8.json",
       "git_blob_sha1": "c156b36c7d9efb28d7cc048cbe173f6bc651ee39",
-      "note": "Dataset 8, pre-revision ('Renamed datasets to be consistent with manuscript', 2020-05-22). Superseded in the repository on 2021-03-15. Source of the wheel CSV's content.",
+      "note": "Dataset 8, pre-revision. Same blob since b6dfd28 (2020-05-18, as SEM_adult.head.json); 859641e (2020-05-22) only renamed it. Replaced in the repository by baf8ec8 (2021-03-15). Its chemical edges and weights, and gap junctions as unordered pairs, equal the wheel CSV.",
       "origin": "secondary",
-      "primary_reference": "https://nemanode.org/ (dataset ids witvliet_2020_7, witvliet_2020_8); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "primary_reference": "none current: NemaNode repository content from b6dfd28 (2020-05-18) until baf8ec8 (2021-03-15), when the first author replaced it (nemanode.org now presumably serves the replacement; unverified); paper https://www.nature.com/articles/s41586-021-03778-8",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "c13c42b5ba662e0bddcb1060693e0f75d579d85ee5c81ca539c620271819b07a",
       "size": 932228,
@@ -109,10 +285,42 @@
         "size and SHA-256 match the pin in the source module",
         "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
       ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 8a50236db4c5888e7fe0c1d018e5eff0729e4c88 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_8a50236__SEM_adult.head.json",
+      "git_blob_sha1": "cf39c0d4114bb0584b2bd51fdc1c496653c65837",
+      "note": "Dataset 8 (adult), first version ('Initial commit after removing unpublished datasets'). Replaced by b6dfd28 (2020-05-18); renamed to witvliet_2020_8.json in 859641e. A third version, equal to neither the pre-revision nor the published data.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository root commit 8a50236 (2020-05-14), replaced four days later by b6dfd28 ('Fixed bug in data where two synapses were counted only once'); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "4de49ad034465df9cd1ff2e9d93a0a985e06ff1ca637b62adbdd365565f5bad7",
+      "size": 859998,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/8a50236db4c5888e7fe0c1d018e5eff0729e4c88/src/server/db/populate-db/raw-data/connections/SEM_adult.head.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub zhenlab-ltri/NemaNode @ 8a50236db4c5888e7fe0c1d018e5eff0729e4c88 (Zhen lab; source data of nemanode.org)",
+      "filename": "nemanode_8a50236__TEM_adult.head.json",
+      "git_blob_sha1": "fbe13f1e916cc9842c2877d3a7f4717e8e758283",
+      "note": "Dataset 7 (adult), first version ('Initial commit after removing unpublished datasets'). Replaced by b6dfd28 (2020-05-18); renamed to witvliet_2020_7.json in 859641e. A third version, equal to neither the pre-revision nor the published data.",
+      "origin": "secondary",
+      "primary_reference": "none current: NemaNode repository root commit 8a50236 (2020-05-14), replaced four days later by b6dfd28 ('Fixed bug in data where two synapses were counted only once'); paper https://www.nature.com/articles/s41586-021-03778-8",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "4b9b5392603c621f7e76bb69880d314f401baffe6ffe7417ddfc106792435ab7",
+      "size": 827927,
+      "url": "https://raw.githubusercontent.com/zhenlab-ltri/NemaNode/8a50236db4c5888e7fe0c1d018e5eff0729e4c88/src/server/db/populate-db/raw-data/connections/TEM_adult.head.json"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
       "distributor": "GitHub zhenlab-ltri/NemaNode @ baf8ec877455890d089d965d1a0b3ea0db110e9f (Zhen lab; source data of nemanode.org)",
       "filename": "nemanode_baf8ec8__neurons.json",
       "git_blob_sha1": "81da4572b20674dcc852cfa9fd041e66a3c7a73c",
-      "note": "NemaNode cell table (447 cells: name, classes, typ, nt, emb, inhead, intail). Identical blob at 859641e, baf8ec8 and 6b7ca03. Its typ/nt codes are NemaNode annotations, not Witvliet data.",
+      "note": "NemaNode cell table (447 cells: name, classes, typ, nt, emb, inhead, intail). Identical blob at 8a50236, b6dfd28, a0ff6f3, 859641e, baf8ec8 and 6b7ca03. Its typ/nt codes are NemaNode annotations, not Witvliet data.",
       "origin": "secondary",
       "primary_reference": "https://nemanode.org/ (dataset ids witvliet_2020_7, witvliet_2020_8); paper https://www.nature.com/articles/s41586-021-03778-8",
       "retrieved_utc_date": "2026-10-11",

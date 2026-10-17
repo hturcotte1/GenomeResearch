@@ -88,13 +88,45 @@
       "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
       "filename": "herm_full_edgelist.csv",
       "git_blob_sha1": "89ffc2a2d9e1934ddc462d51032acead5e4cfc91",
-      "note": "WormWiring hermaphrodite edge list (chemical + electrical, neurons + muscles/other). Its neuron-to-neuron chemical rows equal xlsx sheet 5 exactly. The toolbox labels it 'legacy dataset (based on Cook et al. 2019) ... Do not use!' (UpdatedSpreadsheetDataReader.py @ ffe5702). Not the Cook 2019 SI 5 matrix. Every name is space-padded.",
+      "note": "OpenWorm copy of a hermaphrodite edge list (chemical + electrical, neurons + muscles/other) with one OpenWorm-added gap junction (PVCR->PVDR, 2); WormWiring origin UNVERIFIED. Its neuron-to-neuron chemical rows equal xlsx sheet 5 exactly. The toolbox labels it 'legacy dataset (based on Cook et al. 2019) ... Do not use!' (cect/readers/UpdatedSpreadsheetDataReader.py @ ffe5702). Not the Cook 2019 SI 5 matrix. Every name is space-padded.",
       "origin": "secondary",
-      "primary_reference": "WormWiring (Emmons lab) data downloads, https://wormwiring.org/series/ ('Edge list (.csv)' for the adult hermaphrodite); exact file URL and WormWiring release date UNVERIFIED. Same blob (89ffc2a2) is in openworm/c302 master at c302/data/herm_full_edgelist.csv, added there 2018-07-06.",
+      "primary_reference": "OpenWorm-amended copy: openworm/CElegansNeuroML 1ca08b14f4e795a973ce447565e0c97b897ee4dc (2016-12-06, 'Add missing GJ PVCR-PVDR to herm_full_edgelist.csv') added the one row PVCR -> PVDR, weight 2, electrical (written space-padded like every row: 'PVCR , PVDR        ,2,electrical') to blob a1313b0e (acquired as herm_full_edgelist_CElegansNeuroML-3808b6b.csv), giving this blob 89ffc2a2; the same blob is in CElegansNeuroML master and in openworm/c302 (49acae1, 2018-07-06). Origin UNVERIFIED. The earliest copy found is openworm/CElegansNeuroML commit 3808b6b235aa39ffac48bee319b06598bd23ff4d (2016-12-06, 'Add herm_full_edgelist.csv', blob a1313b0e), whose commit names no source. Presumed origin: WormWiring (Emmons lab) data downloads, https://wormwiring.org/series/ ('Edge list (.csv)' for the adult hermaphrodite), as the xlsx USER GUIDE says 'Source data: Wormwiring connectome reconstruction'; no WormWiring-hosted copy was compared, and its exact file URL and release date are UNVERIFIED.",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "142693f17556148d7f962835b18ac6dd5af18b7467eef61815ebc1dd5474c0ca",
       "size": 245463,
       "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/herm_full_edgelist.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/CElegansNeuroML @ 3808b6b235aa39ffac48bee319b06598bd23ff4d (path herm_full_edgelist.csv)",
+      "filename": "herm_full_edgelist_CElegansNeuroML-3808b6b.csv",
+      "git_blob_sha1": "a1313b0e53d258c361032d08657ce97566066ced",
+      "note": "Pre-edit OpenWorm edge list, as first committed (CElegansNeuroML 3808b6b, 2016-12-06, 'Add herm_full_edgelist.csv'). Differs from herm_full_edgelist.csv only by lacking the one row PVCR -> PVDR, weight 2, electrical (written space-padded like every row: 'PVCR , PVDR        ,2,electrical'). Its neuron-to-neuron rows equal data.csv's chemical and electrical rows (pairs and weights). Stored under a distinct local name; the repository path is herm_full_edgelist.csv. LF line ends, no final newline, every name space-padded.",
+      "origin": "secondary",
+      "primary_reference": "Origin UNVERIFIED. The earliest copy found is openworm/CElegansNeuroML commit 3808b6b235aa39ffac48bee319b06598bd23ff4d (2016-12-06, 'Add herm_full_edgelist.csv', blob a1313b0e), whose commit names no source. Presumed origin: WormWiring (Emmons lab) data downloads, https://wormwiring.org/series/ ('Edge list (.csv)' for the adult hermaphrodite), as the xlsx USER GUIDE says 'Source data: Wormwiring connectome reconstruction'; no WormWiring-hosted copy was compared, and its exact file URL and release date are UNVERIFIED.",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "7dfc27e4fa04844cd8b38554da5f4765c4a90ddce313d0f2612ee03e526829a6",
+      "size": 245430,
+      "url": "https://raw.githubusercontent.com/openworm/CElegansNeuroML/3808b6b235aa39ffac48bee319b06598bd23ff4d/herm_full_edgelist.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub openworm/ConnectomeToolbox @ ffe570268b7cffb9329cd009a1bb37d60db2d465",
+      "filename": "herm_full_edgelist_MODIFIED.csv",
+      "git_blob_sha1": "5065baf77a58e990a28f460a1e4c1d6c5d2eecaf",
+      "note": "Acquired as evidence only: NOT a Fenyves input. Equals herm_full_edgelist.csv minus the chemical row VB04->VB05 (1) plus 16 appended chemical rows of weight 5 (DB01->DB02 .. DB06->DB07, VB01->VB02 .. VB10->VB11), so on the xlsx's 302 neurons it has 15 chemical pairs sheet 5 lacks and VB04->VB05 = 5 where sheet 5 has 1.",
+      "origin": "secondary",
+      "primary_reference": "No external primary: an OpenWorm manual edit of blob 89ffc2a2 (herm_full_edgelist.csv). Blob 5065baf7 first appears at path herm_full_edgelist.csv in openworm/CElegansNeuroML 1c24a6ce1cc27051f6e9765e1aff837a540ae260 (2017-10-12, 'intermediate commit') and again in a40fccb764975bfc9dd13c19ea7e0dd190cc5186 (2018-01-26, 'DO NOT MERGE!! Manual changes to connectome!'), neither on CElegansNeuroML master; both commits' parent holds blob 89ffc2a2 there. The same blob is openworm/c302 c302/data/herm_full_edgelist_MODIFIED.csv, added in c302 3e723fb840f220268e7b5e3181a6ba5f945b5b93 (2018-07-10).",
+      "retrieved_utc_date": "2026-10-13",
+      "sha256": "8ba817eaed196e4aff3c6646af3d9493f5929ca6cea134439ee1e181087ac205",
+      "size": 245926,
+      "url": "https://raw.githubusercontent.com/openworm/ConnectomeToolbox/ffe570268b7cffb9329cd009a1bb37d60db2d465/cect/data/herm_full_edgelist_MODIFIED.csv"
     },
     {
       "archive_filename": "wormneuroatlas-0.0.7.3-py3-none-any.whl",
@@ -108,7 +140,7 @@
       ],
       "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
       "filename": "journal.pcbi.1007974.s003.xlsx",
-      "note": "NT+R sign-prediction workbook (USER GUIDE: 'Source data: Wormwiring connectome reconstruction'; 'Method of prediction: NT+R'). docProps: created 2019-07-01T09:46:44Z, modified 2020-09-10T23:15:24Z, lastModifiedBy 'Fenyves B\u00e1nk'. wormneuroatlas SynapseSign reads sheets 1-2 only and recomputes signs from CeNGEN; pumpprobe Funatlas reads sheet 5 from doi .s003. Byte-identical to GitHub francescorandi/wormneuroatlas@b2e13d88 blob 0457b2fa.",
+      "note": "NT+R sign-prediction workbook (USER GUIDE: 'Source data: Wormwiring connectome reconstruction'; 'Method of prediction: NT+R'). docProps: created 2019-07-01T09:46:44Z, modified 2020-09-10T23:15:24Z, lastModifiedBy 'Fenyves B\u00e1nk'. wormneuroatlas SynapseSign reads sheets 1-2 only; NeuroAtlas.get_chemical_synapse_sign recomputes signs from CeNGEN. pumpprobe Funatlas reads sheet 5 from doi .s003. Byte-identical to GitHub francescorandi/wormneuroatlas@b2e13d88 blob 0457b2faf3d051c1826b9865421c258f2dc37509. The wormneuroatlas wheels 0.0.6, 0.0.7.1 and 0.0.7.2 carry a byte-identical member (same SHA-256 and size); 0.0.2 to 0.0.5 do not contain the file.",
       "origin": "secondary",
       "primary_reference": "https://doi.org/10.1371/journal.pcbi.1007974.s003 (PLOS Comput Biol supporting-information item s003 of doi:10.1371/journal.pcbi.1007974; its caption, inferred to be 'S1 Data' (NT+R prediction), is UNVERIFIED; see docs/provenance/fenyves2020.md)",
       "retrieved_utc_date": "2026-10-11",
