@@ -97,15 +97,18 @@ def test_fenyves_predicted_excitatory_inhibitory_complex_synapses():
     assert by["-"] == 2580
     assert by["complex"] == 3413
     assert by["no pred"] == 5526
-    assert round(100 * (20589 - 5526) / 20589) == 73  # "polarities for 73% of all ionotropic chemical synapses"
+    # Fig 2 legend (PMC7785220, g002; WebSearch excerpt): "We were able to predict polarity for 73% of chemical synapses"
+    assert round(100 * (20589 - 5526) / 20589) == 73
 
 
-def test_fenyves_excitatory_inhibitory_ratio_is_the_papers_close_to_4_to_1():
-    """The paper's E:I is 'close to 4:1'. The exact synapse-weighted ratio implied by its counts is 9,070/2,580 = 3.5155.
+def test_fenyves_excitatory_inhibitory_ratio_implied_by_reported_counts():
+    """The exact synapse-weighted E:I implied by the paper's counts is 9,070/2,580 = 3.5155.
 
-    The owner's brief targets "approximately 4:1". That target is the paper's
-    rounding, not a separately reported number. This test asserts the exact
-    ratio the reported counts imply, with no tolerance.
+    The owner's brief targets "approximately 4:1" (abstract: "close to 4:1").
+    Whether that wording rounds 3.5155 or refers to a figure printed elsewhere
+    (Fig 3A, not seen) is not established; see docs/provenance/fenyves2020.md
+    FEN-3. This test asserts the exact ratio implied by the reported counts
+    9,070 / 2,580, with no tolerance.
     """
     by = Counter()
     for r in readers.fenyves_sign_rows():

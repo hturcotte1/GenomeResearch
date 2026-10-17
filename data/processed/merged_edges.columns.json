@@ -565,7 +565,7 @@
   },
   "predicted_sign_connectome_synapses": {
     "decision": "Q-008",
-    "definition": "synapse count of the pair in the WormWiring connectome Fenyves used (0 = none)",
+    "definition": "synapse count of the pair in the connectome Fenyves used (xlsx sheet 5; the workbook labels it 'Wormwiring connectome reconstruction', origin UNVERIFIED, see docs/provenance/fenyves2020.md FEN-8) (0 = none)",
     "files": [
       {
         "filename": "journal.pcbi.1007974.s003.xlsx",

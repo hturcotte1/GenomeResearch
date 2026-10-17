@@ -585,7 +585,7 @@ def columns_metadata(cfg: dict, release_file: str) -> dict:
     meta["predicted_sign_basis"] = src("fenyves2020", fx, fenyves2020.CITATION,
                                        "presynaptic transmitter(s) and matched receptor classes with the postsynaptic genes expressed in each", "Q-008")
     meta["predicted_sign_connectome_synapses"] = src("fenyves2020", fx, fenyves2020.CITATION,
-                                                     "synapse count of the pair in the WormWiring connectome Fenyves used (0 = none)", "Q-008")
+                                                     "synapse count of the pair in the connectome Fenyves used (xlsx sheet 5; the workbook labels it 'Wormwiring connectome reconstruction', origin UNVERIFIED, see docs/provenance/fenyves2020.md FEN-8) (0 = none)", "Q-008")
     for rng in ("short", "mid", "long"):
         meta[f"np_edge_{rng}"] = src("ripollsanchez2023", [NP_FILES[("08062023", rng)]], ripollsanchez2023.CITATION,
                                      f"number of NPP-GPCR pairs supporting pre->post, {rng}-range model, 2023 (Table S6) version; 0 = no edge", "Q-RS-1")

@@ -551,38 +551,6 @@ file.
   journal's s003 content, not proof. The byte-level comparison remains
   PENDING.
 
-### Stale copies of this record's claims in files it does not own
-
-These files repeat claims this record has since corrected. They are outside
-the files this record's fix passes may edit, so they are listed here for the
-owner, with the replacement text. None of the fixes changes an assertion or
-a value.
-
-- `tests/test_reproduction.py`,
-  `test_fenyves_excitatory_inhibitory_ratio_is_the_papers_close_to_4_to_1`
-  (the name and the docstring's second paragraph). The test says 3.5155 *is*
-  the paper's "close to 4:1" and that the target "is the paper's rounding,
-  not a separately reported number". FEN-3 says this is not established.
-  Proposed fix: rename the test to
-  `test_fenyves_excitatory_inhibitory_ratio_implied_by_reported_counts` and
-  replace the paragraph with: "The owner's brief targets "approximately 4:1"
-  (abstract: "close to 4:1"). Whether that wording rounds 3.5155 or refers
-  to a figure printed elsewhere (Fig 3A, not seen) is not established; see
-  docs/provenance/fenyves2020.md FEN-3. This test asserts the exact ratio
-  implied by the reported counts 9,070 / 2,580, with no tolerance."
-- `tests/test_reproduction.py`, the inline comment on the 73% assertion in
-  `test_fenyves_predicted_excitatory_inhibitory_complex_synapses`. It quotes
-  "polarities for 73% of all ionotropic chemical synapses", which an
-  exact-phrase search did not find (see the "Share predicted" row). Proposed
-  fix: `# Fig 2 legend (PMC7785220, g002; WebSearch excerpt): "We were able
-  to predict polarity for 73% of chemical synapses"`.
-- `src/merge/build_table.py`, the definition of
-  `predicted_sign_connectome_synapses`. It calls the input "the WormWiring
-  connectome Fenyves used"; the WormWiring origin is UNVERIFIED (FEN-8).
-  Proposed fix, for the next Phase 4 rebuild: "synapse count of the pair in
-  the connectome Fenyves used (xlsx sheet 5; the workbook labels it
-  "Wormwiring connectome reconstruction", origin UNVERIFIED) (0 = none)".
-
 ### Not acquired
 
 - Journal copies of s001–s005 and any other SI items: journals.plos.org and
