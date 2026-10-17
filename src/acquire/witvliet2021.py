@@ -9,7 +9,7 @@ docs/provenance/witvliet2021.md as available but not acquired. The primary hosts
 wormwiring.org, zenodo.org) are blocked in this environment; see that document.
 
 Four secondary distributions are acquired, because they hold three different
-versions of the same two datasets plus the paper's own tables:
+versions of the same two datasets plus the first author's table export:
 
 - ``aconnectome_witvliet_2020_{7,8}.csv``: members of the ``wormneuroatlas``
   0.0.7.3 wheel. Tab-separated despite the ``.csv`` suffix, no trailing
@@ -64,10 +64,10 @@ Facts checked by ``record_counts`` that later phases must respect:
   the xlsx omit. Randi et al.'s code (wormneuroatlas, pumpprobe) therefore
   uses the pre-revision version.
 - The root-commit version (8a50236) is a third version, equal to neither.
-- The paper's own ``synapse_count_matrices.xlsx`` (datasets 7, 8) and
-  ``synapse_list.csv`` agree with the post-revision data, not with the wheel
-  CSVs. Matrices are laid out [post row, pre column]. Their cell set has no
-  ``excgl`` row or column.
+- The first author's ``synapse_count_matrices.xlsx`` (datasets 7, 8) and
+  ``synapse_list.csv`` (identity with the Nature ESM unverified) agree with
+  the post-revision data, not with the wheel CSVs. Matrices are laid out
+  [post row, pre column]. Their cell set has no ``excgl`` row or column.
 - NemaNode's ``head.annotations.json`` (pre-revision classification) gives
   3,113 classified (non-post-embryonic) pairs, and their presence in the
   859641e datasets 1-8 averages 1,292.0 per dataset; the authors' Feb-2021
@@ -418,7 +418,7 @@ FILES = (
             "(paper text unreachable). Evidence only."
         ),
     ),
-    # --- The paper's own tables (first author's repository) -----------------
+    # --- The first author's tables (dwitvliet/nature2021; ESM identity unverified)
     _nature2021_file(
         "tables/synapse_count_matrices.xlsx",
         sha256="bd725d1f6121abeb8ec08d0b80edad94d9e0fea954a8704ee07c7f4be7cebfe6",
@@ -444,14 +444,20 @@ FILES = (
         sha256="da94863507a64da8d85d75a280ceff538d30f98a746390a7d0090607b0870f08",
         size=92737,
         git_blob_sha1="960ce494eee0352320bde8a3bc82a59fede4d713",
-        note="The paper's per-connection classification (stable / variable / developmentally dynamic / post-embryonic). Commit 8b2ce2e, 2021-02-12.",
+        note=(
+            "The first author's per-connection classification table (stable / variable / developmentally "
+            "dynamic / post-embryonic); identity with the Nature ESM unverified. Commit 8b2ce2e, 2021-02-12."
+        ),
     ),
     _nature2021_file(
         "tables/_neurons.csv",
         sha256="2189e2ee262a1d1a81f1139fcc95c4b886681cfdd706dc5f77bd8cda2a49491d",
         size=2223,
         git_blob_sha1="bef93bfd871caa8c3fbea910741d01bc9c960ac8",
-        note="The paper's brain cell classes (class, members, type, integration); tables.py omits CAN. Commit 65282f6, 2021-02-11.",
+        note=(
+            "The first author's table of brain cell classes (class, members, type, integration); identity "
+            "with the Nature ESM unverified; tables.py omits CAN. Commit 65282f6, 2021-02-11."
+        ),
     ),
 )
 
@@ -680,14 +686,15 @@ def record_counts() -> dict:
     NemaNode pre- vs post-revision comparison with weight = sum of ``syn``.
 
     ``cells_by_paper_type``: each name is mapped to its class by NemaNode
-    ``neurons.json`` ``classes`` and the class to its type by the paper's
-    ``_neurons.csv``; names with no such type (absent from neurons.json, or
-    class not listed, e.g. CAN, which the authors' tables.py skips) are listed
-    in ``cells_without_paper_type_names``.
+    ``neurons.json`` ``classes`` and the class to its type by the first
+    author's ``_neurons.csv`` ("paper" in key names means the first author's
+    tables, not verified Nature ESM tables); names with no such type (absent
+    from neurons.json, or class not listed, e.g. CAN, which the authors'
+    tables.py skips) are listed in ``cells_without_paper_type_names``.
 
-    Paper tables (``paper_*``): ``_neurons.csv`` class and member counts by
-    type and integration; ``synapse_count_matrices.xlsx`` per adult sheet:
-    pre columns, post rows (named rows only), nonzero cells, sum, the type
+    The first author's tables (``paper_*``): ``_neurons.csv`` class and
+    member counts by type and integration; ``synapse_count_matrices.xlsx``
+    per adult sheet: pre columns, post rows (named rows only), nonzero cells, sum, the type
     labels in sheet order, post rows per type label and the names under
     "Other"; ``synapse_list.csv`` rows, distinct ``syn_id`` and distinct
     (pre, post) per dataset (all 8), rows with size == -1;
@@ -697,7 +704,7 @@ def record_counts() -> dict:
     pairs occur in that dataset's synapse list (sum, number of datasets,
     mean). ``cmp_d<k>_paper_matrix__vs__<v>`` and
     ``cmp_d<k>_paper_synapse_list__vs__nemanode_baf8ec8`` compare chemical
-    edges only (the paper tables hold no gap junctions); for the synapse list
+    edges only (the author's tables hold no gap junctions); for the synapse list
     the weight is the number of rows per (pre, post), and ``syn_id_sets_equal``
     compares its syn_ids with NemaNode's chemical connector ids.
     ``cmp_d<k>_paper_matrix__vs__<v>_restricted_to_matrix_cells_*`` repeats
@@ -729,7 +736,7 @@ def record_counts() -> dict:
     ``WitvlietEtAl2021.md`` names MOESM4 and says the chemical weights were
     read from the supplement; per dataset, the yaml's reader name,
     ``total_nonzero_conns`` and sampled weights per synapse class, and for
-    each version (and the paper matrix) the sampled chemical weights it does
+    each version (and the author's matrix) the sampled chemical weights it does
     not reproduce (empty = all reproduced). ``cect_xlsx_d<k>_chem_nonzero_cells``
     and ``..._gap_nonzero_cells_symmetric`` (2 x non-self pairs + self pairs)
     are the counts a matrix reader of the xlsx would give, for comparison

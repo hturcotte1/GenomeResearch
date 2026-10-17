@@ -699,17 +699,20 @@ are logged as a blocker.
       after `859641e` in `230afb6` and `4b700bc`, 2020-05-22): metadata only.
     - `annotations/complete.annotations.json`: a 383-byte "not-imaged" list
       of class pairs (blob `77b650d7…`), added in `8a50236` and moved
-      unchanged by `a0ff6f3` (so present at `8a50236`, `b6dfd28` and
-      `a0ff6f3`); emptied to `{}` by `04cbaeb` (2020-05-19, "Removed
-      'not-imaged' annotations in preparation for better comparisons of
-      data") and unchanged since (blob `bfd870e4…` at `859641e`, `baf8ec8`
-      and `6b7ca03`). Not Witvliet connectivity.
+      unchanged by `a0ff6f3`; the same blob is in every commit from
+      `8a50236` to `abc0123`, the parent of `04cbaeb` (among them `b6dfd28`
+      and `a0ff6f3`). Emptied to `{}` (5 bytes, blob `bfd870e4…`) by
+      `04cbaeb` (2020-05-19, "Removed 'not-imaged' annotations in
+      preparation for better comparisons of data") and unchanged since
+      (same blob at `859641e`, `baf8ec8` and `6b7ca03`). Not Witvliet
+      connectivity.
     - `raw-data/adult-complete-neurons.json` (blob `3b2b7c31…`, 56,439 bytes
       per `git ls-tree -l`): added in `8a50236`, moved unchanged by
-      `a0ff6f3` (so present at `8a50236`, `b6dfd28` and `a0ff6f3`), deleted
-      by `859641e`. A NemaNode cell table in the `neurons.json` format
-      (`name`, `classes`, `typ`, `nt`, `emb`, `inhead`, `intail`), not
-      Witvliet connectivity; not needed.
+      `a0ff6f3`; the same blob is in every commit from `8a50236` to
+      `3cce17f`, the parent of `859641e` (among them `b6dfd28`, `a0ff6f3`
+      and `04cbaeb`), and `859641e` deleted it. A NemaNode cell table in the
+      `neurons.json` format (`name`, `classes`, `typ`, `nt`, `emb`,
+      `inhead`, `intail`), not Witvliet connectivity; not needed.
     - `trajectories/`: not needed.
     - `white_1986_{jsh,n2u,whole,jse}.json`: these belong to the white1986
       source (Phase 0 flag F9). The Zhen-lab muscle annotations of JSH/N2U
