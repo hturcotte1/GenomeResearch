@@ -15,12 +15,13 @@ distributions, on these conditions (`docs/decisions.md` D-003):
 - **pending primary checks block the Phase 4 freeze** until the primary hosts
   are allowlisted and each file is compared.
 
-The reachable secondary distributions are:
+The reachable secondary distributions are (D-003; the GitHub repositories beyond the toolbox are covered provisionally by D-015):
 
 | Distribution | Pinned as | Integrity checks performed at acquisition |
 |---|---|---|
 | PyPI `wormneuroatlas` 0.0.7.3 wheel, by F. Randi (Leifer lab) | file URL + SHA-256 | SHA-256 equals PyPI's published digest (fetched live); each extracted member matches the wheel's own `RECORD` |
 | GitHub `openworm/ConnectomeToolbox` | commit `ffe570268b7cffb9329cd009a1bb37d60db2d465` | each file's git blob id matches the blob the commit records for its path |
+| Author and community GitHub repositories (Ripoll-Sánchez, Fenyves, Witvliet, Randi, Leifer lab, Varshney, NemaNode, OpenWorm); full list in `docs/decisions.md` D-015 | commit hash per file (in its URL) | each file's git blob id matches the blob the commit records for its path |
 
 These checks prove the bytes are exactly what the distributor published. They
 do **not** prove the distributor's copy equals the journal or portal copy.

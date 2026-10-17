@@ -208,3 +208,36 @@ in the table plus the logged pairs equal the source's distinct neuron pairs.
 
 The table itself is unchanged by this (same CSV and Parquet hashes). Only the
 exclusion log and `SHA256SUMS` changed.
+
+## Phase 1 follow-up
+
+### D-015 (2026-10-17, Phase 1, PROVISIONAL, owner confirmation requested)
+**Author and community GitHub repositories, each pinned to a commit with git
+blob ids, are treated as covered by the owner's D-003 approval.**
+
+D-003 records two distributions: the `wormneuroatlas` wheel and the
+ConnectomeToolbox. The option the owner chose on 2026-10-11 reads "Acquire
+from reachable author/community distributions", and it names those two as
+examples. Phase 1 also used the following repositories, which are all on
+github.com:
+
+| Repository | Pinned commit(s) | Kind | Used by |
+|---|---|---|---|
+| `LidiaRipollSanchez/Neuropeptide-Connectome` | `36ecbbf`, `6689619`, `fb0ba84` | first author | ripollsanchez2023, taylor2021 |
+| `bank-fenyves/CeConn-SignPrediction` | `e657d5f` | first author | fenyves2020 |
+| `dwitvliet/nature2021` | `0646af9` | first author | witvliet2021 |
+| `francescorandi/wormneuroatlas` | `df07176` | first author (Randi) | randi2023 |
+| `leiferlab/pumpprobe` | `1dbc5e0` | senior author's lab (Randi's analysis code) | white1986 and others |
+| `lrvarshney/elegans` | `07d10c2` | first author (Varshney 2011) | white1986 |
+| `zhenlab-ltri/NemaNode` | `8a50236`, `859641e`, `baf8ec8`, `da8ca7e` | authors' lab (Witvliet 2021 portal) | witvliet2021, white1986, canonical_neurons |
+| `openworm/CElegansNeuroML` | `3808b6b` | community (OpenWorm) | fenyves2020 |
+| `openworm/owmeta` | `945f717` | community (OpenWorm) | canonical_neurons |
+
+Reading "author/community distributions" as covering these is Claude's
+provisional interpretation, made under the owner's instruction not to ask
+further questions. Every file from them is logged SECONDARY under the D-003
+conditions, which are unchanged: primary comparison PENDING, and the freeze
+blocked until it is done. If the owner meant only the two named
+distributions, the files from these repositories must be replaced or
+re-approved; `data/raw/*/MANIFEST.json` lists, for every file, its URL and
+therefore its distributor.
