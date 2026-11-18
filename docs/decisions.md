@@ -241,3 +241,26 @@ blocked until it is done. If the owner meant only the two named
 distributions, the files from these repositories must be replaced or
 re-approved; `data/raw/*/MANIFEST.json` lists, for every file, its URL and
 therefore its distributor.
+
+### D-016 (2026-11-18, Phase 1, DECIDED, engineering)
+**A re-download whose SHA-256 equals the committed manifest entry keeps the
+entry's first retrieval date.**
+
+On 2026-11-18 the session's container was replaced. `data/raw/` (not
+committed), the virtualenv and the scratch directory were lost, together with
+some uncommitted fix-pass edits (see the Phase 1 verification notes in the
+final report). `python -m src.acquire` re-downloaded every declared file:
+101 files across the 8 sources, plus the `wormneuroatlas` wheel. Each matched
+its pinned SHA-256 (and git blob id, where declared).
+
+The framework then stamped every manifest entry with 2026-11-18. That would
+have made every provenance record's retrieval date wrong, although no byte
+changed. `write_manifest` and `_record_archive` now keep the recorded date
+when the SHA-256 is unchanged; different bytes under the same name still get
+a new date. `tests/test_acquire_common.py` covers both cases. The committed
+manifests are unchanged.
+
+Determinism check: `python -m src.build` in the new container, on the
+re-downloaded bytes, reproduced `data/interim/namespace/`,
+`docs/merged-table-summary.md` and all four `data/processed/` artifacts byte
+for byte (`SHA256SUMS` identical).

@@ -277,7 +277,9 @@ def write_manifest(source_id: str, entries: list[dict]) -> Path:
     """Write ``data/raw/<source>/MANIFEST.json`` in a stable layout.
 
     A file's retrieval date is set when its bytes first arrive and carried
-    forward on later runs. If a file is present but has no recorded date (the
+    forward on later runs. A re-download whose SHA-256 equals the recorded
+    entry's keeps the recorded date: the bytes are provably the ones first
+    retrieved then (D-016). If a file is present but has no recorded date (the
     manifest was lost), the date is recorded as "UNKNOWN" rather than guessed.
     """
     previous = {e["filename"]: e for e in _load_manifest(source_id).get("files", [])}
@@ -287,12 +289,13 @@ def write_manifest(source_id: str, entries: list[dict]) -> Path:
         prev = previous.get(e["filename"])
         retrieved = e.pop("_retrieved", None)
         fetched_now = e.pop("_fetched_now", False)
+        same_bytes = prev is not None and prev.get("sha256") == e["sha256"] and prev.get("retrieved_utc_date") not in (None, "UNKNOWN")
         if retrieved is not None:
             e["retrieved_utc_date"] = retrieved
+        elif same_bytes:
+            e["retrieved_utc_date"] = prev["retrieved_utc_date"]
         elif fetched_now:
             e["retrieved_utc_date"] = _today_utc()
-        elif prev is not None and prev.get("sha256") == e["sha256"]:
-            e["retrieved_utc_date"] = prev["retrieved_utc_date"]
         else:
             e["retrieved_utc_date"] = "UNKNOWN"
         out_entries.append(e)
@@ -313,10 +316,10 @@ def _record_archive(rf: RemoteFile, downloaded_now: bool) -> str:
     manifest = _load_manifest(DIST_DIR.name)
     entries = {e["filename"]: e for e in manifest.get("files", [])}
     prev = entries.get(rf.filename)
-    if downloaded_now:
+    if prev is not None and prev.get("sha256") == rf.sha256 and prev.get("retrieved_utc_date") not in (None, "UNKNOWN"):
+        date = prev["retrieved_utc_date"]  # same bytes as first retrieved (D-016)
+    elif downloaded_now:
         date = _today_utc()
-    elif prev is not None and prev.get("sha256") == rf.sha256:
-        date = prev["retrieved_utc_date"]
     else:
         date = "UNKNOWN"
     entries[rf.filename] = {

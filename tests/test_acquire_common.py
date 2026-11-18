@@ -125,3 +125,35 @@ def test_member_retrieval_date_is_the_archive_download_date(tmp_path, monkeypatc
     (entry,) = manifest["files"]
     assert entry["retrieved_utc_date"] == "2000-01-01"
     assert not any(k.startswith("_") for k in entry)
+
+
+def test_redownload_of_identical_bytes_keeps_the_first_retrieval_date(tmp_path, monkeypatch):
+    """A fresh container re-downloads every file; identical bytes keep their first date (D-016)."""
+    import json
+
+    payload = b"payload"
+    raw = tmp_path / "raw"
+    monkeypatch.setattr(common, "RAW_ROOT", raw)
+    rf = RemoteFile(
+        url="https://example.invalid/x.bin",
+        filename="x.bin",
+        sha256=hashlib.sha256(payload).hexdigest(),
+        size=len(payload),
+        distributor="test",
+        origin="secondary",
+        primary_reference="test",
+    )
+    monkeypatch.setattr(common, "ensure_remote", lambda f, d: ((d / f.filename), True, ["downloaded"]))
+    seeded = {"source": "src_b", "files": [{"filename": "x.bin", "sha256": rf.sha256, "retrieved_utc_date": "2000-01-01"}]}
+    (raw / "src_b").mkdir(parents=True)
+    (raw / "src_b" / common.MANIFEST_NAME).write_text(json.dumps(seeded), encoding="utf-8")
+    common.acquire_source("src_b", (rf,))
+    (entry,) = json.loads((raw / "src_b" / common.MANIFEST_NAME).read_text(encoding="utf-8"))["files"]
+    assert entry["retrieved_utc_date"] == "2000-01-01"
+
+    # different bytes under the same name are a new retrieval
+    seeded["files"][0]["sha256"] = "0" * 64
+    (raw / "src_b" / common.MANIFEST_NAME).write_text(json.dumps(seeded), encoding="utf-8")
+    common.acquire_source("src_b", (rf,))
+    (entry,) = json.loads((raw / "src_b" / common.MANIFEST_NAME).read_text(encoding="utf-8"))["files"]
+    assert entry["retrieved_utc_date"] == common._today_utc()
