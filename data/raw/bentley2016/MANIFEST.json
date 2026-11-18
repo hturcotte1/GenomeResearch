@@ -44,9 +44,9 @@
       ],
       "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
       "filename": "esconnectome_monoamines_Bentley_2016.csv",
-      "note": "The monoamine file Randi et al.'s package loads. Equals a 53-byte '#source neuron, ...' header line followed by the exact bytes of the toolbox's edgelist_MA.csv.",
+      "note": "The monoamine file Randi's wormneuroatlas package loads (NeuroAtlas.esconn_sources). Equals a 53-byte '#source neuron, ...' header line followed by the exact bytes of the toolbox's edgelist_MA.csv. Byte-identical to the pumpprobe copy.",
       "origin": "secondary",
-      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING.",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING. Content: edge_lists/edgelist_MA.csv (per the toolbox) behind a header line not in the toolbox's extraction.",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "16a1527028c6d8eece4d8a2d792e5a19cc416650e45066612180c42adc83654e",
       "size": 66771,
@@ -64,13 +64,45 @@
       ],
       "distributor": "PyPI package wormneuroatlas 0.0.7.3 (F. Randi / Leifer lab), uploaded 2023-06-29",
       "filename": "esconnectome_neuropeptides_Bentley_2016.csv",
-      "note": "The neuropeptide file Randi et al.'s package loads. Header line + the toolbox's 8,931 rows, each with a 5th field appended (a receptor sequence name, filled on only some rows). That field is absent from the toolbox's S1 extraction and from the first commit of this file in GitHub francescorandi/wormneuroatlas (5ebe7f4, 2022-12-13); it appears in commit 7a7c653 (2022-12-23).",
+      "note": "The neuropeptide file Randi's wormneuroatlas package loads. 54-byte header line + the toolbox's 8,931 rows, each with a 5th field appended (a receptor sequence name, filled on only some rows). That field is absent from the toolbox's S1 extraction, from the pumpprobe copy (blob 190868bd), and from that same blob in GitHub francescorandi/wormneuroatlas from its first commit of the file (3eed4b8, 2022-12-12; moved to data/ by 5ebe7f4, 2022-12-13); it appears in commit 7a7c653 (2022-12-23).",
       "origin": "secondary",
-      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING.",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING. Content: edge_lists/edgelist_NP.csv (per the toolbox) behind a header line, with a 5th field that is not in the toolbox's extraction.",
       "retrieved_utc_date": "2026-10-11",
       "sha256": "0abea9f09112e5d7af88823dd6e4ef91f181af7e919ce997fa12356c92c99e64",
       "size": 217695,
       "url": "https://files.pythonhosted.org/packages/b3/dc/634b2a009739f692bad83325e5c0f8fd5b1323ac1a9ce11df7d4c8ac40db/wormneuroatlas-0.0.7.3-py3-none-any.whl#wormneuroatlas/data/esconnectome_neuropeptides_Bentley_2016.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 (Leifer lab; Randi et al. analysis code)",
+      "filename": "pumpprobe__esconnectome_monoamines_Bentley_2016.csv",
+      "git_blob_sha1": "eaa17360c76e311ad690f68395537d1f7628c4e5",
+      "note": "The monoamine file Randi et al.'s analysis code loads (pumpprobe Funatlas.esconn_sources). Byte-identical to the wheel's esconnectome_monoamines_Bentley_2016.csv (53-byte header line + toolbox edgelist_MA.csv). Same blob in pumpprobe since 8ceb2cb (2022-07-15). The copy at build/lib.linux-x86_64-3.8/pumpprobe/ is the same blob and is not acquired.",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING. Content: edge_lists/edgelist_MA.csv (per the toolbox) behind a header line not in the toolbox's extraction.",
+      "retrieved_utc_date": "2026-11-18",
+      "sha256": "16a1527028c6d8eece4d8a2d792e5a19cc416650e45066612180c42adc83654e",
+      "size": 66771,
+      "url": "https://raw.githubusercontent.com/leiferlab/pumpprobe/1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7/pumpprobe/esconnectome_monoamines_Bentley_2016.csv"
+    },
+    {
+      "checks": [
+        "size and SHA-256 match the pin in the source module",
+        "git blob SHA-1 matches the blob id recorded in the repository at the pinned commit"
+      ],
+      "distributor": "GitHub leiferlab/pumpprobe @ 1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7 (Leifer lab; Randi et al. analysis code)",
+      "filename": "pumpprobe__esconnectome_neuropeptides_Bentley_2016.csv",
+      "git_blob_sha1": "190868bd841ccf4b2f671fb83396a9d9ca193a7e",
+      "note": "The neuropeptide file Randi et al.'s analysis code loads (pumpprobe Funatlas.esconn_sources). The 53-byte monoamine-style header line (no trailing comma) + exactly the bytes of the toolbox's edgelist_NP.csv: 4 fields, no 5th field, so NOT the wheel's version. Same blob in pumpprobe since 8ceb2cb (2022-07-15), and the first wormneuroatlas version of the file (3eed4b8). The copy at build/lib.linux-x86_64-3.8/pumpprobe/ is the same blob and is not acquired.",
+      "origin": "secondary",
+      "primary_reference": "https://doi.org/10.1371/journal.pcbi.1005283.s004 (PLOS supporting-information item s004, 'S1 Dataset', a zip; per the ConnectomeToolbox validation note it contains edge_lists/edgelist_MA.csv and edge_lists/edgelist_NP.csv). Also listed in the PLOS figshare collection https://plos.figshare.com/collections/The_Multilayer_Connectome_of_i_Caenorhabditis_elegans_i_/3647060 . Not reachable from this environment; byte comparison PENDING. Content: edge_lists/edgelist_NP.csv (per the toolbox) behind a header line not in the toolbox's extraction.",
+      "retrieved_utc_date": "2026-11-18",
+      "sha256": "b8544d2bc947d0dc2ddf510f141f06b90acae2e39fea49f4cf7ec13c3f59de6f",
+      "size": 202710,
+      "url": "https://raw.githubusercontent.com/leiferlab/pumpprobe/1dbc5e0a2b609d54bc9b1c90c73d4e3bf183d3c7/pumpprobe/esconnectome_neuropeptides_Bentley_2016.csv"
     }
   ],
   "source": "bentley2016"
