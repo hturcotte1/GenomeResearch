@@ -115,8 +115,8 @@ choice of which candidate is authoritative stays with the owner in Phase 2.
 variants are acquired and their byte-level relationships documented; none is
 picked as canonical in Phase 1.**
 
-Examples: the White-lineage connectome variants, and the wheel vs toolbox
-copies of Bentley 2016. Which variant feeds which Phase 4 column is the
+Examples: the White-lineage connectome variants, and the wheel, toolbox and
+pumpprobe copies of Bentley 2016. Which variant feeds which Phase 4 column is the
 owner's call (Q-007, Q-009).
 
 ### D-011 (2026-10-12, Phase 1, DECIDED, engineering)

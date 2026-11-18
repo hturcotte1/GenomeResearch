@@ -289,6 +289,22 @@ def test_bentley_monoamine_and_neuropeptide_connection_counts():
     assert len({e.pre for e in np_} | {e.post for e in np_}) == 239
 
 
+
+def test_bentley_114_tyramine_receptor_expressing_neurons():
+    """PLoS Comput Biol 12:e1005283 (docs/provenance/bentley2016.md E13): "Of 114 neurons that express reporters
+    for one or more of the four tyramine (TA) receptors, only 7 are postsynaptic to a tyraminergic neuron"."""
+    ma = readers.bentley_edgelist("edgelist_MA.csv")
+    assert len({e.post for e in ma if e.kind == "tyramine"}) == 114
+
+
+@pytest.mark.xfail(strict=True, reason="BLOCKER: Bentley 2016 reports 251 neurons expressing a monoamine receptor; edgelist_MA.csv has 235 receivers")
+def test_bentley_251_monoamine_receptor_expressing_neurons():
+    """BLOCKER: PLoS Comput Biol 12:e1005283 (search-tool paraphrase, provenance E5): 251 neurons (83%) express one
+    or more monoamine receptors (arXiv: 248). Like for like, edgelist_MA.csv has 235 distinct receivers (field 2);
+    tyramine alone matches the paper's 114 (E13). Flag B3."""
+    ma = readers.bentley_edgelist("edgelist_MA.csv")
+    assert len({e.post for e in ma}) == 251
+
 # ------------------------------------------------------------------ canonical list (White et al. 1986)
 
 def test_white1986_302_neurons_in_118_classes():
